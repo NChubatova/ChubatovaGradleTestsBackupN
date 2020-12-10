@@ -11,13 +11,8 @@ dependencies {
     testImplementation("junit:junit:4.13")
 }
 
-tasks{
-    test{
-        useTestNG()
-        retry {
-            maxRetries.set(49)
-            maxFailures.set(200)
-            failOnPassedAfterRetry.set(false)
-        }
-    }
+tasks.test {
+    useJUnit()
+
+    maxHeapSize = "1G"
 }
