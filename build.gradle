@@ -15,7 +15,7 @@ tasks{
     test{
         useTestNG()
         retry {
-            maxRetries.set(50)
+            maxRetries.set(49)
             maxFailures.set(200)
             failOnPassedAfterRetry.set(false)
         }
