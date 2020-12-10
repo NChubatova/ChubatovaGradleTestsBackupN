@@ -1,7 +1,9 @@
 package ChubatovaGradlePackage;
 
 import org.junit.Assert;
+import org.junit.*;
 import org.junit.Test;
+
 
 public class ChubatovaGradleClassTest {
 
@@ -12,8 +14,20 @@ public class ChubatovaGradleClassTest {
     public void FizzBuzzNormalNumbers() {
 
         ChubatovaGradleClass fb = new ChubatovaGradleClass();
-        Assert.assertEquals("1", fb.convert(2));
-    }
+        if (System.currentTimeMillis()%2!=0){
+
+            System.out.println(System.currentTimeMillis());
+            System.out.println(System.currentTimeMillis()%2);
+            //Assert.assertEquals("1", fb.convert(2))
+            }
+            else {
+            System.out.println(System.currentTimeMillis());
+            System.out.println(System.currentTimeMillis()%2);
+            //Assert.assertEquals("2", fb.convert(2))
+                Assert.fail("fail message");
+        };
+
+    };
 
     @Test
     public void FizzBuzzThreeNumbers() {

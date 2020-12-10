@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.gradle.test-retry") version "1.2.0"
+    id("org.gradle.test-retry") version "1.1.9"
 }
 
 repositories {
@@ -8,13 +8,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation("junit:junit:4.13")
+    testImplementation("junit:junit:4.12")
 }
 
 tasks.test {
     useJUnit()
     retry {
-        maxRetries = 3
+        maxRetries = 0
         maxFailures = 20
         failOnPassedAfterRetry = false
     }
