@@ -8,11 +8,11 @@ public class ChubatovaGradleClassTest {
 
 
     @Test
+
     public void FizzBuzzNormalNumbers() {
 
         ChubatovaGradleClass fb = new ChubatovaGradleClass();
         Assert.assertEquals("1", fb.convert(2));
-        Assert.assertEquals("2", fb.convert(2));
     }
 
     @Test
