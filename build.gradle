@@ -1,0 +1,23 @@
+plugins {
+    id("java")
+    id("org.gradle.test-retry") version "1.1.9"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("junit:junit:4.13")
+}
+
+tasks{
+    test{
+        useTestNG()
+        retry {
+            maxRetries.set(50)
+            maxFailures.set(200)
+            failOnPassedAfterRetry.set(false)
+        }
+    }
+}
