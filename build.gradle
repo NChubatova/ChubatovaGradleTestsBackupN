@@ -14,7 +14,7 @@ dependencies {
 tasks.test {
     useJUnit()
     retry {
-        maxRetries = 100
+        maxRetries = 300
         maxFailures = 20000
         failOnPassedAfterRetry = false
     }
