@@ -7,17 +7,28 @@ import org.junit.Test;
 public class mytest {
 
     @Test
-    public void foo() {
-        if (System.currentTimeMillis()%3==0){
-
-            System.out.println(System.currentTimeMillis());
-            System.out.println(System.currentTimeMillis()%2);
-            //Assert.assertEquals("1", fb.convert(2))
+    public void foo1() {
+        if (System.currentTimeMillis()%3==1){
         }
         else {
-            System.out.println(System.currentTimeMillis());
-            System.out.println(System.currentTimeMillis()%2);
-            //Assert.assertEquals("2", fb.convert(2))
+            Assert.fail("fail message");
+        };
+
+    };
+    @Test
+    public void foo2() {
+        if (System.currentTimeMillis()%2==1){
+        }
+        else {
+            Assert.fail("fail message");
+        };
+
+    };
+    @Test
+    public void foo3() {
+        if (System.currentTimeMillis()%1==1){
+        }
+        else {
             Assert.fail("fail message");
         };
 
