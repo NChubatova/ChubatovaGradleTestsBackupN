@@ -9,8 +9,10 @@ public class mytest {
     @Test
     public void foo1() {
         if (System.currentTimeMillis()%3==1){
+           System.out.println(System.currentTimeMillis());
         }
         else {
+            System.out.println(System.currentTimeMillis());
             Assert.fail("fail message");
         };
 
@@ -18,8 +20,10 @@ public class mytest {
     @Test
     public void foo2() {
         if (System.currentTimeMillis()%2==1){
+            System.out.println(System.currentTimeMillis());
         }
         else {
+            System.out.println(System.currentTimeMillis());
             Assert.fail("fail message");
         };
 
