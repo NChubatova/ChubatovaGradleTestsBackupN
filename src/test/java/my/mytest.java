@@ -8,7 +8,7 @@ public class mytest {
 
     @Test
     public void foo() {
-        if (System.currentTimeMillis()%1==1){
+        if (System.currentTimeMillis()%3==0){
 
             System.out.println(System.currentTimeMillis());
             System.out.println(System.currentTimeMillis()%2);
