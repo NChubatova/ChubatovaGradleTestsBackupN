@@ -11,7 +11,7 @@ public class mytest {
     public void foo1() {
         if (System.currentTimeMillis()%3==100){
            System.out.println(System.currentTimeMillis());
-           Thread.sleep(40000)
+           Thread.sleep(40000);
         }
         else {
             System.out.println(System.currentTimeMillis());
