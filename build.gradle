@@ -15,7 +15,7 @@ tasks.test {
     useJUnit()
     retry {
         maxRetries = 3
-        maxFailures = 2
+        maxFailures = 200
         failOnPassedAfterRetry = false
     }
 }
