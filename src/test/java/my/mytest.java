@@ -10,8 +10,6 @@ public class mytest {
     @Test
     public void foo1() {
         if (System.currentTimeMillis()%3==100){
-           System.out.println(System.currentTimeMillis());
-           Thread.sleep(40000);
 
         }
         else {
