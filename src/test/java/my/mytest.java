@@ -14,6 +14,14 @@ public class mytest {
         }
         else {
             System.out.println(System.currentTimeMillis());
+            try 
+            {
+                Thread.sleep(40000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
             Assert.fail("fail message");
         };
 
