@@ -12,7 +12,7 @@ public class mytest {
         if (1==1){
             try 
             {
-                Thread.sleep(40000);
+                Thread.sleep(120000);
             } 
             catch(InterruptedException e)
             {
