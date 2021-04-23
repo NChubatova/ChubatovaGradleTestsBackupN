@@ -12,7 +12,7 @@ public class mytest {
         if (1==1){
             try 
             {
-                Thread.sleep(120000);
+                Thread.sleep(12);
             } 
             catch(InterruptedException e)
             {
@@ -24,7 +24,7 @@ public class mytest {
             System.out.println(System.currentTimeMillis());
             try 
             {
-                Thread.sleep(40000);
+                Thread.sleep(4);
             } 
             catch(InterruptedException e)
             {
