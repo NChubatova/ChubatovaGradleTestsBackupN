@@ -25,7 +25,7 @@ public class mytest {
             System.out.println(System.currentTimeMillis());
             try 
             {
-                Thread.sleep(5);
+                Thread.sleep(2);
             } 
             catch(InterruptedException e)
             {
