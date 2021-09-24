@@ -17,7 +17,7 @@ tasks.test {
     retry {
         maxRetries = 3
         maxFailures = 200
-        failOnPassedAfterRetry = false
+        failOnPassedAfterRetry = true
     }
 }
 if (hasProperty('buildScan')) {
