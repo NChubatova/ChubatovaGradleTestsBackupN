@@ -13,7 +13,7 @@ public class mytest {
             try 
             {
                 Thread.sleep(12);
-                //Assert.fail("fail message");
+                //Assert.fail("fail message1");
             } 
             catch(InterruptedException e)
             {
