@@ -1,5 +1,5 @@
 package my;
-public String a;
+int data=50;
 
 public class myclass {
     public static void main(String[] args) {
