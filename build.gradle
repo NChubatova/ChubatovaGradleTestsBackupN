@@ -13,7 +13,7 @@ dependencies {
 
 tasks.test {
     useJUnit()
-    ignoreFailures = true
+    ignoreFailures = false
     retry {
         maxRetries = 3
         maxFailures = 200
