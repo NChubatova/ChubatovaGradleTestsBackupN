@@ -8,7 +8,7 @@ import java.lang.Thread;
 public class mytest {
 
     @Test
-    public static void foo1() {
+    public void foo1() {
         if (1==1){
             try 
             {
