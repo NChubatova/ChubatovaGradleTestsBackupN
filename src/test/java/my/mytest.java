@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.Thread;
 
-public class mytest {
+public static class mytest {
 
     @Test
     public void foo1() {
