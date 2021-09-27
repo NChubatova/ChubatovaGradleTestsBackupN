@@ -36,8 +36,8 @@ public class mytest {
 
     };
     
-    
-
+   
+@RunWith(JUnit4.class)
 public class BeforeClassAndAfterClassAnnotationsUnitTest {
 
 
