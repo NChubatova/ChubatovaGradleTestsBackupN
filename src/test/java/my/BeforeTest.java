@@ -11,13 +11,13 @@ public class BeforeTest {
 
     @Before
     public void init() {
-         Assert.fail("fail message");
+         //Assert.fail("fail message");
 
     }
 
     @After
     public void teardown() {
-         Assert.fail("fail message");
+         //Assert.fail("fail message");
 
     }
 }
