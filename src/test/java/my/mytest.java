@@ -35,6 +35,22 @@ public class mytest {
         };
 
     };
+    
+    
+
+public class BeforeClassAndAfterClassAnnotationsUnitTest {
 
 
+    @BeforeClass
+    public static void setup() {
+        LOG.info("startup - creating DB connection");
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        LOG.info("closing DB connection");
+    }
 }
+
+
+};
