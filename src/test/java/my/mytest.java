@@ -7,19 +7,15 @@ import java.lang.Thread;
 
 public class BeforeAndAfterAnnotationsUnitTest {
 
-    // ...
-
-    private List<String> list;
-
     @Before
     public void init() {
-        LOG.info("startup");
+         Assert.fail("fail message");
 
     }
 
     @After
     public void teardown() {
-        LOG.info("teardown");
+         Assert.fail("fail message");
 
     }
 }
