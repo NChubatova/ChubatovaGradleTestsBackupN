@@ -5,6 +5,25 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.Thread;
 
+public class BeforeAndAfterAnnotationsUnitTest {
+
+    // ...
+
+    private List<String> list;
+
+    @Before
+    public void init() {
+        LOG.info("startup");
+
+    }
+
+    @After
+    public void teardown() {
+        LOG.info("teardown");
+
+    }
+}
+
 public class mytest {
 
     @Test
@@ -37,20 +56,6 @@ public class mytest {
     };
     
    
-@RunWith(JUnit4.class)
-public class BeforeClassAndAfterClassAnnotationsUnitTest {
-
-
-    @BeforeClass
-    public static void setup() {
-        LOG.info("startup - creating DB connection");
-    }
-
-    @AfterClass
-    public static void tearDown() {
-        LOG.info("closing DB connection");
-    }
-}
 
 
 };
