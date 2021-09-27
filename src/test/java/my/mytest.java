@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.Thread;
 
-public class BeforeAndAfterAnnotationsUnitTest {
+class BeforeAndAfterAnnotationsUnitTest {
 
     @Before
     public void init() {
