@@ -27,3 +27,6 @@ if (hasProperty('buildScan')) {
         termsOfServiceAgree = 'yes'
     }
 }
+tasks.withType(Test) {
+  exitCodeOnFailure = 20
+}
