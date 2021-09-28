@@ -6,8 +6,8 @@ function runInInternalBuilder() {
     docker run python
 }
 function gradleInBuilder() {
-    runInInternalBuilder "exit 1" $@
+    runInInternalBuilder 
     echo hi
 }
 set -e
-gradleInBuilder  "$@"
+gradleInBuilder
