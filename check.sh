@@ -8,4 +8,4 @@ function gradleInBuilder() {
     runInInternalBuilder ./gradlew ${GRADLE_RUN_PARAMS} $@
 }
 set -e
-gradleInBuilder test --stacktrace "$@"
+gradleInBuilder test "$@"
