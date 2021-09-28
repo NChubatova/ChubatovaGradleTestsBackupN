@@ -1,2 +1,5 @@
 rootProject.name = 'ChubatovaGradleTests'
 
+gradleEnterprise {
+    server = "https://gradle-enterprise.mycompany.com"
+}
