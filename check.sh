@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 function runInInternalBuilder() {
-docker run  custom-gradle $@ 
+docker run custom-gradle $@ 
 
 }
 function gradleInBuilder() {
