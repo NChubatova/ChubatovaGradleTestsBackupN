@@ -13,5 +13,5 @@ function gradleInBuilder() {
     echo hi
     
 }
-set -e
+#set -e
 gradleInBuilder
