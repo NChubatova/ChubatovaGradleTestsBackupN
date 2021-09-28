@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.lang.Thread;
 
 
-public static class mytest {
+public class mytest {
 
     @Test
     public void foo1() {
