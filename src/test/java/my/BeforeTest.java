@@ -9,13 +9,13 @@ import org.junit.After;
 
 public class BeforeTest {
 
-    //@Before
+    /* @Before
     public void init() {
          //Assert.fail("fail message");
 
     }
 
-    //@After
+    /* @After
     public void teardown() {
          //Assert.fail("fail message");
 
