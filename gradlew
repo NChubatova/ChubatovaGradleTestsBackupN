@@ -57,7 +57,7 @@ die () {
     echo
     echo "$*"
     echo
-    exit 1
+    exit 199
 }
 
 # OS specific support (must be 'true' or 'false').
