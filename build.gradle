@@ -14,7 +14,7 @@ dependencies {
 tasks.test {
     useJUnit()
     ignoreFailures = false
-    exitCodeOnFailure = 20
+
     retry {
         maxRetries = 3
         maxFailures = 200
@@ -26,7 +26,4 @@ if (hasProperty('buildScan')) {
         termsOfServiceUrl = 'https://gradle.com/terms-of-service'
         termsOfServiceAgree = 'yes'
     }
-}
-tasks.withType(Test) {
-  exitCodeOnFailure = 20
 }
