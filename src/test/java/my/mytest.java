@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.Thread;
 
-public class mytest {
+public static class mytest {
 
     @Test
     public void foo1() {
@@ -31,10 +31,12 @@ public class mytest {
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-            Assert.fail("fail message");
+            //Assert.fail("fail message");
         };
 
     };
+    
+   
 
 
-}
+};
