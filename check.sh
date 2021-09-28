@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 function runInInternalBuilder() {
 docker run --entrypoint "/sources/a.sh" custom-gradle
 }
