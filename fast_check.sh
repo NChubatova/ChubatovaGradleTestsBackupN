@@ -7,6 +7,7 @@ function runInInternalBuilder() {
 }
 function gradleInBuilder() {
     runInInternalBuilder "exit 1" $@
+    echo hi
 }
 set -e
 gradleInBuilder  "$@"
