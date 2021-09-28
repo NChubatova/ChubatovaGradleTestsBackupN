@@ -19,10 +19,7 @@ public class mytest {
     };
     @Test
     public void foo2() {
-        if (System.currentTimeMillis()%3==1){
-        }
-        else {
-            try 
+        try 
             {
                 Thread.sleep(3000000);
             } 
@@ -30,6 +27,10 @@ public class mytest {
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+          //
         };
 
     };
