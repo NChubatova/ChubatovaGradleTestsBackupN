@@ -1,5 +1,5 @@
 function runInInternalBuilder() {
-docker run --entrypoint "/sources/gradlew" custom-gradle
+docker run --entrypoint "/sources/a.sh" custom-gradle
 }
 function gradleInBuilder() {
     runInInternalBuilder
