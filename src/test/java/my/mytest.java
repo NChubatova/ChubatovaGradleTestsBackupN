@@ -13,7 +13,7 @@ public class mytest {
         }
         else {
             Assert.fail("fail message2");
-            Thread.sleep(400000);
+
         };
 
     };
@@ -22,7 +22,14 @@ public class mytest {
         if (System.currentTimeMillis()%3==1){
         }
         else {
-            Assert.fail("fail message2");
+            try 
+            {
+                Thread.sleep(3000000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
         };
 
     };
