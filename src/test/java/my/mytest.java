@@ -3,6 +3,7 @@ package my;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
+import java.lang.*;
 
 public class mytest {
 
@@ -12,6 +13,7 @@ public class mytest {
         }
         else {
             Assert.fail("fail message2");
+            Thread.sleep(400000);
         };
 
     };
