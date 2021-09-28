@@ -7,7 +7,7 @@ function runInInternalBuilder() {
     echo code $?
     docker ps -a
     ./gradlew test --stacktrace --scan
-    echo code $?
+    #echo code $?
     #echo hi
 }
 function gradleInBuilder() {
