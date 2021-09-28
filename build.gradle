@@ -27,9 +27,4 @@ tasks.test {
         failOnPassedAfterRetry = true
     }
 }
-gradleEnterprise {
-    buildScan {
-        termsOfServiceUrl = "https://gradle.com/terms-of-service"
-        termsOfServiceAgree = "yes"
-    }
-}
+
