@@ -1,0 +1,37 @@
+package my;
+
+import junit.framework.TestCase;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class mytest {
+
+    @Test
+    public void foo1() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+            Assert.fail("fail message2");
+        };
+
+    };
+    @Test
+    public void foo2() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+            Assert.fail("fail message2");
+        };
+
+    };
+    @Test
+    public void foo3() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+            Assert.fail("fail message2");
+        };
+
+    };
+
+}
