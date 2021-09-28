@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 function runInInternalBuilder() {
-docker run custom-gradle ./gradlew test --stacktrace --no-daemon
-#/q/gradlew test --stacktrace --no-daemon
+docker run custom-gradle $@
+#./gradlew test --stacktrace --no-daemon
+
 }
 function gradleInBuilder() {
-    runInInternalBuilder
-    
+    runInInternalBuilder ./gradlew ${GRADLE_RUN_PARAMS} $@
 }
 set -e
-gradleInBuilder 
+gradleInBuilder test --stacktrace "$@"
