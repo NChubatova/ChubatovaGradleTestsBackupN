@@ -8,11 +8,11 @@ function runInInternalBuilder() {
     docker ps -a
     ./gradlew test --stacktrace
     echo code $?
-    echo hi
+    #echo hi
 }
 function gradleInBuilder() {
     runInInternalBuilder 
-    echo hi
+    #echo hi
     
 }
 #set -e
