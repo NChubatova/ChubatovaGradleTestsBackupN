@@ -3,41 +3,36 @@ package my;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
-import java.lang.Thread;
-
 
 public class mytest {
 
     @Test
     public void foo1() {
-        if (1==1){
-            try 
-            {
-                Thread.sleep(1000);
-                //Assert.fail("fail message2");
-            } 
-            catch(InterruptedException e)
-            {
-            // this part is executed when an exception (in this example InterruptedException) occurs
-            }
-
+        if (System.currentTimeMillis()%3==1){
         }
         else {
-            System.out.println(System.currentTimeMillis());
-            try 
-            {
-                Thread.sleep(2);
-            } 
-            catch(InterruptedException e)
-            {
-            // this part is executed when an exception (in this example InterruptedException) occurs
-            }
-            //Assert.fail("fail message");
+            Assert.fail("fail message2");
         };
 
     };
-    
-   
+    @Test
+    public void foo2() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+            Assert.fail("fail message2");
+        };
 
+    };
+    @Test
+    public void foo3() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+            Assert.fail("fail message2");
+        };
 
-};
+    };
+
+}
+
