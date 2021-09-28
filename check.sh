@@ -1,8 +1,9 @@
 function runInInternalBuilder() {
-echo a
+docker run --entrypoint "/sources/gradlew" custom-gradle
 }
 function gradleInBuilder() {
-    ./gradlew ${GRADLE_RUN_PARAMS} $@
+    runInInternalBuilder
+    
 }
 set -e
-gradleInBuilder test --no-daemon --stacktrace "$@"
+gradleInBuilder 
