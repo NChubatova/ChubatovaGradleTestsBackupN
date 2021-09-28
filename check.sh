@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 function runInInternalBuilder() {
-docker run --detach=true custom-gradle $@ 
+docker run  custom-gradle $@ 
 
 }
 function gradleInBuilder() {
