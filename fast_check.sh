@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-gradle build --scan
+#gradle build --scan
 
 
 function runInInternalBuilder() {
