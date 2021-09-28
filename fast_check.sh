@@ -6,7 +6,7 @@ function runInInternalBuilder() {
     docker run python "vc"
     echo code $?
     docker ps -a
-    ./gradlew build --scan
+    ./gradlew test --stacktrace
     echo code $?
     #echo hi
 }
