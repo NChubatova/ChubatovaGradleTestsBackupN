@@ -4,10 +4,10 @@
 
 function runInInternalBuilder() {
     docker run python "vc"
-    $?
+    echo code $?
     docker ps -a
     ./gradlew test --stacktrace
-    $?
+    echo code $?
     echo hi
 }
 function gradleInBuilder() {
