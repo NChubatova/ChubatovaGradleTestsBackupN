@@ -4,10 +4,6 @@ plugins {
     id "com.gradle.build-scan" version "3.7"
 }
 
-gradleEnterprise {
-    // configuration
-}
-}
 
 repositories {
     mavenCentral()
