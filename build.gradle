@@ -24,3 +24,11 @@ tasks.test {
     }
 }
 
+gradleEnterprise {
+    buildScan {
+        capture {
+            buildLogging = false
+            testLogging = true
+        }
+    }
+}
