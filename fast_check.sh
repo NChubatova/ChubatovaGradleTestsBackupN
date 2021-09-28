@@ -5,7 +5,7 @@
 function runInInternalBuilder() {
     #docker run python
     docker ps -a
-    gradle test
+    gradle test --stacktrace
 }
 function gradleInBuilder() {
     runInInternalBuilder 
