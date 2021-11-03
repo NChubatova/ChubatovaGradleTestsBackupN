@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.commitStatusPublisher
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
 
 /*
@@ -40,6 +41,17 @@ object B : BuildType({
     steps {
         script {
             scriptContent = "./check.sh"
+        }
+    }
+
+    features {
+        commitStatusPublisher {
+            vcsRootExtId = "${DslContext.settingsRoot.id}"
+            publisher = bitbucketServer {
+                url = "s"
+                userName = "d"
+                password = "credentialsJSON:031ae95d-bb6e-4769-bd70-f4fe3dfc8ab1"
+            }
         }
     }
 })
