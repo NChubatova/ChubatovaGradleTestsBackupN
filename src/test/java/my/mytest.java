@@ -21,7 +21,7 @@ public class mytest {
     public void foo2() {
         try 
             {
-                Thread.sleep(31);
+                Thread.sleep(30);
             } 
             catch(InterruptedException e)
             {
