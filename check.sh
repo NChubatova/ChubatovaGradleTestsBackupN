@@ -7,4 +7,5 @@ function gradleInBuilder() {
     runInInternalBuilder ./gradlew ${GRADLE_RUN_PARAMS} $@
 }
 set -e
+echo a 
 gradleInBuilder test --stacktrace --scan "$@"
