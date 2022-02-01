@@ -8,20 +8,20 @@ import java.lang.*;
 public class mytest {
 
     @Test
-    public void foo1() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
+    public void foo12() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
             Assert.fail("fail mkk");
 
-        //};
+        };
 
     };
     @Test
-    public void foo2() {
+    public void foo22() {
         try 
             {
-                Thread.sleep(30);
+                //Thread.sleep(30);
             } 
             catch(InterruptedException e)
             {
@@ -35,7 +35,7 @@ public class mytest {
 
     };
     @Test
-    public void foo3() {
+    public void foo32() {
         if (System.currentTimeMillis()%3==1){
         }
         else {
