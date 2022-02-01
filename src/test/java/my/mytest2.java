@@ -1,7 +1,7 @@
 package my;
 
 import org.junit.jupiter.api.*;
-mport static org.junit.jupiter.api.Assertions.assertEquals;.
+mport static org.junit.jupiter.api.Assertions.assertEquals;
 import java.lang.*;
 
 public class mytest2 {
