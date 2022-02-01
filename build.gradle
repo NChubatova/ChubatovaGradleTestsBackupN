@@ -15,7 +15,6 @@ dependencies {
 }
 
 
-}
 
 tasks.test {
     useJUnit()
