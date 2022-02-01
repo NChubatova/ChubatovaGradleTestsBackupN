@@ -1,7 +1,7 @@
 package my;
 
 import org.junit.jupiter.api.*;
-org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Assertions;
 import java.lang.*;
 
 public class mytest2 {
