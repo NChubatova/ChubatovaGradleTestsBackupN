@@ -33,6 +33,6 @@ import java.util.Collection;
 
      @Test
      public void test() {
-         assertEquals(fExpected, Fibonacci.compute(fInput));
+         assertEquals(fExpected, fInput);
      }
  }
