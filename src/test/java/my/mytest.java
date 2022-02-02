@@ -2,13 +2,14 @@ package my;
 
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.lang.*;
 
 public class mytest {
 
-    @Test
-public void testAdd() {
-    assertEquals(42, Integer.sum(19, 23));
-};
-
+@ParameterizedTest
+@ValueSource(ints = {1, 3, 5, -3, 15, Integer.MAX_VALUE}) // six numbers
+void isOdd_ShouldReturnTrueForOddNumbers(int number) {
+    assertTrue(Numbers.isOdd(number));
+}
 }
