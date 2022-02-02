@@ -12,7 +12,7 @@ public class mytest {
         if (System.currentTimeMillis()%2==1){
         }
         else {
-            Assert.fail("fail mkk");
+            Assert.fail("fail mkk new branch");
 
         };
 
