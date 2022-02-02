@@ -19,7 +19,7 @@ import java.util.Collection;
  public class mytest {
     String a[] = new String[] { "A", "B", "C", "D" };
      @Parameters(name= "{index}: str{0}")
-     public static Iterable<Object[]> data() {
+     public Iterable<Object[]> data() {
          return Arrays.asList(a);
      }
 
