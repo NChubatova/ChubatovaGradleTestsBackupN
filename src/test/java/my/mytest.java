@@ -20,7 +20,7 @@ import java.util.Collection;
     String a[] = new String[] { "A", "B", "C", "D" };
      @Parameters(name= "{index}: str{0}")
      public Iterable<Object[]> data() {
-         return Arrays.asList(a[]);
+         return Arrays.asList(a);
      }
 
      private String fInput;
