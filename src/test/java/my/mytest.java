@@ -20,7 +20,7 @@ import java.lang.*;
 
      private int fExpected;
 
-     public FibonacciTest(int input, int expected) {
+     public mytest(int input, int expected) {
          fInput= input;
          fExpected= expected;
      }
