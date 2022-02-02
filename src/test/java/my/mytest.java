@@ -33,6 +33,6 @@ import java.util.Collection;
 
      @Test
      public void test() {
-         assertEquals(fExpected, fInput);
+         Assert.assertEquals(fExpected, fInput);
      }
  }
