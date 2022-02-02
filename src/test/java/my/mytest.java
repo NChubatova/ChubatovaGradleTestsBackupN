@@ -13,26 +13,22 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Collection;
 
+String a[] = new String[] { "A", "B", "C", "D" };
 
 @RunWith(Parameterized.class)
  public class mytest {
-     @Parameters(name= "{index}: fib[{0}]={1}")
+     @Parameters(name= "{index}: str{0}")
      public static Iterable<Object[]> data() {
-         return Arrays.asList(new Object[][] { { 0, 0 }, { 1, 1 }, { 2, 1 },
-                 { 3, 2 }, { 4, 3 }, { 5, 5 }, { 6, 8 } });
+         return Arrays.asList(a);
      }
 
-     private int fInput;
+     private String fInput;
 
-     private int fExpected;
 
-     public mytest(int input, int expected) {
-         fInput= input;
-         fExpected= expected;
-     }
+
 
      @Test
      public void test() {
-         Assert.assertEquals(fExpected, fInput);
+         Assert.assertEquals("B", fInput);
      }
  }
