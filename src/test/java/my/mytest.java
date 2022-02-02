@@ -13,10 +13,11 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Collection;
 
-String a[] = new String[] { "A", "B", "C", "D" };
+
 
 @RunWith(Parameterized.class)
  public class mytest {
+    String a[] = new String[] { "A", "B", "C", "D" };
      @Parameters(name= "{index}: str{0}")
      public static Iterable<Object[]> data() {
          return Arrays.asList(a);
