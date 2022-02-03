@@ -21,7 +21,7 @@ public class mytest2 {
     public void test22a() {
         try 
             {
-                Thread.sleep(3);
+                Thread.sleep(30);
             } 
             catch(InterruptedException e)
             {
@@ -35,12 +35,12 @@ public class mytest2 {
 
     };
     @Test
-    //public void test23a() {
+    public void test23a() {
         if (System.currentTimeMillis()%1==1){
         }
         else {
             //Assert.fail("fail messajge2");
-            Thread.sleep(3);
+            Thread.sleep(30);
         };
 
     };
