@@ -40,7 +40,7 @@ public class mytest2 {
         }
         else {
             //Assert.fail("fail messajge2");
-            Thread.sleep(30);
+            System.out.print("GfG1");
         };
 
     };
