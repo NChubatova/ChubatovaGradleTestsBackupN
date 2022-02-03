@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest {
 
     @Test
-    public void foo1master() {
+    public void foo1branch24() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
