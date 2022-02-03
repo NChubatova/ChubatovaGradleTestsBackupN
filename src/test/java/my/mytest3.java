@@ -36,7 +36,7 @@ public class mytest3 {
     };
     @Test
     public void test33a() {
-        if (System.currentTimeMillis()%3==1){
+        if (System.currentTimeMillis()%1==1){
         }
         else {
             Assert.fail("fail messajge2");
