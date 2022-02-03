@@ -9,7 +9,7 @@ public class mytest1 {
 
     @Test
     public void test11a() {
-        if (System.currentTimeMillis()%1238789==1){
+        if (System.currentTimeMillis()%1==1){
         }
         else {
             Assert.fail("fail mk4");
