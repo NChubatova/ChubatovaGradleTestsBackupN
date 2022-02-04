@@ -12,7 +12,7 @@ public class mytest1 {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            //Assert.fail("fail mk");
+            Assert.fail("fail mk");
 System.out.print("GfG1");
         //};
 
@@ -21,7 +21,7 @@ System.out.print("GfG1");
     public void test12c() {
         try 
             {
-                Thread.sleep(60);
+                Thread.sleep(180000);
             } 
             catch(InterruptedException e)
             {
