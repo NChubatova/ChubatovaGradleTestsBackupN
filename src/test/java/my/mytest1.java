@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest1 {
 
     @Test
-    public void test21a() {
+    public void test11c() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -18,7 +18,7 @@ public class mytest1 {
 
     };
     @Test
-    public void test22a() {
+    public void test12c() {
         try 
             {
                 Thread.sleep(60);
@@ -35,7 +35,7 @@ public class mytest1 {
 
     };
     @Test
-    public void test23a() {
+    public void test13c() {
         if (System.currentTimeMillis()%1==1){
         }
         else {
