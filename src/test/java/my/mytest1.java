@@ -12,7 +12,7 @@ public class mytest1 {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            //Assert.fail("fail mk");
+            Assert.fail("fail mk");
 System.out.print("GfG1");
         //};
 
@@ -39,7 +39,7 @@ System.out.print("GfG1");
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            //Assert.fail("fail messajge2");
+            Assert.fail("fail messajge2");
             System.out.print("GfG1");
         };
 
