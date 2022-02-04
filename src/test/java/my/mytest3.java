@@ -21,7 +21,7 @@ System.out.print("GfG1");
     public void test32c() {
         try 
             {
-                Thread.sleep(60);
+                Thread.sleep(360000);
             } 
             catch(InterruptedException e)
             {
