@@ -13,7 +13,7 @@ public class mytest3 {
         //}
         //else {
             Assert.fail("fail mkg");
-System.out.print("GfG1");
+System.out.print("GfG1s");
         //};
 
     };
