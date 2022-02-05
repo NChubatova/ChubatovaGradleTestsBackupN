@@ -21,7 +21,8 @@ System.out.print("GfG1d");
     public void test12c() {
         try 
             {
-                Thread.sleep(180000);
+                //Thread.sleep(180000);
+            Thread.sleep(18);
             } 
             catch(InterruptedException e)
             {
