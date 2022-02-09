@@ -22,7 +22,7 @@ System.out.print("GfG1d");
         try 
             {
                 //Thread.sleep(180000);
-            Thread.sleep(18);
+            Thread.sleep(90000);
             } 
             catch(InterruptedException e)
             {
