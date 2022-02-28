@@ -17,6 +17,17 @@ public class mytest1 {
         //};
 
     };
+    
+    @Test
+    public void foo2master2added() {
+        //if (System.currentTimeMillis()%3==1){
+        //}
+        //else {
+            Assert.fail("fail mkk_remote2");
+
+        //};
+
+    };
 
 
 }
