@@ -36,11 +36,11 @@ public class mytest {
     };
     @Test
     public void foo3() {
-        if (System.currentTimeMillis()%3==1){
-        }
-        else {
+        //if (System.currentTimeMillis()%3==1){
+        //}
+       // else {
             Assert.fail("fail messajge2");
-        };
+        //};
 
     };
 
