@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest1 {
 
     @Test
-    public void test11c() {
+    public void test11cPR() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -18,7 +18,7 @@ System.out.print("GfG1d");
 
     };
     @Test
-    public void test12c() {
+    public void test12cPR() {
         try 
             {
                 //Thread.sleep(180000);
@@ -36,7 +36,7 @@ System.out.print("GfG1d");
 
     };
     @Test
-    public void test13c() {
+    public void test13cPR() {
         if (System.currentTimeMillis()%1==1){
         }
         else {
