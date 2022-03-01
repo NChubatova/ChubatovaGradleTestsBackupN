@@ -6,17 +6,20 @@ import org.junit.Test;
 import java.lang.*;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.junit.Rule;
 
 
 
 public class mytest1 {
 Logger log = LogManager.getLogger();
+    @Rule
+public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     @Test
     public void test11c() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            log.info("hi from the test output");
+            print("hi from the test output");
             Assert.fail("fail mk");
 
         //};
