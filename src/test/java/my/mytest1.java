@@ -4,9 +4,9 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
-public static Logger log = Logger.getLogger(JUnitTest.class.getName());
+//public static Logger log = Logger.getLogger(JUnitTest.class.getName());
 
 public class mytest1 {
 
@@ -45,7 +45,7 @@ System.out.print("GfG1d");
         else {
             Assert.fail("fail messajge2");
             
-            log.info("hi from the test output");
+            //log.info("hi from the test output");
         };
 
     };
