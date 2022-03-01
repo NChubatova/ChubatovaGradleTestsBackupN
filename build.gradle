@@ -13,6 +13,8 @@ repositories {
 
 dependencies {
     testImplementation("junit:junit:4.13")
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.7'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.7'
 }
 
 tasks.test {
