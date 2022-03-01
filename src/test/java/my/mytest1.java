@@ -22,7 +22,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-           System.out.print("hello world");
+           System.out.print("##teamcity[setParameter name='ddd' value='fff']");
             Assert.fail("fail mk");
 
         //};
