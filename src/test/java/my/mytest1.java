@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.lang.*;
 import org.apache.log4j.Logger;
 
-public static Logger log = Logger.getLogger(JUnitTest.class.getName());
+Logger log = Logger.getLogger(JUnitTest.class.getName());
 
 public class mytest1 {
 
