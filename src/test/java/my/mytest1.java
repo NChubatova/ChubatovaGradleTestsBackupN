@@ -22,7 +22,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            print("hi from the test output");
+           System.out.print("hello world");
             Assert.fail("fail mk");
 
         //};
