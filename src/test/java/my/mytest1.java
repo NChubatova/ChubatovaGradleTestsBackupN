@@ -7,7 +7,7 @@ import java.lang.*;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.junit.Rule;
-org.junit.contrib.java.lang.system.SystemOutRule
+import org.junit.contrib.java.lang.system.SystemOutRule
 
 
 
