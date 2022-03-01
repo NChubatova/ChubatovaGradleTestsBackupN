@@ -5,18 +5,20 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 
 public class mytest1 {
-Logger log = Logger.getLogger(mytest1.class.getName());
+Logger log = LogManager.getLogger();
     @Test
     public void test11c() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
+            log.info("hi from the test output");
             Assert.fail("fail mk");
-System.out.print("GfG1d");
+
         //};
 
     };
@@ -45,7 +47,7 @@ System.out.print("GfG1d");
         else {
             Assert.fail("fail messajge2");
             
-            log.info("hi from the test output");
+
         };
 
     };
