@@ -6,10 +6,10 @@ import org.junit.Test;
 import java.lang.*;
 import org.apache.log4j.Logger;
 
-Logger log = Logger.getLogger(JUnitTest.class.getName());
+
 
 public class mytest1 {
-
+Logger log = Logger.getLogger(JUnitTest.class.getName());
     @Test
     public void test11c() {
         //if (System.currentTimeMillis()%3==1){
