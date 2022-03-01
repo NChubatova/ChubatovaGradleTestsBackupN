@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 
 public class mytest1 {
-Logger log = Logger.getLogger(JUnitTest.class.getName());
+Logger log = Logger.getLogger(mytest1.class.getName());
     @Test
     public void test11c() {
         //if (System.currentTimeMillis()%3==1){
