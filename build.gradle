@@ -26,7 +26,7 @@ dependencies {
     testImplementation("junit:junit:4.13")
   implementation 'org.apache.logging.log4j:log4j-api:2.17.2'
   implementation 'org.apache.logging.log4j:log4j-core:2.17.2'
-  testCompile 'com.github.stefanbirkner:system-rules:1.19.0'
+
 }
 
 tasks.test {
