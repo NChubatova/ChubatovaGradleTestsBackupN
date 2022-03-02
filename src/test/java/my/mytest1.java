@@ -27,7 +27,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
          try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(30000);
+            Thread.sleep(15000);
             } 
             catch(InterruptedException e)
             {
@@ -43,7 +43,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         try 
             {
                 //Thread.sleep(180000);
-            Thread.sleep(30000);
+            Thread.sleep(15000);
             } 
             catch(InterruptedException e)
             {
@@ -61,7 +61,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(30000);
+            Thread.sleep(15000);
             } 
             catch(InterruptedException e)
             {
