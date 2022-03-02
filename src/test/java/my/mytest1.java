@@ -24,7 +24,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         //else {
            System.out.print("##teamcity[setParameter name='ddd' value='fff']");
           System.out.print("teamcity[setParameter name='ddd' value='fff']");
-            Assert.fail("fail mk4");
+            Assert.fail("fail mk5");
 
         //};
 
