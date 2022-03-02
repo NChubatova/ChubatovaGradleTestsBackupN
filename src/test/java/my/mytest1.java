@@ -24,7 +24,15 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         //else {
            System.out.print("##teamcity[setParameter name='ddd' value='fff']");
           System.out.print("teamcity[setParameter name='ddd' value='fff']");
-        Thread.sleep(30000);
+         try 
+            {
+                //Thread.sleep(90000);
+            Thread.sleep(30000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
             Assert.fail("fail mk6");
 
         //};
