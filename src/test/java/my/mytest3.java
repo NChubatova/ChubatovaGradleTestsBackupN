@@ -12,7 +12,7 @@ public class mytest3 {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(15000);
+            Thread.sleep(1500);
             } 
             catch(InterruptedException e)
             {
@@ -31,7 +31,7 @@ System.out.print("GfG1s");
         try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(15000);
+            Thread.sleep(1500);
             } 
             catch(InterruptedException e)
             {
@@ -49,7 +49,7 @@ System.out.print("GfG1s");
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(15000);
+            Thread.sleep(1500);
             } 
             catch(InterruptedException e)
             {
