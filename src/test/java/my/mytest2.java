@@ -12,6 +12,15 @@ public class mytest2 {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
+                 try 
+            {
+                //Thread.sleep(90000);
+            Thread.sleep(30000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
             Assert.fail("fail mk");
 System.out.print("GfG1");
         //};
@@ -37,9 +46,19 @@ System.out.print("GfG1");
     };
     @Test
     public void test23c() {
+                 try 
+            {
+                //Thread.sleep(90000);
+            Thread.sleep(30000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
         if (System.currentTimeMillis()%1==1){
         }
         else {
+            
             Assert.fail("fail messajge2");
             System.out.print("GfG1");
         };
