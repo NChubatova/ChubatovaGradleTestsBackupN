@@ -58,6 +58,15 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     };
     @Test
     public void test13c() {
+                 try 
+            {
+                //Thread.sleep(90000);
+            Thread.sleep(30000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
         if (System.currentTimeMillis()%1==1){
         }
         else {
