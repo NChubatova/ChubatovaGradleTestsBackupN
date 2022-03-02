@@ -24,6 +24,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         //else {
            System.out.print("##teamcity[setParameter name='ddd' value='fff']");
           System.out.print("teamcity[setParameter name='ddd' value='fff']");
+        Thread.sleep(30000);
             Assert.fail("fail mk6");
 
         //};
@@ -34,7 +35,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         try 
             {
                 //Thread.sleep(180000);
-            Thread.sleep(90);
+            Thread.sleep(30000);
             } 
             catch(InterruptedException e)
             {
