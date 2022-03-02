@@ -38,7 +38,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
             } 
             catch(InterruptedException e)
             {
-            // this part is executed when an exception (in this example InterruptedException) occurs
+            // this part is executed when an exception (in this example InterruptedException) occurssss
             }
         if (System.currentTimeMillis()%3==1){
         }
