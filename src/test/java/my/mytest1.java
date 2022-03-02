@@ -52,7 +52,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            Assert.fail("fail messajge4");
+            Assert.fail("fail messajge5");
             
 
         };
