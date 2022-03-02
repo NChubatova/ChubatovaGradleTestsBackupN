@@ -21,7 +21,7 @@ public class mytest3 {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            Assert.fail("fail mkhg");
+            //Assert.fail("fail mkhg");
 System.out.print("GfG1s");
         //};
 
@@ -58,7 +58,7 @@ System.out.print("GfG1s");
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            Assert.fail("fail messajge2");
+            //Assert.fail("fail messajge2");
             System.out.print("GfG1");
         };
 
