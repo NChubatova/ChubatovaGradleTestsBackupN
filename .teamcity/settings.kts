@@ -55,7 +55,7 @@ object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackupRefsHeadsMaster11 :
 object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : Project({
     name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
 
-    //vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
+    vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
 
     //buildType(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4)
 
@@ -87,7 +87,7 @@ object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : Project({
             param("numberOfParts", "3")
         }
     }
-})/*
+})*/
 
 object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : GitVcsRoot({
     name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
