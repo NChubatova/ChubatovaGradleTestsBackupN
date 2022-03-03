@@ -83,7 +83,7 @@ object Buildsplit_4 : BuildType({
 })
 
 object Dependent : BuildType({
-    name = "dependent"
+    name = "dependent2"
 
     vcs {
         root(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackupRefsHeadsMaster11)
