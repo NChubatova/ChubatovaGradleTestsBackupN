@@ -43,6 +43,13 @@
           <param name="ruleDisabled" value="false" />
         </parameters>
       </extension>
+      <extension id="BUILD_EXT_17" type="pullRequests">
+        <parameters>
+          <param name="authenticationType" value="vcsRoot" />
+          <param name="filterAuthorRole" value="MEMBER" />
+          <param name="providerType" value="github" />
+        </parameters>
+      </extension>
     </build-extensions>
     <cleanup>
       <options>
