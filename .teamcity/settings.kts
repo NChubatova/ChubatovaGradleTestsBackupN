@@ -57,7 +57,7 @@ object Build_4 : BuildType({
 
 
 object Subp : Project({
-    name = "subp"
+    name = "subp3"
 
     buildType(Subp_A)
 })
