@@ -37,7 +37,7 @@
           <param name="filters.1.status" value="SUCCESSFUL" />
           <param name="filters.1.type" value="buildStatus" />
           <param name="keepData.2.type" value="everything" />
-          <param name="limit.buildsCount" value="3" />
+          <param name="limit.buildsCount" value="2" />
           <param name="limit.type" value="lastNBuilds" />
           <param name="preserveArtifacts" value="true" />
           <param name="ruleDisabled" value="false" />
