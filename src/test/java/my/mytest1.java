@@ -33,7 +33,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-            //Assert.fail("fail mk6");
+            Assert.fail("fial from PR");
 
         //};
 
