@@ -40,7 +40,7 @@ project {
 
 object Buildsplit_4 : BuildType({
     id("Buildsplit")
-    name = "buildsplit"
+    name = "buildsplit2"
 
     vcs {
         root(DslContext.settingsRoot)
