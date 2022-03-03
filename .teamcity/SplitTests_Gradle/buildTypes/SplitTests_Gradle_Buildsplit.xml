@@ -26,7 +26,7 @@
       </runner>
       <runner id="RUNNER_20" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="echo %securepar% &gt; a.txt" />
+          <param name="script.content" value="echo %env.envpar% &gt; a.txt" />
           <param name="teamcity.step.mode" value="execute_if_failed" />
           <param name="use.custom.script" value="true" />
         </parameters>
