@@ -43,7 +43,7 @@ project {
 
 object Buildsplit_4 : BuildType({
     id("Buildsplit")
-    name = "buildsplit2"
+    name = "buildsplit3"
 
     artifactRules = "+:a.txt => ."
 
