@@ -57,7 +57,7 @@ object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : Project({
 
     vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
 
-    buildType(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4)
+    //buildType(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4)
 
     cleanup {
         baseRule {
@@ -66,7 +66,7 @@ object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : Project({
     }
 })
 
-object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4 : BuildType({
+/*object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4 : BuildType({
     id("HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle")
     name = "splitgradle"
 
@@ -87,7 +87,7 @@ object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4 : Bu
             param("numberOfParts", "3")
         }
     }
-})
+})*/
 
 object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : GitVcsRoot({
     name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
