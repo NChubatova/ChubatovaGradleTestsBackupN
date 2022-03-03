@@ -6,6 +6,9 @@
     <options>
       <option name="artifactRules" value="+:a.txt =&gt; ." />
     </options>
+    <disabled-settings>
+      <setting-ref ref="BUILD_EXT_1" />
+    </disabled-settings>
     <parameters>
       <param name="securepar" value="credentialsJSON:d2eb856f-3355-421f-99cc-3a4342ee7d2d" spec="password display='normal'" />
     </parameters>
