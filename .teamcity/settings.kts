@@ -55,7 +55,7 @@ object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackupRefsHeadsMaster11 :
 object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : Project({
     name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
 
-    vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
+    //vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
 
     //buildType(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle_4)
 
