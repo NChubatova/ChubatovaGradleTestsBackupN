@@ -7,6 +7,7 @@
       <option name="artifactRules" value="+:a.txt =&gt; ." />
     </options>
     <parameters>
+      <param name="env.envpar" value="12" />
       <param name="securepar" value="credentialsJSON:d2eb856f-3355-421f-99cc-3a4342ee7d2d" spec="password display='normal'" />
     </parameters>
     <build-runners>
