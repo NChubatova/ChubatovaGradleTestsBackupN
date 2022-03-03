@@ -59,7 +59,7 @@ System.out.print("GfG1");
         }
         else {
             
-            Assert.fail("fail messajge2");
+            //Assert.fail("fail messajge2");
             System.out.print("GfG1");
         };
 
