@@ -24,5 +24,12 @@ create(RelativeId("HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup"), Bui
             gradleWrapperPath = ""
         }
     }
+
+    features {
+        feature {
+            type = "splitTests"
+            param("numberOfParts", "3")
+        }
+    }
 }))
 
