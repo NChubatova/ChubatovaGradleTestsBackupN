@@ -6,7 +6,9 @@
     <options>
       <option name="artifactRules" value="+:a.txt =&gt; ." />
     </options>
-    <parameters />
+    <parameters>
+      <param name="securepar" value="credentialsJSON:d2eb856f-3355-421f-99cc-3a4342ee7d2d" spec="password display='normal'" />
+    </parameters>
     <build-runners>
       <runner id="RUNNER_1" name="" type="gradle-runner">
         <parameters>
