@@ -68,10 +68,11 @@ object Buildsplit_4 : BuildType({
     }
 
     features {
-        feature {
+        /*feature {
             type = "splitTests"
             param("numberOfParts", "4")
         }
+        */
         pullRequests {
             provider = github {
                 authType = vcsRoot()
