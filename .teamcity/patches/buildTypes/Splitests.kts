@@ -24,5 +24,12 @@ create(DslContext.projectId, BuildType({
             gradleWrapperPath = ""
         }
     }
+
+    features {
+        feature {
+            type = "splitTests"
+            param("numberOfParts", "5")
+        }
+    }
 }))
 
