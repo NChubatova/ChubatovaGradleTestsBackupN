@@ -13,8 +13,12 @@ create(DslContext.projectId, BuildType({
     id("CompositeNosplit")
     name = "composite_nosplit"
 
+    type = BuildTypeSettings.Type.COMPOSITE
+
     vcs {
         root(DslContext.settingsRoot)
+
+        showDependenciesChanges = true
     }
 }))
 
