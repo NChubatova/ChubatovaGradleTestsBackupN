@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.BuildType
+import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -15,6 +16,13 @@ create(DslContext.projectId, BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+
+    steps {
+        gradle {
+            tasks = "clean build"
+            gradleWrapperPath = ""
+        }
     }
 }))
 
