@@ -20,5 +20,17 @@ create(DslContext.projectId, BuildType({
 
         showDependenciesChanges = true
     }
+
+    dependencies {
+        snapshot(RelativeId("Dep1nosplit")) {
+            reuseBuilds = ReuseBuilds.NO
+        }
+        snapshot(RelativeId("Dep2nosplit")) {
+            reuseBuilds = ReuseBuilds.NO
+        }
+        snapshot(RelativeId("Dep3nosplit")) {
+            reuseBuilds = ReuseBuilds.NO
+        }
+    }
 }))
 
