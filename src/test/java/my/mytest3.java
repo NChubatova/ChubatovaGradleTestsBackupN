@@ -12,7 +12,7 @@ public class mytest3 {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(1500);
+            Thread.sleep(150);
             } 
             catch(InterruptedException e)
             {
