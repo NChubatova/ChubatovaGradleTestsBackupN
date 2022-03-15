@@ -26,7 +26,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
           System.out.print("teamcity[setParameter name='ddd' value='fff']");
          try 
             {
-                //Thread.sleep(90);
+                //Thread.sleep(9);
             Thread.sleep(1500);
             } 
             catch(InterruptedException e)
