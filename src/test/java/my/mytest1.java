@@ -42,7 +42,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     public void test12c() {
         try 
             {
-                //Thread.sleep(18000);
+                //Thread.sleep(1800);
             Thread.sleep(1500);
             } 
             catch(InterruptedException e)
