@@ -12,5 +12,9 @@ in the project with id = 'HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup
 create(RelativeId("HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup"), BuildType({
     id("HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup_Splitgradle")
     name = "splitgradle"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
 }))
 
