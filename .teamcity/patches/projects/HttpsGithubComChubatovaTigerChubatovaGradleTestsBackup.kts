@@ -12,5 +12,11 @@ in the root project, and delete the patch script.
 create(DslContext.projectId, Project({
     id("HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup")
     name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
+
+    cleanup {
+        baseRule {
+            all(builds = 2)
+        }
+    }
 }))
 
