@@ -8,3 +8,6 @@ import java.lang.*;
 
 @Suite
 @SelectPackages("my")
+public class TestSuite1
+{
+}
