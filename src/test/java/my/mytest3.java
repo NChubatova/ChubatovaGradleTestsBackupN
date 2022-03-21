@@ -10,11 +10,11 @@ import java.lang.*;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-   mytest3.testsuiteclass31,
-   mytest3.testsuiteclasss32
+   my.mytest3,
+   my.mytest2
 })
 
-public class testsuiteclass31 {
+public class mytest3 {
 
     @Test
     public void test311c() {
