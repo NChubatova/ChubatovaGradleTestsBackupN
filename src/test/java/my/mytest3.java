@@ -10,8 +10,8 @@ import java.lang.*;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-   my.mytest3,
-   my.mytest2
+   mytest3.class,
+   mytest2.class
 })
 
 public class mytest3 {
