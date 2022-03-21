@@ -14,5 +14,5 @@ import java.lang.*;
    mytest2.class
 })
 
-  public class JunitTestSuite {   
+  public class TestSuite1 {   
 }  
