@@ -1,13 +1,11 @@
+package my;
 
-import junit.framework.TestCase;
-import org.junit.Assert;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import java.lang.*;
 
-@Suite
-@SelectPackages("my")
-public class TestSuite1
-{
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({mytest1.class,mytest2.class})
+public class TestSuite1 {
+
 }
