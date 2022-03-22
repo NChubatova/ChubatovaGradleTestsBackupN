@@ -35,7 +35,6 @@ tasks.test {
     ignoreFailures = false
     scanForTestClasses = false
     filter{
-    includeTestsMatching "*test3*"
     includeTestsMatching "TestSuite*"
     }
     retry {
