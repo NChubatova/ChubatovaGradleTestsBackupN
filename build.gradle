@@ -33,8 +33,10 @@ dependencies {
 tasks.test {
     useJUnit()
     ignoreFailures = false
+    filter{
     includeTestsMatching "myTest3*"
     includeTestsMatching "TestSuite*"
+    }
     retry {
         maxRetries = 0
         maxFailures = 200
