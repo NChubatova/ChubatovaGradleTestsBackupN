@@ -33,6 +33,7 @@ dependencies {
 tasks.test {
     useJUnit()
     ignoreFailures = false
+    scanForTestClasses = false
     filter{
     includeTestsMatching "*test3*"
     includeTestsMatching "TestSuite*"
