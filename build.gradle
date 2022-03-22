@@ -34,7 +34,7 @@ tasks.test {
     useJUnit()
     ignoreFailures = false
     filter{
-    includeTestsMatching "myTest3"
+    includeTestsMatching "*test3*"
     includeTestsMatching "TestSuite*"
     }
     retry {
