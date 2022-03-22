@@ -35,6 +35,7 @@ tasks.test {
     ignoreFailures = false
     filter{
     includeTestsMatching "myTest3*"
+    includeTestsMatching "myTest2*"
     includeTestsMatching "TestSuite*"
     }
     retry {
