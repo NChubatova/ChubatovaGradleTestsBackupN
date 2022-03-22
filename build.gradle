@@ -34,9 +34,6 @@ tasks.test {
     useJUnit()
     ignoreFailures = false
     scanForTestClasses = false
-    filter{
-    includeTestsMatching "TestSuite*"
-    }
     retry {
         maxRetries = 0
         maxFailures = 200
