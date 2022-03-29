@@ -23,6 +23,13 @@ testing {
         integrationTest(JvmTestSuite) { 
 
 
+            targets { 
+                all {
+                    testTask.configure {
+                        shouldRunAfter(test)
+                    }
+                }
+            }
         }
     }
 }
