@@ -17,7 +17,7 @@ dependencies {
 testing {
     suites { 
         test { 
-            useJUnitJupiter() 
+            useJUnit() 
         }
 
         integrationTest(JvmTestSuite) { 
