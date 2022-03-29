@@ -21,9 +21,9 @@ testing {
         }
 
         integrationTest(JvmTestSuite) { 
-    filter{
-    includeTestsMatching "*test1*"
-    }
+            filter {
+                includeTestsMatching "mytest1*"
+             }
 
         }
     }
