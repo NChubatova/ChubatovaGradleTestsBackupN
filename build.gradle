@@ -21,9 +21,6 @@ testing {
         }
 
         integrationTest(JvmTestSuite) { 
-            filter {
-                includeTestsMatching "mytest1*"
-             }
 
         }
     }
@@ -31,4 +28,8 @@ testing {
 
 tasks.named('check') { 
     dependsOn(testing.suites.integrationTest)
+                filter {
+                includeTestsMatching "mytest1*"
+             }
+
 }
