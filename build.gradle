@@ -14,14 +14,19 @@ dependencies {
     testImplementation("junit:junit:4.13")
 }
 
-tasks.test {
-    useJUnit()
-    ignoreFailures = false
+testing {
+    suites { 
+        test { 
+            useJUnitJupiter() 
+        }
 
-    retry {
-        maxRetries = 0
-        maxFailures = 200
-        failOnPassedAfterRetry = true
+        integrationTest(JvmTestSuite) { 
+
+
+        }
     }
 }
 
+tasks.named('check') { 
+    dependsOn(testing.suites.integrationTest)
+}
