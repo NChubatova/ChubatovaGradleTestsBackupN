@@ -18,6 +18,7 @@ Logger log = LogManager.getLogger();
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
+    @Tag("fast")
     public void cherry() {
         //if (System.currentTimeMillis()%3==1){
         //}
@@ -39,6 +40,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
+    @Tag("fast")
     public void cherry1() {
         try 
             {
@@ -57,6 +59,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
+    @Tag("fast")
     public void apple() {
                  try 
             {
