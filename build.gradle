@@ -36,7 +36,9 @@ tasks.test {
     scanForTestClasses = false
  filter {
           //specific test class, this can match 'SomeTest' class and corresponding method under any package
-          includeTestsMatching "Apple"
+          includeTestsMatching "*Apple"
+          includeTestsMatching "*Cherry"
+          includeTestsMatching "*Cherry2"
           }
     retry {
         maxRetries = 0
