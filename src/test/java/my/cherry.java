@@ -41,7 +41,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     };
     @Test
 
-    public void Cherry1() {
+    public void Cherry2() {
         try 
             {
                 //Thread.sleep(1800);
