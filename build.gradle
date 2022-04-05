@@ -40,7 +40,7 @@ tasks.test {
           includeTestsMatching "*Cherry"
           //includeTestsMatching "*Cherry2"
           includeTestsMatching "*mytest*"
-          //}
+          }
 
 }
 
