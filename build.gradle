@@ -34,7 +34,10 @@ tasks.test {
     useJUnit()
     ignoreFailures = false
     scanForTestClasses = false
-
+ filter {
+          //specific test class, this can match 'SomeTest' class and corresponding method under any package
+          includeTestsMatching "Apple"
+          }
     retry {
         maxRetries = 0
         maxFailures = 200
