@@ -33,7 +33,7 @@ dependencies {
 tasks.test {
     useJUnit()
     ignoreFailures = false
-    scanForTestClasses2 = false
+    scanForTestClasses = false
  filter {
           //specific test class, this can match 'SomeTest' class and corresponding method under any package
           //includeTestsMatching "*Apple"
