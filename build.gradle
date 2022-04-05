@@ -35,9 +35,9 @@ tasks.test {
     ignoreFailures = false
     scanForTestClasses = false
     filter{
-    includeTestsMatching "cherry"
-    includeTestsMatching "cherry2"
-    includeTestsMatching "apple"
+    includeTestsMatching "cherry.cherry"
+    includeTestsMatching "cherry.cherry2"
+    includeTestsMatching "cherry.apple"
     
 
     }
