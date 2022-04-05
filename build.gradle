@@ -31,16 +31,13 @@ dependencies {
 }
 
 tasks.test {
-    useJUnit()
+     useJUnitPlatform {
+        includeTags 'fast'
+        excludeTags 'slow'
+    })
     ignoreFailures = false
     scanForTestClasses = false
-    filter{
-    includeTestsMatching "cherry.cherry"
-    includeTestsMatching "cherry.cherry2"
-    includeTestsMatching "cherry.apple"
-    
 
-    }
     retry {
         maxRetries = 0
         maxFailures = 200
