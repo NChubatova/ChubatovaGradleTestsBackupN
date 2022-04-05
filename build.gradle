@@ -34,13 +34,13 @@ tasks.test {
     useJUnit()
     ignoreFailures = false
     scanForTestClasses = false
- filter {
+// filter {
           //specific test class, this can match 'SomeTest' class and corresponding method under any package
           //includeTestsMatching "*Apple"
-          includeTestsMatching "*Cherry"
+          include "*Cherry"
           //includeTestsMatching "*Cherry2"
           //includeTestsMatching "*mytest*"
-          }
+          //}
 
 }
 
