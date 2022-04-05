@@ -31,10 +31,7 @@ dependencies {
 }
 
 tasks.test {
-     useJUnitPlatform {
-        includeTags 'fast'
-        excludeTags 'slow'
-    }
+    useJUnit()
     ignoreFailures = false
     scanForTestClasses = false
 
