@@ -18,7 +18,7 @@ Logger log = LogManager.getLogger();
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void cherry1() {
+    public void cherry() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -39,7 +39,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void cherry2() {
+    public void cherry1() {
         try 
             {
                 //Thread.sleep(1800);
@@ -57,7 +57,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void cherry3() {
+    public void apple() {
                  try 
             {
                 //Thread.sleep(90000);
