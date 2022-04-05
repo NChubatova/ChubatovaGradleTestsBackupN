@@ -34,7 +34,7 @@ tasks.test {
      useJUnitPlatform {
         includeTags 'fast'
         excludeTags 'slow'
-    })
+    }
     ignoreFailures = false
     scanForTestClasses = false
 
