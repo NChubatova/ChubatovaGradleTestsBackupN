@@ -39,6 +39,7 @@ tasks.test {
           includeTestsMatching "*Apple"
           includeTestsMatching "*Cherry"
           includeTestsMatching "*Cherry2"
+          includeTestsMatching "*mytest*"
           }
     retry {
         maxRetries = 0
