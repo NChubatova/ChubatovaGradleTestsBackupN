@@ -31,7 +31,7 @@ dependencies {
 }
 
 tasks.test {
-    useJUnit()
+    //useJUnit()
     ignoreFailures = false
     scanForTestClasses = false
  filter {
