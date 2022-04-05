@@ -58,7 +58,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         };
 
     };
-    @Test
+
 
     public void Apple() {
                  try 
