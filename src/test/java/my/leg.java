@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 
-public class jeg {
+public class leg {
 
     @Test
     public void test61c() {
