@@ -8,7 +8,7 @@ import java.lang.*;
 public class hand {
 
     @Test
-    public void test21c() {
+    public void test71c() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -27,7 +27,7 @@ System.out.print("GfG1");
 
     };
     @Test
-    public void test22c() {
+    public void test72c() {
         try 
             {
                 //Thread.sleep(90000);
@@ -45,7 +45,7 @@ System.out.print("GfG1");
 
     };
     @Test
-    public void test23c() {
+    public void test73c() {
                  try 
             {
                 //Thread.sleep(90000);
