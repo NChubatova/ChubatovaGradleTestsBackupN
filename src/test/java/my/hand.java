@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 
-public class cherry2 {
+public class hand {
 
     @Test
     public void test21c() {
