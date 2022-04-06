@@ -1,41 +1,53 @@
 package my;
-
+//haha
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.junit.Rule;
+import org.junit.contrib.java.lang.system.SystemOutRule;
 
-public class mytest2 {
 
+
+public class chicken4 {
+Logger log = LogManager.getLogger();
+    
+@Rule
+public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+    
     @Test
-    public void test21c() {
+    public void chicken41() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-                 try 
+           System.out.print("##teamcity[setParameter name='ddd' value='fff']");
+          System.out.print("teamcity[setParameter name='ddd' value='fff']");
+         try 
             {
-                //Thread.sleep(90000);
-            Thread.sleep(1500);
+                //Thread.sleep(9);
+            Thread.sleep(5000);
             } 
             catch(InterruptedException e)
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-            //Assert.fail("fail mk");
-System.out.print("GfG1");
+            Assert.fail("fai ");
+
         //};
 
     };
     @Test
-    public void test22c() {
+    public void chiсken42() {
         try 
             {
-                //Thread.sleep(90000);
-            Thread.sleep(1500);
+                //Thread.sleep(1800);
+            Thread.sleep(3000);
             } 
             catch(InterruptedException e)
             {
-            // this part is executed when an exception (in this example InterruptedException) occurs
+            // this part is executed when an exception (in this example InterruptedException) occurssss
             }
         if (System.currentTimeMillis()%3==1){
         }
@@ -45,11 +57,11 @@ System.out.print("GfG1");
 
     };
     @Test
-    public void test23c() {
+    public void chicken43() {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(1500);
+            Thread.sleep(2000);
             } 
             catch(InterruptedException e)
             {
@@ -58,9 +70,9 @@ System.out.print("GfG1");
         if (System.currentTimeMillis()%1==1){
         }
         else {
+            Assert.fail("fail messajge5");
             
-            //Assert.fail("fail messajge2");
-            System.out.print("GfG1");
+
         };
 
     };

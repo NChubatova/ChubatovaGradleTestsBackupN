@@ -1,41 +1,47 @@
 package my;
-
+//haha
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 
-public class mytest3 {
+
+
+public class chicken1 {
+
+    
 
     @Test
-    public void test31c() {
-                 try 
+    public void chicken11() {
+        //if (System.currentTimeMillis()%3==1){
+        //}
+        //else {
+           System.out.print("##teamcity[setParameter name='ddd' value='fff']");
+          System.out.print("teamcity[setParameter name='ddd' value='fff']");
+         try 
             {
-                //Thread.sleep(1);
-            Thread.sleep(15);
+                //Thread.sleep(9);
+            Thread.sleep(10000);
             } 
             catch(InterruptedException e)
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-            Assert.fail("fail mkhg");
-System.out.print("GfG1s");
+            Assert.fail("fai ");
+
         //};
 
     };
     @Test
-    public void test32c() {
+    public void chiсken12() {
         try 
             {
-                //Thread.sleep(90000);
-            Thread.sleep(150);
+                //Thread.sleep(1800);
+            Thread.sleep(10000);
             } 
             catch(InterruptedException e)
             {
-            // this part is executed when an exception (in this example InterruptedException) occurs
+            // this part is executed when an exception (in this example InterruptedException) occurssss
             }
         if (System.currentTimeMillis()%3==1){
         }
@@ -45,11 +51,11 @@ System.out.print("GfG1s");
 
     };
     @Test
-    public void test33c() {
+    public void chicken13() {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(150);
+            Thread.sleep(10000);
             } 
             catch(InterruptedException e)
             {
@@ -58,8 +64,9 @@ System.out.print("GfG1s");
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            Assert.fail("fail messajge2");
-            System.out.print("GfG1");
+            Assert.fail("fail messajge5");
+            
+
         };
 
     };

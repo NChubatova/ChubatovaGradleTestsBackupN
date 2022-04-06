@@ -11,14 +11,14 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class mytest1 {
+public class chicken10 {
 Logger log = LogManager.getLogger();
     
 @Rule
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void test11() {
+    public void chicken101() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -27,7 +27,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
          try 
             {
                 //Thread.sleep(9);
-            Thread.sleep(1);
+            Thread.sleep(3000);
             } 
             catch(InterruptedException e)
             {
@@ -39,11 +39,11 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void test12() {
+    public void chicken102() {
         try 
             {
                 //Thread.sleep(1800);
-            Thread.sleep(1500);
+            Thread.sleep(2000);
             } 
             catch(InterruptedException e)
             {
@@ -57,11 +57,11 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void test13() {
+    public void chicken103() {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(1500);
+            Thread.sleep(5000);
             } 
             catch(InterruptedException e)
             {
