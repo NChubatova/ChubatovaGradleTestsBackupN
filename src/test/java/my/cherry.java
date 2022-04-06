@@ -11,14 +11,14 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class mytest1 {
+public class cherry {
 Logger log = LogManager.getLogger();
     
 @Rule
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void cherry() {
+    public void test11() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -39,7 +39,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void cherry2() {
+    public void test12() {
         try 
             {
                 //Thread.sleep(1800);
@@ -57,7 +57,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void apple() {
+    public void test13() {
                  try 
             {
                 //Thread.sleep(90000);
