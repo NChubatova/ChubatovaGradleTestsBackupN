@@ -8,7 +8,7 @@ import java.lang.*;
 public class jeg {
 
     @Test
-    public void test41c() {
+    public void test61c() {
                  try 
             {
                 //Thread.sleep(1);
@@ -27,7 +27,7 @@ System.out.print("GfG1s");
 
     };
     @Test
-    public void test42c() {
+    public void test62c() {
         try 
             {
                 //Thread.sleep(90000);
@@ -45,7 +45,7 @@ System.out.print("GfG1s");
 
     };
     @Test
-    public void test43c() {
+    public void test63c() {
                  try 
             {
                 //Thread.sleep(90000);
