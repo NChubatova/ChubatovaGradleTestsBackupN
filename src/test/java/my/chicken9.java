@@ -33,7 +33,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-            Assert.fail("fai ");
+            //Assert.fail("fai ");
 
         //};
 
@@ -70,7 +70,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            Assert.fail("fail messajge5");
+            //Assert.fail("fail messajge5");
             
 
         };
