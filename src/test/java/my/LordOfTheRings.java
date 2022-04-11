@@ -1,6 +1,5 @@
 package my;
 //haha
-import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
@@ -11,14 +10,14 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class chicken3 {
+public class LordOfTheRings {
 Logger log = LogManager.getLogger();
     
 @Rule
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void Chicken31() {
+    public void LOTR31() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -39,7 +38,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken32() {
+    public void LOTR32() {
         try 
             {
                 //Thread.sleep(1800);
@@ -57,7 +56,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken33() {
+    public void LOTR33() {
                  try 
             {
                 //Thread.sleep(90000);
