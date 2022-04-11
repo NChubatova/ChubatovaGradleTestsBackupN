@@ -18,7 +18,7 @@ Logger log = LogManager.getLogger();
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void chicken31() {
+    public void Chicken31() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -33,7 +33,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-            //Assert.fail("fai ");
+            Assert.fail("fai ");
 
         //};
 
