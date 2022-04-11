@@ -1,18 +1,16 @@
 package my;
 //haha
-import junit.framework.TestCase;
-import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 
 
 
-public class chicken1 {
+public class Chicken1 {
 
     
 
     @Test
-    public void chicken11() {
+    public void Chicken11() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -33,7 +31,7 @@ public class chicken1 {
 
     };
     @Test
-    public void chiсken12() {
+    public void Chiсken12() {
         try 
             {
                 //Thread.sleep(1800);
@@ -51,7 +49,7 @@ public class chicken1 {
 
     };
     @Test
-    public void chicken13() {
+    public void Chicken13() {
                  try 
             {
                 //Thread.sleep(90000);

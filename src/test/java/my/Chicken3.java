@@ -1,6 +1,5 @@
 package my;
 //haha
-import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
@@ -11,7 +10,7 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class chicken3 {
+public class Chicken3 {
 Logger log = LogManager.getLogger();
     
 @Rule
@@ -39,7 +38,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken32() {
+    public void Chicken32() {
         try 
             {
                 //Thread.sleep(1800);
@@ -57,7 +56,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken33() {
+    public void Chicken33() {
                  try 
             {
                 //Thread.sleep(90000);
