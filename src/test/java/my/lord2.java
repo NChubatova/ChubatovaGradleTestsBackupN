@@ -37,7 +37,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void Chicken22() {
+    public void lord22() {
         try 
             {
                 //Thread.sleep(1800);
@@ -55,7 +55,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void Chicken23() {
+    public void lord23() {
                  try 
             {
                 //Thread.sleep(90000);
