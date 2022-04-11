@@ -44,7 +44,7 @@ tasks.test {
         includeTestsMatching "my.*"
         //includeTestsMatching "ChickenA*"
         //includeTestsMatching "*Lord2*"
-
+        setExcludePatterns "*ChikenA*"
 
 
     }
