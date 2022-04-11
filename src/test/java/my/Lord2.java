@@ -16,7 +16,7 @@ Logger log = LogManager.getLogger();
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void Chicken21() {
+    public void lord21() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
