@@ -9,14 +9,14 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class Lord2 {
+public class lord2 {
 Logger log = LogManager.getLogger();
     
 @Rule
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void lord21() {
+    public void Lord21() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
