@@ -9,7 +9,7 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class Chicken2 {
+public class Lord2 {
 Logger log = LogManager.getLogger();
     
 @Rule
