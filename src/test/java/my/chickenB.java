@@ -1,7 +1,5 @@
 package my;
 //haha
-import junit.framework.TestCase;
-import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 import org.apache.logging.log4j.Logger;
@@ -11,14 +9,14 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class chicken10 {
+public class chickenB {
 Logger log = LogManager.getLogger();
     
 @Rule
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void chicken101() {
+    public void chickenB1() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -27,7 +25,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
          try 
             {
                 //Thread.sleep(9);
-            Thread.sleep(3001);
+            Thread.sleep(10000);
             } 
             catch(InterruptedException e)
             {
@@ -39,11 +37,11 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken102() {
+    public void chiсkenB2() {
         try 
             {
                 //Thread.sleep(1800);
-            Thread.sleep(2000);
+            Thread.sleep(10000);
             } 
             catch(InterruptedException e)
             {
@@ -57,11 +55,11 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken103() {
+    public void chickenB3() {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(5000);
+            Thread.sleep(10000);
             } 
             catch(InterruptedException e)
             {
@@ -70,7 +68,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            Assert.fail("fail messajge5");
+            //Assert.fail("fail messajge5");
             
 
         };

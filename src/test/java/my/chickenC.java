@@ -1,7 +1,5 @@
 package my;
 //haha
-import junit.framework.TestCase;
-import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 import org.apache.logging.log4j.Logger;
@@ -11,14 +9,14 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 
-public class chicken11 {
+public class chickenC {
 Logger log = LogManager.getLogger();
     
 @Rule
 public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
-    public void chicken111() {
+    public void chickenC1() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -39,7 +37,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chiсken112() {
+    public void chiсkenC2() {
         try 
             {
                 //Thread.sleep(1800);
@@ -57,7 +55,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     };
     @Test
-    public void chicken113() {
+    public void chickenC3() {
                  try 
             {
                 //Thread.sleep(90000);
