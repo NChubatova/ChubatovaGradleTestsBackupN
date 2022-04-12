@@ -41,10 +41,19 @@ tasks.test {
    // }
     filter {
         //include specific method in any of the tests
-        includeTestsMatching "my.*"
+        includeTestsMatching "*ChickenA*"
         //includeTestsMatching "ChickenA*"
         //includeTestsMatching "*Lord2*"
-        setExcludePatterns "*ChickenA*"
+        //setExcludePatterns "*ChickenA*"
+        includeTestsMatching "*ChickenB*"
+        includeTestsMatching "*ChickenC*"
+        //includeTestsMatching "*Chicken1"
+        includeTestsMatching "*Chicken2*"
+        includeTestsMatching "*Chicken3*"
+        includeTestsMatching "*Chicken4*"
+        includeTestsMatching "*Chicken6*"
+        includeTestsMatching "*Chicken8*"
+        includeTestsMatching "*Chicken9*"
 
 
     }
