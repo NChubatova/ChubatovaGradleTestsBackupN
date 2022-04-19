@@ -43,6 +43,7 @@ tasks.test {
         //include specific method in any of the tests
         includeTestsMatching "*chicken1*"
         includeTestsMatching "*chicken2*"
+        includeTestsMatching "*chicken5*"
         includeTestsMatching "*chicken3*"
         includeTestsMatching "*chicken4*"
         includeTestsMatching "*chicken7*"
