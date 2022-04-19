@@ -21,7 +21,7 @@ public class chicken1 {
          try 
             {
                 //Thread.sleep(9);
-            Thread.sleep(10000);
+            Thread.sleep(1000);
             } 
             catch(InterruptedException e)
             {
@@ -37,7 +37,7 @@ public class chicken1 {
         try 
             {
                 //Thread.sleep(1800);
-            Thread.sleep(10000);
+            Thread.sleep(1000);
             } 
             catch(InterruptedException e)
             {
@@ -55,7 +55,7 @@ public class chicken1 {
                  try 
             {
                 //Thread.sleep(90000);
-            Thread.sleep(10000);
+            Thread.sleep(1000);
             } 
             catch(InterruptedException e)
             {
