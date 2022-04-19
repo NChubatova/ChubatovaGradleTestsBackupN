@@ -38,6 +38,7 @@ tasks.test {
     includeTestsMatching "*test3*"
     includeTestsMatching "TestSuite*"
 
+
     }
     retry {
         maxRetries = 0
