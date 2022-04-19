@@ -46,7 +46,7 @@ tasks.test {
         includeTestsMatching "*chicken3*"
         includeTestsMatching "*chicken4*"
         includeTestsMatching "*chicken5*"
-        includeTestsMatching "*chicken6*"
+        //includeTestsMatching "*chicken6*"
 
 
     }
