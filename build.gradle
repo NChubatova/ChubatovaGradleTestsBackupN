@@ -36,7 +36,7 @@ tasks.test {
     scanForTestClasses = false
     filter{
     includeTestsMatching "*test3*"
-    includeTestsMatching "TestSuite**"
+    includeTestsMatching "*test1*"
 
 
     }
