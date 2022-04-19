@@ -19,9 +19,9 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     @Test
     public void Chicken31() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
            System.out.print("##teamcity[setParameter name='ddd' value='fff']");
           System.out.print("teamcity[setParameter name='ddd' value='fff']");
          try 
@@ -35,7 +35,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
             }
             Assert.fail("fai ");
 
-        //};
+        };
 
     };
     @Test
