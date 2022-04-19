@@ -34,11 +34,11 @@ tasks.test {
     useJUnit()
     //ignoreFailures = false
 
-   // retry {
-    //    maxRetries = 0
-    //    maxFailures = 200
-   //     failOnPassedAfterRetry = true
-   // }
+    retry {
+        maxRetries = 3
+        maxFailures = 200
+        failOnPassedAfterRetry = true
+    }
     filter {
         //include specific method in any of the tests
         includeTestsMatching "*chicken1*"
