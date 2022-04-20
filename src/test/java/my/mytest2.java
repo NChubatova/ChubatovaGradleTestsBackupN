@@ -7,7 +7,7 @@ import java.lang.*;
 
 public class mytest2 {
 
-    @Category(SlowTests)
+   
     @Test
     public void test21c() {
         //if (System.currentTimeMillis()%3==1){
@@ -45,7 +45,7 @@ System.out.print("GfG1");
         };
 
     };
-    @Category(SlowTests)
+   
     @Test
     public void test23c() {
                  try 
