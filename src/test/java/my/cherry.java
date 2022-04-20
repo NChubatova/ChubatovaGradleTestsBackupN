@@ -1,21 +1,17 @@
 package my;
 //haha
-import junit.framework.TestCase;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.lang.*;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-import org.junit.Rule;
-import org.junit.contrib.java.lang.system.SystemOutRule;
+
+import org.junit.jupiter.api.Tag;
 
 
 
 public class cherry {
-Logger log = LogManager.getLogger();
+
     
-@Rule
-public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+
     
     @Test
 
@@ -34,7 +30,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
             {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
-            Assert.fail("fai ");
+            //Assert.fail("fai ");
 
         //};
 
@@ -73,7 +69,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
         if (System.currentTimeMillis()%1==1){
         }
         else {
-            Assert.fail("fail messajge5");
+            //Assert.fail("fail messajge5");
             
 
         };

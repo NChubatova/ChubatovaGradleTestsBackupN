@@ -1,13 +1,14 @@
 package my;
 
-import junit.framework.TestCase;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.lang.*;
+
+import org.junit.jupiter.api.Tag;
 
 public class mytest2 {
 
-   @Category(SlowTests)
+    @Tag("fast")
     @Test
     public void test21c() {
         //if (System.currentTimeMillis()%3==1){
@@ -45,8 +46,8 @@ System.out.print("GfG1");
         };
 
     };
-   
-   @Category(SlowTests) 
+
+    @Tag("fast")
    @Test
     public void test23c() {
                  try 
