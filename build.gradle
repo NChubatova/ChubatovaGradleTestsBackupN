@@ -29,8 +29,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform {
-        includeTags("fast")
-        includeTags("slow")
+        //includeTags("fast")
+        excludeTags("slow")
 
     }
 }
