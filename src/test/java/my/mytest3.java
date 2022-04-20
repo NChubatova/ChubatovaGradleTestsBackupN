@@ -9,7 +9,7 @@ import java.lang.*;
 
 
 public class mytest3 {
-
+@Category(FastTests)
     @Test
     public void test311c() {
                  try 
@@ -47,6 +47,7 @@ System.out.print("GfG1s");
         };
 
     };
+    @Category(FastTests)
     @Test
     public void test313c() {
                  try 
