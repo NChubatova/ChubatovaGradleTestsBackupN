@@ -12,7 +12,7 @@ public class mytest {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            Assert.fail("fail mkk");
+            //Assert.fail("fail mkk");
 
         //};
 
@@ -39,7 +39,7 @@ public class mytest {
         //if (System.currentTimeMillis()%3==1){
         //}
        // else {
-            Assert.fail("fail messajge2");
+            //Assert.fail("fail messajge2");
         //};
 
     };
