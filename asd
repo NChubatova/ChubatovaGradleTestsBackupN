@@ -2,13 +2,3 @@ asd
 sdf
 м
 в
-sdf
-sdf
-sdf
-s
-sdf
-ff
-ываsdf
-ирр
-sdf
-df
