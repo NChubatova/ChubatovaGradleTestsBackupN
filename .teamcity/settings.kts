@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -27,6 +28,8 @@ version = "2022.04"
 
 project {
 
+    vcsRoot(HttpsGithubComChubatovaTigerManyPullRequests)
+
     buildType(Build)
 }
 
@@ -45,4 +48,10 @@ object Build : BuildType({
         vcs {
         }
     }
+})
+
+object HttpsGithubComChubatovaTigerManyPullRequests : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/manyPullRequests"
+    url = "https://github.com/ChubatovaTiger/manyPullRequests"
+    branch = "refs/heads/main"
 })
