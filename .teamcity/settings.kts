@@ -53,6 +53,10 @@ object Build : BuildType({
 
 object Prs : BuildType({
     name = "prs"
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerManyPullRequests)
+    }
 })
 
 object HttpsGithubComChubatovaTigerManyPullRequests : GitVcsRoot({
