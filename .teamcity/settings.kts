@@ -34,7 +34,7 @@ project {
     buildType(Csp)
 
     params {
-        param("a", "annnn")
+        param("a", "annnncc")
     }
 }
 
