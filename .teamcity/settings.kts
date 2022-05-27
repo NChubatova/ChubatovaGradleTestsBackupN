@@ -31,6 +31,7 @@ project {
     vcsRoot(HttpsGithubComChubatovaTigerManyPullRequests)
 
     buildType(Build)
+    buildType(Prs)
 }
 
 object Build : BuildType({
@@ -48,6 +49,10 @@ object Build : BuildType({
         vcs {
         }
     }
+})
+
+object Prs : BuildType({
+    name = "prs"
 })
 
 object HttpsGithubComChubatovaTigerManyPullRequests : GitVcsRoot({
