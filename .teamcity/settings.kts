@@ -1,4 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.PullRequests
+import jetbrains.buildServer.configs.kotlin.buildFeatures.pullRequests
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
@@ -56,6 +58,17 @@ object Prs : BuildType({
 
     vcs {
         root(HttpsGithubComChubatovaTigerManyPullRequests)
+    }
+
+    features {
+        pullRequests {
+            provider = github {
+                authType = token {
+                    token = "credentialsJSON:bb8b5b90-bd37-491c-837a-dfe49c0a8c9e"
+                }
+                filterAuthorRole = PullRequests.GitHubRoleFilter.MEMBER
+            }
+        }
     }
 })
 
