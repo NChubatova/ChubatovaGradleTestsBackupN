@@ -34,7 +34,7 @@ project {
     buildType(Csp)
 
     params {
-        param("sdfsdf", "sdfsd")
+        param("sdfsdf", "sdfsdb")
     }
 }
 
