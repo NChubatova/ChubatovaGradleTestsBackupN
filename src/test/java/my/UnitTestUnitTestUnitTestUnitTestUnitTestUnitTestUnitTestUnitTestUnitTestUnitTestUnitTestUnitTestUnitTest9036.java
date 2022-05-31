@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 
-public class UnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTest9036 {
+public class UnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTest90036 {
 
     @Test
     public void foo1master() {
