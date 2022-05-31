@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 
-public class UnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTest19003 {
+public class UnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTest1903 {
 
     @Test
     public void foo1master() {
@@ -21,7 +21,7 @@ public class UnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUni
     public void foo2() {
         try 
             {
-                Thread.sleep(900);
+                Thread.sleep(90);
             } 
             catch(InterruptedException e)
             {

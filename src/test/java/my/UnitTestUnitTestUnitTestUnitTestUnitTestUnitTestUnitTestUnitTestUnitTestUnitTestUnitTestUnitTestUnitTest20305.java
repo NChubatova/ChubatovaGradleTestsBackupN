@@ -21,7 +21,7 @@ public class UnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUnitTestUni
     public void foo2() {
         try 
             {
-                Thread.sleep(900);
+                Thread.sleep(90);
             } 
             catch(InterruptedException e)
             {
