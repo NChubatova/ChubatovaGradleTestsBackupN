@@ -29,7 +29,7 @@ public class mytest1 {
 
     };
         @Test
-    public void foo2master2added2() {
+    public void BaRabulka() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
