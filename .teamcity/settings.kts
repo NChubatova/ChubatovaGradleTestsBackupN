@@ -41,7 +41,7 @@ project {
             cloudFrontPrivateKey = "credentialsJSON:e95855b4-3d61-4379-a908-84dcc13dc66a"
             accessKey = "credentialsJSON:1452225c-83d9-4a40-9171-f7f9e4ab9a5c"
             awsEnvironment = custom {
-                endpoint = "https://s3.eu-central-1.amazonaws.com"
+                endpoint = "https://chubatovatransferacceleration.s3-accelerate.amazonaws.com/"
                 awsRegionName = "eu-central-1"
             }
             accessKeyID = "AKIA5JH2VERVHVMPJQJI"
