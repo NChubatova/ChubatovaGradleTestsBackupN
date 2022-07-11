@@ -18,7 +18,7 @@ dependencies {
 
 apply plugin : "java" 
 ext {
-   javaMainClass = "main.java.my.myclass"
+   javaMainClass = "my.myclass"
 }
 
 application {
