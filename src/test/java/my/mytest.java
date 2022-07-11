@@ -11,8 +11,8 @@ public class mytest {
 
     @Test
     public void foo2master() {
-	System.out.println("hin");	
-            Assert.fail("fail mkk_remtdde0");
+	System.out.println("hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong ");	
+            Assert.notfail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
 
 
 
@@ -21,16 +21,16 @@ public class mytest {
     @Test
     public void foo2master2added() {
 
-            Assert.fail("fail mkk_remote2");
-
+	System.out.println("hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong ");	
+            Assert.notfail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
 
 
     };
         @Test
     public void BaRabulka() {
     
-            Assert.fail("fail mkk_remote2");
-
+	System.out.println("hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong ");	
+            Assert.notfail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
 
 
     };
