@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
-import System.*
+import System.*;
 
 public class mytest {
 
