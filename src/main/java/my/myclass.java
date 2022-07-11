@@ -9,6 +9,7 @@ public class myclass {
             for (int j = 0; j < 20000; j++) {
             System.out.println("##teamcity[blockOpened name='"+i+"' description='"+i+"']");
         System.out.println(j + "..hi from ..hi from ..hi from ..hi from ..hi from ..hi from ..hi from ..hi from ..hi from ..hi from ..hi from ..hi from " + j);
+                System.out.println("##teamcity[blockClose name='"+i+"']");
 }
     }
     }
