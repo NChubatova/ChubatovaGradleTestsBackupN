@@ -14,16 +14,7 @@ dependencies {
     testImplementation("junit:junit:4.13")
 }
 
-tasks.test {
-    useJUnit()
-    ignoreFailures = false
 
-    retry {
-        maxRetries = 0
-        maxFailures = 200
-        failOnPassedAfterRetry = true
-    }
-}
 
 apply plugin : "java" 
 ext {
