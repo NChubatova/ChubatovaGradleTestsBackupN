@@ -2,7 +2,7 @@ plugins {
     id("java")
     //id("jvm-test-suite")
     id("org.gradle.test-retry") version "1.2.0"
-    
+     id "application"
 }
 
 
@@ -25,3 +25,11 @@ tasks.test {
     }
 }
 
+apply plugin : "java" 
+ext {
+   javaMainClass = "main.java.my.myclass"
+}
+
+application {
+    mainClassName = javaMainClass
+}
