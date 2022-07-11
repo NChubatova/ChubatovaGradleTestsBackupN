@@ -12,7 +12,7 @@ public class mytest {
     @Test
     public void foo2master() {
 	System.out.println("hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong ");	
-            Assert.notfail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
+            Assert.fail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
 
 
 
@@ -22,7 +22,7 @@ public class mytest {
     public void foo2master2added() {
 
 	System.out.println("hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong ");	
-            Assert.notfail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
+            Assert.fail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
 
 
     };
@@ -30,7 +30,7 @@ public class mytest {
     public void BaRabulka() {
     
 	System.out.println("hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong hinlong ");	
-            Assert.notfail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
+            Assert.fail("notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0notfail mkk_remtdde0");
 
 
     };
