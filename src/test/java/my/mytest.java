@@ -4,6 +4,7 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
+import System.*
 
 public class mytest {
 
@@ -12,35 +13,23 @@ public class mytest {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            Assert.fail("fail mkk");
+	System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
+            Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
 
         //};
 
     };
     @Test
     public void foo2() {
-        try 
-            {
-                Thread.sleep(90);
-            } 
-            catch(InterruptedException e)
-            {
-            // this part is executed when an exception (in this example InterruptedException) occurs
-            }
-        if (System.currentTimeMillis()%3==1){
-        }
-        else {
-          //
+System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
+            Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
         };
 
     };
     @Test
     public void foo3() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-       // else {
-            Assert.fail("fail messajge2");
-        //};
+System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
+            Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
 
     };
 
