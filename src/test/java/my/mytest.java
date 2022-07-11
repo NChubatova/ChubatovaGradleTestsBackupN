@@ -10,25 +10,23 @@ public class mytest {
 
     @Test
     public void foo1master() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-	System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
-            Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
 
-        //};
+	System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
+        Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
+
+ 
 
     };
     @Test
     public void foo2() {
-System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
-            Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
+	System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
+        Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
         };
 
     };
     @Test
     public void foo3() {
-System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
+	System.out.println("longstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstringlongstring");
             Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
 
     };
