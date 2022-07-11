@@ -4,12 +4,14 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
+import System.*;
+
 //haha
 public class mytest {
 
     @Test
     public void foo2master() {
-
+	System.out.println("hin");	
             Assert.fail("fail mkk_remtdde0");
 
 
