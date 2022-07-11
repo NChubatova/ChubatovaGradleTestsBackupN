@@ -4,31 +4,34 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
-
-
+//haha
 public class mytest {
 
     @Test
-    public void foo1master() {
+    public void foo2master() {
+
+            Assert.fail("fail mkk_remtdde0");
 
 
-        Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
-
- 
 
     };
+    
     @Test
-    public void foo2() {
+    public void foo2master2added() {
 
-        Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
-        };
+            Assert.fail("fail mkk_remote2");
 
-    };
-    @Test
-    public void foo3() {
 
-            Assert.fail("longstringlongstringlongstringlongstringlongstringlongstring");
 
     };
+        @Test
+    public void BaRabulka() {
+    
+            Assert.fail("fail mkk_remote2");
+
+
+
+    };
+
 
 }
