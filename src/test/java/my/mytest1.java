@@ -9,35 +9,16 @@ public class mytest1 {
 
     @Test
     public void foo2master() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
             Assert.fail("fail mkk_remtdde0");
 
-        //};
+        };
 
     };
     
-    @Test
-    public void foo2master2added() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-            Assert.fail("fail mkk_remote2");
-
-        //};
-
-    };
-        @Test
-    public void BaRabulka() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-            Assert.fail("fail mkk_remote2");
-
-        //};
-
-    };
+   
 
 
 }
