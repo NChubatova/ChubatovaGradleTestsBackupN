@@ -39,7 +39,7 @@ object A : BuildType({
 
     steps {
         script {
-            scriptContent = "echo a"
+            scriptContent = "echo b"
         }
     }
 })
