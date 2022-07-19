@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -16,6 +17,11 @@ changeBuildType(RelativeId("Gradle")) {
         insert(0) {
             script {
                 scriptContent = "echo a"
+            }
+        }
+        insert(1) {
+            gradle {
+                param("ui.gradleRunner.gradle.tasks.names", "ljl")
             }
         }
     }
