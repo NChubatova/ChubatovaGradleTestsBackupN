@@ -1,6 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
-import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
-import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
+
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -60,16 +59,7 @@ object Gradle_5 : BuildType({
         root(DslContext.settingsRoot)
     }
 
-    steps {
-        gradle {
-            tasks = "clean build"
-            gradleWrapperPath = ""
-        }
-    }
 
-    features {
-        parallelTests {
-            numberOfBatches = 2
-        }
-    }
+
+
 })
