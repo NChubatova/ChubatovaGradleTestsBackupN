@@ -42,5 +42,8 @@ object A : BuildType({
         script {
             scriptContent = "echo b"
         }
+        gradle {
+                param("ui.gradleRUnner.gradle.build.file", "build.gradle2")
+            }
     }
 })
