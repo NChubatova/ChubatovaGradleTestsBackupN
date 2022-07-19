@@ -1,8 +1,8 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
-/*import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 
-
+/*
 The settings script is an entry point for defining a TeamCity
 project hierarchy. The script should contain a single call to the
 project() function with a Project instance or an init function as
