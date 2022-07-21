@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -17,6 +18,14 @@ changeBuildType(RelativeId("Gradle")) {
             gradle {
                 tasks = "clean build"
                 gradleWrapperPath = ""
+            }
+        }
+    }
+
+    features {
+        add {
+            parallelTests {
+                numberOfBatches = 2
             }
         }
     }
