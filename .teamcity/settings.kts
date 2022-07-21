@@ -41,7 +41,6 @@ project {
             }
             accessKeyID = "AKIA5JH2VERVHVMPJQJI"
             accessKey = "credentialsJSON:4f0dd7f7-9e59-443b-8487-fc73ea89b097"
-            param("storage.s3.accelerateModeEnabled", "true")
         }
         activeStorage {
             id = "PROJECT_EXT_7"
