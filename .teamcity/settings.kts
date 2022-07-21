@@ -34,14 +34,13 @@ project {
     features {
         s3Storage {
             id = "PROJECT_EXT_6"
-            bucketName = "chubatovatransferacceleration"
+            bucketName = "n.chubatova-test"
             forceVirtualHostAddressing = true
             awsEnvironment = default {
                 awsRegionName = "eu-central-1"
             }
             accessKeyID = "AKIA5JH2VERVHVMPJQJI"
             accessKey = "credentialsJSON:4f0dd7f7-9e59-443b-8487-fc73ea89b097"
-            param("storage.s3.accelerateModeEnabled", "true")
         }
         activeStorage {
             id = "PROJECT_EXT_7"
