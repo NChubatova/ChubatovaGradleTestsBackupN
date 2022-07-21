@@ -51,6 +51,8 @@ project {
 object As : BuildType({
     name = "as"
 
+    artifactRules = "+:bc.txt => ."
+
     vcs {
         root(DslContext.settingsRoot)
     }
