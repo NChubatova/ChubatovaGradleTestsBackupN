@@ -59,7 +59,7 @@ object As : BuildType({
 
     steps {
         script {
-            scriptContent = "echo b > bc.txt"
+            scriptContent = "echo %build.number% > bc.txt"
         }
     }
 })
