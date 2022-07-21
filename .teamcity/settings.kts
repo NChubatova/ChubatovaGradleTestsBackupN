@@ -31,4 +31,8 @@ project {
 
 object As : BuildType({
     name = "as"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
 })
