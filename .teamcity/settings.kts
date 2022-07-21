@@ -35,7 +35,6 @@ project {
         s3Storage {
             id = "PROJECT_EXT_6"
             bucketName = "n.chubatova-test"
-            forceVirtualHostAddressing = true
             awsEnvironment = default {
                 awsRegionName = "eu-central-1"
             }
