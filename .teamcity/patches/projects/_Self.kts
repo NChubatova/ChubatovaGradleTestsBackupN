@@ -26,6 +26,7 @@ changeProject(DslContext.projectId) {
         }
         feature1.apply {
             bucketName = "chubatovatransferacceleration"
+            forceVirtualHostAddressing = true
             param("aws.use.default.credential.provider.chain", "")
         }
     }
