@@ -39,8 +39,8 @@ changeProject(DslContext.projectId) {
         }
         add {
             activeStorage {
-                id = "PROJECT_EXT_5"
-                activeStorageID = "DefaultStorage"
+                id = "PROJECT_EXT_8"
+                activeStorageID = "PROJECT_EXT_6"
             }
         }
     }
