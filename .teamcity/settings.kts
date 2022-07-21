@@ -34,7 +34,7 @@ project {
     features {
         s3Storage {
             id = "PROJECT_EXT_6"
-            bucketName = "chubatovatransferacceleration"
+            bucketName = "n.chubatova-test"
             accessKey = "credentialsJSON:4f0dd7f7-9e59-443b-8487-fc73ea89b097"
             awsEnvironment = default {
                 awsRegionName = "eu-central-1"
