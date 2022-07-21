@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -27,6 +28,18 @@ version = "2022.04"
 project {
 
     buildType(As)
+
+    features {
+        s3Storage {
+            id = "PROJECT_EXT_6"
+            bucketName = "n.chubatova-test"
+            awsEnvironment = default {
+                awsRegionName = "eu-central-1"
+            }
+            accessKeyID = "AKIA5JH2VERVHVMPJQJI"
+            accessKey = "credentialsJSON:4f0dd7f7-9e59-443b-8487-fc73ea89b097"
+        }
+    }
 }
 
 object As : BuildType({
