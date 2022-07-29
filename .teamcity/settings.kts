@@ -41,7 +41,7 @@ object BuildGradle : BuildType({
         gradle {
             tasks = "buildDependents"
             incremental = true
-            useGradleWrapper = false
+            useGradleWrapper = true
             enableDebug = false
         }
     }
