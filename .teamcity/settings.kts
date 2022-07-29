@@ -42,7 +42,7 @@ object BuildGradle : BuildType({
             tasks = "buildDependents"
             incremental = true
             useGradleWrapper = false
-            enableDebug = true
+            enableDebug = false
         }
     }
 })
