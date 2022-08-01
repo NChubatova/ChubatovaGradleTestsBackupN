@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.GradleBuildStep
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -19,6 +20,17 @@ changeBuildType(RelativeId("BuildGradle")) {
         }
     }
     steps {
-        items.removeAt(0)
+        update<GradleBuildStep>(0) {
+            clearConditions()
+            tasks = "clean build"
+            incremental = false
+            gradleWrapperPath = ""
+            enableDebug = false
+            param("teamcity.coverage.idea.includePatterns", "")
+            param("teamcity.coverage.jacoco.patterns", "")
+            param("teamcity.coverage.emma.instr.parameters", "")
+            param("teamcity.coverage.emma.include.source", "")
+            param("teamcity.tool.jacoco", "")
+        }
     }
 }
