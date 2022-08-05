@@ -12,7 +12,7 @@ public class mytest1 {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
-            Assert.fail("fail mkk_вremtddde0");
+            Assert.fail("fail mkkпп_вremtddde0");
 
         //};
 
