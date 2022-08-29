@@ -9,7 +9,7 @@ public class mytest4 {
 
     @Test
     public void test41s() {
-        //if (System.currentTimeMillis()%3==1){
+        //if (System.currentTimeMллillis()%3==1){
         //}
         //else {
             //Assert.fail("fail mkk_remtdedd");
