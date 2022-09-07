@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest1 {
 
     @Test
-    public void foo2masterIDEapatch4_admin11() {
+    public void foo2masterIDEapatch4_admin12() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
