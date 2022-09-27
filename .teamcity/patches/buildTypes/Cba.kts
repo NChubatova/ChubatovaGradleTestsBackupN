@@ -61,6 +61,11 @@ changeBuildType(RelativeId("Cba")) {
 
     failureConditions {
 
+        check(testFailure == true) {
+            "Unexpected option value: testFailure = $testFailure"
+        }
+        testFailure = false
+
         check(nonZeroExitCode == true) {
             "Unexpected option value: nonZeroExitCode = $nonZeroExitCode"
         }
