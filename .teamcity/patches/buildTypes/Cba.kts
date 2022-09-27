@@ -43,7 +43,7 @@ changeBuildType(RelativeId("Cba")) {
             script {
                 name = "New build step"
                 executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-                scriptContent = "echo master"
+                scriptContent = "echo %parsec% > parsec.txt"
             }
         }
     }
