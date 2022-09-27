@@ -9,6 +9,15 @@ To apply the patch, change the buildType with id = 'Cba'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Cba")) {
+    params {
+        expect {
+            param("aa", "an")
+        }
+        update {
+            param("aa", "master")
+        }
+    }
+
     requirements {
         add {
             contains("teamcity.agent.name", "Default")
