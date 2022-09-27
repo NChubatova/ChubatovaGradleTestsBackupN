@@ -19,6 +19,9 @@ changeBuildType(RelativeId("Cba")) {
         add {
             param("env.env", "envmaster")
         }
+        add {
+            password("parsec", "credentialsJSON:a42e2243-4440-4b74-a541-65893bb2c686")
+        }
     }
 
     requirements {
