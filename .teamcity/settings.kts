@@ -28,10 +28,15 @@ version = "2022.04"
 
 project {
 
-    buildType(Cba)
+    buildType(Cba_4)
+
+    params {
+        param("projpar", "master")
+    }
 }
 
-object Cba : BuildType({
+object Cba_4 : BuildType({
+    id("Cba")
     name = "cba"
 
     params {
