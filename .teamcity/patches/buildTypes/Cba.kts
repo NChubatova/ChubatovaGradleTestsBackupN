@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.commitStatusPublisher
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.ui.*
@@ -54,6 +55,20 @@ changeBuildType(RelativeId("Cba")) {
                 name = "New build step"
                 executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
                 scriptContent = "echo %parsec% > parsec.txt"
+            }
+        }
+    }
+
+    features {
+        add {
+            commitStatusPublisher {
+                vcsRootExtId = "${DslContext.settingsRoot.id}"
+                publisher = github {
+                    githubUrl = "https://api.github.com"
+                    authType = personalToken {
+                        token = "credentialsJSON:25aa9774-b33d-4ec7-9045-8ec357f54265"
+                    }
+                }
             }
         }
     }
