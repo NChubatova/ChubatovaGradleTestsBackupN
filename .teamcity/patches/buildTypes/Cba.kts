@@ -16,6 +16,11 @@ changeBuildType(RelativeId("Cba")) {
     }
     artifactRules = "parsec*=>."
 
+    check(buildNumberPattern == "%build.counter%") {
+        "Unexpected option value: buildNumberPattern = $buildNumberPattern"
+    }
+    buildNumberPattern = "%build.counter%-master"
+
     params {
         expect {
             param("aa", "an")
