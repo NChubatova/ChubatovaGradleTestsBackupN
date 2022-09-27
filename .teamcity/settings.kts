@@ -43,6 +43,7 @@ object Cba : BuildType({
 
     features {
         parallelTests {
+            enabled = false
             numberOfBatches = 3
         }
     }
