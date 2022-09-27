@@ -29,12 +29,12 @@ version = "2022.04"
 
 project {
 
-    vcsRoot(HttpsGithubComChubatovaTigerDotNetTestsSamples)
+    
 
     buildType(Cba_4)
 
     params {
-        param("projpar", "master2")
+        param("projpar", "b3-ranch")
     }
 }
 
@@ -48,7 +48,7 @@ object Cba_4 : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
-        root(HttpsGithubComChubatovaTigerDotNetTestsSamples)
+       
     }
 
     steps {
@@ -65,8 +65,3 @@ object Cba_4 : BuildType({
     }
 })
 
-object HttpsGithubComChubatovaTigerDotNetTestsSamples : GitVcsRoot({
-    name = "https://github.com/ChubatovaTiger/DotNetTestsSamples"
-    url = "https://github.com/ChubatovaTiger/DotNetTestsSamples"
-    branch = "refs/heads/master"
-})
