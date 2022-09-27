@@ -63,7 +63,7 @@ object Build_4 : BuildType({
     name = "Build"
 
     params {
-        param("a", "a")
+        param("a", "b-ranch")
     }
 
     vcs {
@@ -81,7 +81,7 @@ object Build_4 : BuildType({
         vcs {
 
             buildParams {
-                param("fromtrigger", "master")
+                param("fromtrigger", "b-ranch")
             }
         }
     }
