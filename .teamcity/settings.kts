@@ -33,7 +33,7 @@ object Cba : BuildType({
     name = "cba"
 
     params {
-        param("aa", "a")
+        param("aa", "an")
     }
 
     vcs {
