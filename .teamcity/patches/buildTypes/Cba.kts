@@ -16,6 +16,9 @@ changeBuildType(RelativeId("Cba")) {
         update {
             param("aa", "master")
         }
+        add {
+            param("env.env", "envmaster")
+        }
     }
 
     requirements {
