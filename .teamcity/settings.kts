@@ -36,7 +36,7 @@ project {
     buildType(Cba_4)
 
     params {
-        param("projpar", "master2")
+        param("projpar", "b4-ranch")
     }
 }
 
@@ -45,12 +45,12 @@ object Cba_4 : BuildType({
     name = "cba"
 
     artifactRules = "parsec*=>."
-    buildNumberPattern = "%build.counter%-master"
+    buildNumberPattern = "%build.counter%-b4-ranch"
 
     params {
-        param("aa", "master")
-        param("env.env", "envmaster")
-        password("parsec", "credentialsJSON:a42e2243-4440-4b74-a541-65893bb2c686")
+        param("aa", "b4-ranch")
+        param("env.env", "envb4ranch")
+        password("parsec", "credentialsJSON:6f0b7139-8ec4-401c-bd16-d847f78387a9")
     }
 
     vcs {
@@ -65,12 +65,12 @@ object Cba_4 : BuildType({
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "echo master"
+            scriptContent = "echo b4ranch"
         }
         script {
             name = "New build step"
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "echo %parsec% > parsec.txt"
+            scriptContent = "echo %parsec% > parsecb4ranch.txt"
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
@@ -99,7 +99,7 @@ object Cba_4 : BuildType({
     }
 
     requirements {
-        contains("teamcity.agent.name", "Default")
+        contains("teamcity.agent.name", "nc")
     }
 })
 
