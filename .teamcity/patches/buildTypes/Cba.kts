@@ -39,6 +39,13 @@ changeBuildType(RelativeId("Cba")) {
                 scriptContent = "echo master"
             }
         }
+        insert(2) {
+            script {
+                name = "New build step"
+                executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+                scriptContent = "echo master"
+            }
+        }
     }
 
     requirements {
