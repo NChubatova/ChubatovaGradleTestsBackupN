@@ -58,7 +58,7 @@ object Cba_4 : BuildType({
     }
 
     failureConditions {
-        testFailure = false
+        testFailure = true
         nonZeroExitCode = false
     }
 
