@@ -59,6 +59,14 @@ changeBuildType(RelativeId("Cba")) {
         }
     }
 
+    failureConditions {
+
+        check(nonZeroExitCode == true) {
+            "Unexpected option value: nonZeroExitCode = $nonZeroExitCode"
+        }
+        nonZeroExitCode = false
+    }
+
     features {
         add {
             commitStatusPublisher {
