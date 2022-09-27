@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -38,5 +39,11 @@ object Cba : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+
+    features {
+        parallelTests {
+            numberOfBatches = 3
+        }
     }
 })
