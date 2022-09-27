@@ -11,6 +11,11 @@ To apply the patch, change the buildType with id = 'Cba'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Cba")) {
+    check(artifactRules == "") {
+        "Unexpected option value: artifactRules = $artifactRules"
+    }
+    artifactRules = "parsec*=>."
+
     params {
         expect {
             param("aa", "an")
