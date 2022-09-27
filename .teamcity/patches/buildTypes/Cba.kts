@@ -1,6 +1,8 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -21,6 +23,21 @@ changeBuildType(RelativeId("Cba")) {
         }
         add {
             password("parsec", "credentialsJSON:a42e2243-4440-4b74-a541-65893bb2c686")
+        }
+    }
+
+    expectSteps {
+        gradle {
+            tasks = "clean build"
+            gradleWrapperPath = ""
+        }
+    }
+    steps {
+        insert(1) {
+            script {
+                executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+                scriptContent = "echo master"
+            }
         }
     }
 
