@@ -31,7 +31,7 @@ project {
     buildType(Cba_4)
 
     params {
-        param("projpar", "master")
+        param("projpar", "b2-ranch")
     }
 }
 
