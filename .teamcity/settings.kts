@@ -82,7 +82,7 @@ object Build_4 : BuildType({
         perfmon {
         }
         parallelTests {
-            enabled = false
+            enabled = true
             numberOfBatches = 3
         }
         freeDiskSpace {
