@@ -1,10 +1,14 @@
-import jetbrains.buildServer.configs.kotlin.*
-import jetbrains.buildServer.configs.kotlin.buildFeatures.commitStatusPublisher
-import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
-import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
-import jetbrains.buildServer.configs.kotlin.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
+To debug settings scripts in command-line, run the
 
+    mvnDebug org.jetbrains.teamcity:teamcity-configs-maven-plugin:generate
+
+command and attach your debugger to the port 8000.
+
+To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
+-> Tool Windows -> Maven Projects), find the generate task node
+(Plugins -> teamcity-configs -> teamcity-configs:generate), the
+'Debug' option is available in the context menu for the task.
+*/
 
 version = "2022.04"
 
@@ -15,7 +19,7 @@ project {
     buildType(Cba_4)
 
     params {
-        param("projpar", "master")
+        param("projpar", "b4-ranch")
     }
 }
 
@@ -24,12 +28,12 @@ object Cba_4 : BuildType({
     name = "cba"
 
     artifactRules = "parsec*=>."
-    buildNumberPattern = "%build.counter%-master"
+    buildNumberPattern = "%build.counter%-b4-ranch"
 
     params {
-        param("aa", "master")
-        param("env.env", "envmaster")
-        password("parsec", "credentialsJSON:25aa9774-b33d-4ec7-9045-8ec357f54265")
+        param("aa", "b4-ranch")
+        param("env.env", "envb4ranch")
+        password("parsec", "credentialsJSON:6f0b7139-8ec4-401c-bd16-d847f78387a9")
     }
 
     vcs {
@@ -44,12 +48,12 @@ object Cba_4 : BuildType({
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "echo master"
+            scriptContent = "echo b4ranch"
         }
         script {
             name = "New build step"
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "echo %parsec% > parsecmaster.txt"
+            scriptContent = "echo %parsec% > parsecb4ranch.txt"
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
@@ -78,7 +82,7 @@ object Cba_4 : BuildType({
     }
 
     requirements {
-        contains("teamcity.agent.name", "Default")
+        contains("teamcity.agent.name", "nc")
     }
 })
 
