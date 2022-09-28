@@ -21,4 +21,12 @@ changeBuildType(RelativeId("Cba")) {
             enabled = false
         }
     }
+
+    dependencies {
+        remove(RelativeId("Dep")) {
+            snapshot {
+            }
+        }
+
+    }
 }
