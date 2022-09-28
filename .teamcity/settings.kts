@@ -8,7 +8,7 @@ import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
 version = "2022.04"
 
-project {
+roject {
 
     vcsRoot(HttpsGithubComChubatovaTigerDotNetTestsSamples)
 
