@@ -29,4 +29,10 @@ changeBuildType(RelativeId("Cba")) {
         }
 
     }
+
+    requirements {
+        remove {
+            contains("teamcity.agent.name", "Default")
+        }
+    }
 }
