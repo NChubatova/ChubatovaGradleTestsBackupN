@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -12,5 +13,13 @@ changeBuildType(RelativeId("Cba")) {
     vcs {
         expectEntry(DslContext.settingsRoot.id!!, "-:.idea", "-:manyfiles")
         root(DslContext.settingsRoot.id!!)
+    }
+
+    features {
+        remove {
+            parallelTests {
+                numberOfBatches = 3
+            }
+        }
     }
 }
