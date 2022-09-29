@@ -37,7 +37,7 @@ project {
     buildType(Dep)
 
     params {
-        param("projpar", "master")
+        param("projpar", "b5-ranch")
     }
 }
 
@@ -46,11 +46,11 @@ object Cba_4 : BuildType({
     name = "cba"
 
     artifactRules = "parsec*=>."
-    buildNumberPattern = "%build.counter%-master"
+    buildNumberPattern = "%build.counter%-b5ranch"
 
     params {
-        param("aa", "master")
-        param("env.env", "envmaster")
+        param("aa", "b5-ranch")
+        param("env.env", "envb5-ranch")
         password("parsec", "credentialsJSON:25aa9774-b33d-4ec7-9045-8ec357f54265")
     }
 
@@ -68,12 +68,12 @@ object Cba_4 : BuildType({
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "echo master"
+            scriptContent = "echo b5-ranch"
         }
         script {
             name = "New build step"
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "echo %parsec% > parsecmaster.txt"
+            scriptContent = "echo %parsec% > parsecb5-ranch.txt"
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
