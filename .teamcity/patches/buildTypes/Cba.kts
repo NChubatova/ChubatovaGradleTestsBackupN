@@ -20,7 +20,8 @@ changeBuildType(RelativeId("Cba")) {
     }
 
     vcs {
-        remove(DslContext.settingsRoot.id!!, "-:.idea", "-:manyfiles")
+        expectEntry(DslContext.settingsRoot.id!!, "-:.idea", "-:manyfiles")
+        root(DslContext.settingsRoot.id!!)
     }
 
     features {
