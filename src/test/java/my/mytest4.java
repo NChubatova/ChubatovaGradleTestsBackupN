@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest4 {
 
     @Test
-    public void test41s_change1() {
+    public void test41s_change2() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
