@@ -46,7 +46,7 @@ object Cba_4 : BuildType({
     name = "cba"
 
     artifactRules = "parsec*=>."
-    buildNumberPattern = "%build.counter%-b6-ranch"
+    buildNumberPattern = "%build.counter%-b6-ranch-change3"
 
     params {
         param("aa", "b6-ranch2")
