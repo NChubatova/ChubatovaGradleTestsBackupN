@@ -20,6 +20,6 @@ changeBuildType(RelativeId("Cba")) {
 
     vcs {
         expectEntry(DslContext.settingsRoot.id!!, "-:.idea", "-:manyfiles")
-        root(DslContext.settingsRoot.id!!)
+        root(DslContext.settingsRoot.id!!, "-:manyfiles ")
     }
 }
