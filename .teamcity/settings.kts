@@ -49,7 +49,7 @@ object Cba_4 : BuildType({
     buildNumberPattern = "%build.counter%-b6-ranch-change4"
 
     params {
-        param("aa", "b6-ranch2")
+        param("aa", "b6-ranch2change5")
         param("env.env", "envb6-ranch")
         password("parsec", "credentialsJSON:25aa9774-b33d-4ec7-9045-8ec357f54265")
     }
