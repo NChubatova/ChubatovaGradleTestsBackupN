@@ -10,6 +10,15 @@ To apply the patch, change the buildType with id = 'Cba'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Cba")) {
+    params {
+        expect {
+            param("aa", "master")
+        }
+        update {
+            param("aa", "master2")
+        }
+    }
+
     vcs {
         expectEntry(DslContext.settingsRoot.id!!, "-:.idea", "-:manyfiles")
         root(DslContext.settingsRoot.id!!)
