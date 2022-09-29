@@ -11,6 +11,6 @@ accordingly, and delete the patch script.
 changeBuildType(RelativeId("Cba")) {
     vcs {
         expectEntry(DslContext.settingsRoot.id!!, "-:.idea", "-:manyfiles")
-        root(DslContext.settingsRoot.id!!, "+:. => .", "-:.idea", "-:manyfiles")
+        root(DslContext.settingsRoot.id!!)
     }
 }
