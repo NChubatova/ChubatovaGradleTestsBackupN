@@ -36,7 +36,7 @@ project {
 }
 
 object Bld : BuildType({
-    name = "bld"
+    name = "bld2"
 
     vcs {
         root(Prf)
