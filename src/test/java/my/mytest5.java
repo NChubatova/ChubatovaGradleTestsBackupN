@@ -20,12 +20,5 @@ public class mytest5 {
     
     @Test
     public void test5() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-            //Assert.fail("fail mkk_remote2");
-
-        //};
-
     };
 }
