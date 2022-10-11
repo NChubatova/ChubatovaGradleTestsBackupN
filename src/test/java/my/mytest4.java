@@ -29,13 +29,11 @@ public class mytest4 {
 
     };
         @Test
-    public void test43() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-            //Assert.fail("fail mkk_remote2");
+    public void test43-1() {
 
-        //};
+            Assert.fail("fail mkk_remote2");
+
+
 
     };
 
