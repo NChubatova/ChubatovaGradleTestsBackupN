@@ -21,7 +21,7 @@ tasks.test {
     retry {
         maxRetries = 2
         maxFailures = 200
-        failOnPassedAfterRetry = true
+        failOnPassedAfterRetry = false
     }
 }
 
