@@ -28,14 +28,4 @@ public class mytest5 {
         //};
 
     };
-        @Test
-    public void test5() {
-
-            Assert.fail("fail mkk_remote2");
-
-
-
-    };
-
-
 }
