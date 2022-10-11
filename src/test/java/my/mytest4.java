@@ -29,7 +29,7 @@ public class mytest4 {
 
     };
         @Test
-    public void test43-1() {
+    public void test431() {
 
             Assert.fail("fail mkk_remote2");
 
