@@ -8,13 +8,13 @@ import java.lang.*;
 public class mytest4 {
 
     @Test
-    public void test41() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
+    public void test41flk() {
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
             Assert.fail("fail mk_");
 
-        //};
+        };
 
     };
     
