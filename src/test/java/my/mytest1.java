@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest1 {
 
     @Test
-    public void test1_change2pers2() {
+    public void test11() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -19,7 +19,7 @@ public class mytest1 {
     };
     
     @Test
-    public void foo2master2added() {
+    public void test12() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -29,7 +29,7 @@ public class mytest1 {
 
     };
         @Test
-    public void BaRabulka() {
+    public void test13() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
