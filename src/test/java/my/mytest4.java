@@ -8,7 +8,7 @@ import java.lang.*;
 public class mytest4 {
 
     @Test
-    public void test41flk() {
+    public void test41flk1() {
         if (System.currentTimeMillis()%2==1){
         }
         else {
@@ -19,7 +19,7 @@ public class mytest4 {
     };
     
     @Test
-    public void test42() {
+    public void test42s() {
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
@@ -29,7 +29,7 @@ public class mytest4 {
 
     };
         @Test
-    public void test432() {
+    public void test43s() {
 
             Assert.fail("fail mkk_remote2");
 
