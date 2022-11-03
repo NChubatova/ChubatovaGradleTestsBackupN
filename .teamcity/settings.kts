@@ -28,6 +28,10 @@ version = "2022.10"
 project {
 
     buildType(Requi)
+
+    params {
+        param("a", "1")
+    }
 }
 
 object Requi : BuildType({
