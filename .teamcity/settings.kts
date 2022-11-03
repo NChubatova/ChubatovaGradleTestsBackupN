@@ -27,15 +27,18 @@ version = "2022.10"
 
 project {
 
-    buildType(Requi)
+    buildType(Requirem_Requi)
 
     params {
         param("a", "1")
         param("w", "2")
     }
+
+    subProject(AnotherProj)
 }
 
-object Requi : BuildType({
+object Requirem_Requi : BuildType({
+    id("Requi")
     name = "requi"
 
     params {
@@ -52,4 +55,17 @@ object Requi : BuildType({
             dockerImage = "%par4%"
         }
     }
+})
+
+
+object AnotherProj : Project({
+    id = AbsoluteId("AnotherProj")
+    name = "another proj"
+
+    buildType(AnotherProj_Conf)
+})
+
+object AnotherProj_Conf : BuildType({
+    id = AbsoluteId("AnotherProj_Conf")
+    name = "conf"
 })
