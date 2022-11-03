@@ -31,6 +31,7 @@ project {
 
     params {
         param("a", "1")
+        param("w", "2")
     }
 }
 
