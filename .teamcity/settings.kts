@@ -48,11 +48,11 @@ object Requirem_Requi : BuildType({
     steps {
         script {
             scriptContent = "echo 1"
-            dockerImage = "%par1%"
+
         }
         script {
             scriptContent = "echo 1"
-            dockerImage = "%par4%"
+
         }
     }
 })
