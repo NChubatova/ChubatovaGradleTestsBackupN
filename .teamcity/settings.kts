@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -26,9 +27,21 @@ version = "2022.10"
 
 project {
 
+    vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
+
     buildType(Maven)
 }
 
 object Maven : BuildType({
     name = "maven"
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+    }
+})
+
+object HttpsGithubComChubatovaTigerMavenJunit : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/mavenJunit"
+    url = "https://github.com/ChubatovaTiger/mavenJunit"
+    branch = "refs/heads/main"
 })
