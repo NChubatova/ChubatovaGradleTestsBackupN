@@ -31,4 +31,8 @@ project {
 
 object Glpr : BuildType({
     name = "glpr"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
 })
