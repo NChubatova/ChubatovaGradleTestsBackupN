@@ -41,10 +41,9 @@ object Glpr : BuildType({
         pullRequests {
             vcsRootExtId = "${DslContext.settingsRoot.id}"
             provider = gitlab {
-                authType = token {
-                    token = "credentialsJSON:e350ea17-9bf3-4e6c-9650-8635fd4b0432"
-                }
             }
+            param("authenticationType", "vcsRoot")
+            param("secure:accessToken", "credentialsJSON:e350ea17-9bf3-4e6c-9650-8635fd4b0432")
         }
     }
 })
