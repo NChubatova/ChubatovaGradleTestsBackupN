@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.pullRequests
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -34,5 +35,16 @@ object Glpr : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+
+    features {
+        pullRequests {
+            vcsRootExtId = "${DslContext.settingsRoot.id}"
+            provider = gitlab {
+                authType = token {
+                    token = "credentialsJSON:e350ea17-9bf3-4e6c-9650-8635fd4b0432"
+                }
+            }
+        }
     }
 })
