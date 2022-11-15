@@ -59,7 +59,7 @@ project {
         }
         nuGetFeed {
             id = "repository-nuget-df"
-            name = "df"
+            //name = "df"
             description = ""
         }
     }
