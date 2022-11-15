@@ -43,7 +43,7 @@ project {
         youtrack {
             id = "PROJECT_EXT_4"
             displayName = "dsplname"
-            host = "http://localhost:8111"
+            //host = "http://localhost:8111"
             userName = ""
             password = ""
             projectExtIds = "TW"
