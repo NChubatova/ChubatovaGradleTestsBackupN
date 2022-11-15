@@ -35,12 +35,12 @@ project {
         sharedResource {
             id = "PROJECT_EXT_2"
             name = "resname"
-            resourceType = infinite()
+            //resourceType = infinite()
         }
         youtrack {
             id = "PROJECT_EXT_4"
             displayName = "dsplname"
-            //host = "http://localhost:8111"
+            host = "http://localhost:8111"
             userName = ""
             password = ""
             projectExtIds = "TW"
