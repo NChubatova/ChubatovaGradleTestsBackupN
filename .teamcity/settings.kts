@@ -34,7 +34,7 @@ project {
     features {
         sharedResource {
             id = "PROJECT_EXT_2"
-            name = "resname"
+            //name = "resname"
             resourceType = infinite()
         }
         youtrack {
