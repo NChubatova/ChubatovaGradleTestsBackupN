@@ -54,7 +54,7 @@ project {
             awsEnvironment = default {
                 awsRegionName = "eu-central-1"
             }
-            accessKeyID = "AKIA5JH2VERVHVMPJQJI"
+            //accessKeyID = "AKIA5JH2VERVHVMPJQJI"
             accessKey = "credentialsJSON:ac8d0774-e888-4d58-bdce-0e22b504fa48"
         }
     }
