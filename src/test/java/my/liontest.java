@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 //haha
-public class lion {
+public class liontest {
 
     @Test
     public void test41flk1() {
