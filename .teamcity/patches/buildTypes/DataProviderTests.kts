@@ -10,6 +10,11 @@ To apply the patch, change the buildType with id = 'DataProviderTests'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("DataProviderTests")) {
+    check(artifactRules == "") {
+        "Unexpected option value: artifactRules = $artifactRules"
+    }
+    artifactRules = "a.txt => ."
+
     expectSteps {
     }
     steps {
