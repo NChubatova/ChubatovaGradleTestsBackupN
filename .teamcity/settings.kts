@@ -34,82 +34,194 @@ project {
 
 
 object IntegrationTest : BuildType({
-name = "IntegrationTest"
+name = "IntegrationTest" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 
 object UmsStudio : BuildType({
-name = "UmsStudio"
+name = "UmsStudio" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 
 object DataProviderTests : BuildType({
 
     id("DataProviderTests")
-    name = "DataProviderTests"
+    name = "DataProviderTests" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object Geutebrueck : BuildType({
 
     id("Geutebrueck")
-    name = "Geutebrueck"
+    name = "Geutebrueck" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object ReSigner : BuildType({
 
     id("ReSigner")
-    name = "ReSigner"
+    name = "ReSigner" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object SetupConfigurationStudio : BuildType({
 
     id("SetupConfigurationStudio")
-    name = "SetupConfigurationStudio"
+    name = "SetupConfigurationStudio" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object SetupJournalReportingTool2 : BuildType({
 
     id("SetupJournalReportingTool2")
-    name = "SetupJournalReportingTool2"
+    name = "SetupJournalReportingTool2" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object SetupNetagent : BuildType({
 
     id("SetupNetagent")
-    name = "SetupNetagent"
+    name = "SetupNetagent" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object LookAndFeel : BuildType({
 
     id("LookAndFeel")
-    name = "LookAndFeel"
+    name = "LookAndFeel" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object NativeUms : BuildType({
 
     id("NativeUms")
-    name = "NativeUms"
+    name = "NativeUms" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object Opc : BuildType({
 
     id("Opc")
-    name = "Opc"
+    name = "Opc" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
  object PingHost : BuildType({
 
     id("PingHost")
-    name = "PingHost"
+    name = "PingHost" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object Interflex : BuildType({
 
     id("Interflex")
-    name = "Interflex"
+    name = "Interflex" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object SecuriLink_Current_UmsCurrentDeveloper_Subsystems_Ips : BuildType({
 
     id("SecuriLink_Current_UmsCurrentDeveloper_Subsystems_Ips")
-    name = "SecuriLink_Current_UmsCurrentDeveloper_Subsystems_Ips"
+    name = "SecuriLink_Current_UmsCurrentDeveloper_Subsystems_Ips" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object SymbolBibliotheken : BuildType({
 
     id("SymbolBibliotheken")
-    name = "SymbolBibliotheken"
+    name = "SymbolBibliotheken" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
 object Utilities : BuildType({
 
     id("Utilities")
-    name = "Utilities"
+    name = "Utilities" 
+     artifactRules = "a.txt => ."
+
+    steps {
+        script {
+            scriptContent = "echo a > a.txt"
+        }
+    }
 })
                     
 object Publisher : BuildType({
