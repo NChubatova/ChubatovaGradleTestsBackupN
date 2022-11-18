@@ -133,7 +133,7 @@ object Utilities : BuildType({
     name = "Utilities"
 )}
                     
-
+object Publisher : BuildType({
 triggers {
     schedule {
         id = "TRIGGER_665"
