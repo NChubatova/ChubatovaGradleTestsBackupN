@@ -3,7 +3,7 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.smbUpload
 import jetbrains.buildServer.configs.kotlin.triggers.VcsTrigger
 import jetbrains.buildServer.configs.kotlin.triggers.schedule
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
-
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 
 
 version = "2022.04"
