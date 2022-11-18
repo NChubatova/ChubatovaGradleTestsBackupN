@@ -32,7 +32,7 @@ changeBuildType(RelativeId("Publisher")) {
         trigger1.apply {
             schedulingPolicy = cron {
                 seconds = "0"
-                minutes = "/2"
+                minutes = "24"
                 hours = "14"
                 dayOfMonth = "*"
                 dayOfWeek = "?"
