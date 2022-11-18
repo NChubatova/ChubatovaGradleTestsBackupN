@@ -56,7 +56,6 @@ project {
 
 object IntegrationTest : BuildType({
 
-    id("IntegrationTest")
     name = "IntegrationTest"
 )}
 
