@@ -32,7 +32,7 @@ changeBuildType(RelativeId("Publisher")) {
         trigger1.apply {
             schedulingPolicy = cron {
                 seconds = "0"
-                minutes = "01"
+                minutes = "06"
                 hours = "14"
                 dayOfMonth = "*"
                 dayOfWeek = "?"
@@ -44,6 +44,7 @@ changeBuildType(RelativeId("Publisher")) {
             clearBuildParams()
             buildParams {
                 param("rebuildDependencies", "force")
+                param("ss", "ss")
             }
         }
     }
