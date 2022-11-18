@@ -44,7 +44,7 @@ changeBuildType(RelativeId("Publisher")) {
             clearBuildParams()
             buildParams {
                 param("rebuildDependencies", "force")
-                param("reverse.dep.*.defaultAnt", "newvalue")
+                param("reverse.dep.*.defaultAnt", "newvalue2")
                 param("ss", "reverse.dep.*.defaultAnt")
             }
         }
