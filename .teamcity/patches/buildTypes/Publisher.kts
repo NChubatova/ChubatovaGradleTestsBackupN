@@ -32,7 +32,7 @@ changeBuildType(RelativeId("Publisher")) {
         trigger1.apply {
             schedulingPolicy = cron {
                 seconds = "0"
-                minutes = "06"
+                minutes = "/2"
                 hours = "14"
                 dayOfMonth = "*"
                 dayOfWeek = "?"
@@ -44,7 +44,8 @@ changeBuildType(RelativeId("Publisher")) {
             clearBuildParams()
             buildParams {
                 param("rebuildDependencies", "force")
-                param("ss", "ss")
+                param("reverse.dep.*.defaultAnt", "newvalue")
+                param("ss", "reverse.dep.*.defaultAnt")
             }
         }
     }
