@@ -346,7 +346,7 @@ triggers {
             artifacts {
                 id = "ARTIFACT_DEPENDENCY_249"
                 cleanDestination = true
-                artifactRules = "lib/svgviewer.zip=>External-Artifacts/output/TeamCity-Artifacts/LookAndFeel"
+                artifactRules = "**/*=>External-Artifacts/output/TeamCity-Artifacts/LookAndFeel"
             }
         }
         dependency(NativeUms) {
