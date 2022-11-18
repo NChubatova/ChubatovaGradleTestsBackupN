@@ -36,7 +36,7 @@ changeBuildType(RelativeId("Publisher")) {
         trigger1.apply {
             schedulingPolicy = cron {
                 seconds = "0"
-                minutes = "35"
+                minutes = "38"
                 hours = "14"
                 dayOfMonth = "*"
                 dayOfWeek = "?"
@@ -44,6 +44,7 @@ changeBuildType(RelativeId("Publisher")) {
                 year = "*"
                 timezone = "SERVER"
             }
+            param("hour", "12")
             clearBuildParams()
             buildParams {
                 param("rebuildDependencies", "force")
