@@ -56,13 +56,10 @@ project {
 
 object IntegrationTest : BuildType({
 
-    name = "IntegrationTest"
 )}
 
 object UmsStudio : BuildType({
 
-    id("UmsStudio")
-    name = "UmsStudio"
 )}
 
 object DataProviderTests : BuildType({
