@@ -34,11 +34,11 @@ project {
 
 
 object IntegrationTest : BuildType({
-
+name = "IntegrationTest"
 })
 
 object UmsStudio : BuildType({
-
+name = "UmsStudio"
 })
 
 object DataProviderTests : BuildType({
