@@ -2,7 +2,9 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.triggers.ScheduleTrigger
+import jetbrains.buildServer.configs.kotlin.triggers.VcsTrigger
 import jetbrains.buildServer.configs.kotlin.triggers.schedule
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -49,6 +51,18 @@ changeBuildType(RelativeId("Publisher")) {
             buildParams {
                 param("rebuildDependencies", "force")
             }
+        }
+        val trigger2 = find<VcsTrigger> {
+            vcs {
+                quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_DEFAULT
+                triggerRules = "-:project-base/**/*"
+                watchChangesInDependencies = true
+            }
+        }
+        trigger2.apply {
+            quietPeriodMode = VcsTrigger.QuietPeriodMode.DO_NOT_USE
+            branchFilter = ""
+
         }
     }
 }
