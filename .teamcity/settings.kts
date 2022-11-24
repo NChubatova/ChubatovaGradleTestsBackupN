@@ -33,10 +33,13 @@ project {
 
     features {
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_7"
+            id = "PROJECT_EXT_8"
             profileId = "amazon-1"
             agentPoolId = "-2"
-            instanceType = "t2.micro"
+            name = "image"
+            vpcSubnetId = "subnet-043178c302cabfe37"
+            keyPairName = "chubatova-amazon-ireland"
+            instanceType = "t2.medium"
             securityGroups = listOf("sg-22baaa56")
             userScript = """
                 #!/bin/bash
