@@ -63,7 +63,7 @@ project {
             securityGroups = listOf("sg-072d8bfa0626ea2a6")
             userScript = """
                 #!/bin/bash
-                sudo echo a  > /home/ubuntu/a.txt
+                sudo echo a  > /home/ubuntu/b.txt
             """.trimIndent()
             source = Source("ami-0bac84ec5a4017f06")
         }
