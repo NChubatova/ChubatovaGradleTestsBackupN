@@ -45,7 +45,7 @@ project {
             instanceTags = mapOf(
                 "a" to "b"
             )
-            maxInstancesCount = 1
+            maxInstancesCount = 2
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = "1")
         }
