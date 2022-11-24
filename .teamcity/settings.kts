@@ -33,21 +33,18 @@ project {
 
     features {
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_3"
+            id = "PROJECT_EXT_4"
             profileId = "amazon-1"
             agentPoolId = "-2"
-            name = "chubatovaTmplCustomized"
-            vpcSubnetId = "subnet-01bcdc0a6893cb144"
+            name = "chubatovaEc2Tmpl"
+            vpcSubnetId = "__TEMPLATE__VALUE__"
             iamProfile = "__TEMPLATE__VALUE__"
             keyPairName = "__TEMPLATE__VALUE__"
-            instanceType = "__TEMPLATE__VALUE__"
-            securityGroups = listOf("sg-019d3311e9ccc333e")
+            instanceType = "t2.medium"
             instanceTags = mapOf(
-                "b" to "c"
+                "a" to "1"
             )
-            maxInstancesCount = 3
             customizeLaunchTemplate = true
-            launchTemplateCustomAmi = "ami-01056737f8dd61786"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
