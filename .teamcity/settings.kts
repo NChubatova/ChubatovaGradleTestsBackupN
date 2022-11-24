@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 
@@ -31,6 +32,18 @@ project {
     buildType(Cmd)
 
     features {
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_7"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            instanceType = "t2.micro"
+            securityGroups = listOf("sg-22baaa56")
+            userScript = """
+                #!/bin/bash
+                sudo echo a  > /home/ubuntu/a.txt
+            """.trimIndent()
+            source = Source("ami-0bac84ec5a4017f06")
+        }
         amazonEC2CloudProfile {
             id = "amazon-1"
             name = "ec2"
