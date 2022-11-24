@@ -42,7 +42,7 @@ project {
             keyPairName = "__TEMPLATE__VALUE__"
             instanceType = "__TEMPLATE__VALUE__"
             userScript = "echo a > a.txt"
-            maxInstancesCount = 2
+            maxInstancesCount = 3
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = "1")
         }
