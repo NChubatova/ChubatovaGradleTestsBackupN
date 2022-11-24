@@ -25,7 +25,7 @@
         <param name="profileId" value="amazon-1" />
         <param name="security-group-ids" value="sg-072d8bfa0626ea2a6," />
         <param name="source-id" value="lt-0b5689014f6b6ca22" />
-        <param name="spot-instance-price" value="0" />
+        <param name="spot-instance-price" value="9" />
         <param name="subnet-id" value="subnet-043178c302cabfe37" />
         <param name="template-ami" value="ami-0a25857eeda24f6f0" />
         <param name="use-spot-instances" value="true" />
