@@ -28,6 +28,8 @@ version = "2022.10"
 
 project {
 
+    buildType(Cmd)
+
     features {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_3"
@@ -59,3 +61,7 @@ project {
         }
     }
 }
+
+object Cmd : BuildType({
+    name = "cmd"
+})
