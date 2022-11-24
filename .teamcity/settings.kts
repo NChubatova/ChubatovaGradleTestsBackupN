@@ -33,25 +33,13 @@ project {
 
     features {
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_4"
+            id = "PROJECT_EXT_5"
             profileId = "amazon-1"
             agentPoolId = "-2"
-            name = "chubatovaEc2Tmpl"
-            vpcSubnetId = "subnet-043178c302cabfe37"
-            iamProfile = "chubatovaEc2role"
+            vpcSubnetId = "__TEMPLATE__VALUE__"
+            iamProfile = "__TEMPLATE__VALUE__"
             keyPairName = "__TEMPLATE__VALUE__"
-            instanceType = "t2.medium"
-            useSpotInstances = true
-            spotInstanceBidPrice = 1.0
-            instanceTags = mapOf(
-                "a" to "1",
-                "b" to "2",
-                "c" to "3",
-                "d" to "4",
-                "e" to "5",
-                "f" to "6",
-                "g" to "7"
-            )
+            instanceType = "__TEMPLATE__VALUE__"
             customizeLaunchTemplate = true
             launchTemplateCustomAmi = "ami-028771ab2b196ab0c"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
