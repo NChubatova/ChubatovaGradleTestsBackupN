@@ -41,7 +41,10 @@ project {
             iamProfile = "__TEMPLATE__VALUE__"
             keyPairName = "__TEMPLATE__VALUE__"
             instanceType = "__TEMPLATE__VALUE__"
-            userScript = "echo a > a.txt"
+            userScript = """
+                #!/bin/bash
+                echo a  > /home/ubuntu/a.txt
+            """.trimIndent()
             maxInstancesCount = 3
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = "1")
