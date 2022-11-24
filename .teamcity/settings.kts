@@ -38,11 +38,13 @@ project {
             agentPoolId = "-2"
             name = "chubatovaEc2Tmpl"
             vpcSubnetId = "__TEMPLATE__VALUE__"
-            iamProfile = "__TEMPLATE__VALUE__"
+            iamProfile = "chubatovaEc2role"
             keyPairName = "__TEMPLATE__VALUE__"
             instanceType = "t2.medium"
             instanceTags = mapOf(
-                "a" to "1"
+                "a" to "1",
+                "b" to "2",
+                "c" to "3"
             )
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
