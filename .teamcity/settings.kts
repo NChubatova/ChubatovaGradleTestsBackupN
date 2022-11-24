@@ -48,9 +48,12 @@ project {
                 sudo echo HelloQa
                 echo HelloQa
             """.trimIndent()
+            instanceTags = mapOf(
+                "b" to "c"
+            )
             maxInstancesCount = 3
             customizeLaunchTemplate = true
-            source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = "1")
+            source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
             id = "amazon-1"
