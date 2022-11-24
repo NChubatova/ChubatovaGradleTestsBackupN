@@ -33,6 +33,26 @@ project {
 
     features {
         amazonEC2CloudImage {
+            id = "PROJECT_EXT_10"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            name = "tmpl"
+            vpcSubnetId = "subnet-043178c302cabfe37"
+            iamProfile = "__TEMPLATE__VALUE__"
+            keyPairName = "__TEMPLATE__VALUE__"
+            instanceType = "__TEMPLATE__VALUE__"
+            securityGroups = listOf("sg-072d8bfa0626ea2a6")
+            userScript = """
+                #!/bin/bash
+                sudo echo a  > /home/ubuntu/a.txt
+            """.trimIndent()
+            instanceTags = mapOf(
+                "Name" to "ChubatovaFromTemplate"
+            )
+            customizeLaunchTemplate = true
+            source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
+        }
+        amazonEC2CloudImage {
             id = "PROJECT_EXT_8"
             profileId = "amazon-1"
             agentPoolId = "-2"
@@ -46,22 +66,6 @@ project {
                 sudo echo a  > /home/ubuntu/a.txt
             """.trimIndent()
             source = Source("ami-0bac84ec5a4017f06")
-        }
-        amazonEC2CloudImage {
-            id = "PROJECT_EXT_9"
-            profileId = "amazon-1"
-            agentPoolId = "-2"
-            vpcSubnetId = "subnet-043178c302cabfe37"
-            iamProfile = "__TEMPLATE__VALUE__"
-            keyPairName = "__TEMPLATE__VALUE__"
-            instanceType = "__TEMPLATE__VALUE__"
-            securityGroups = listOf("sg-072d8bfa0626ea2a6")
-            userScript = """
-                #!/bin/bash
-                sudo echo a  > /home/ubuntu/a.txt
-            """.trimIndent()
-            customizeLaunchTemplate = true
-            source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
             id = "amazon-1"
