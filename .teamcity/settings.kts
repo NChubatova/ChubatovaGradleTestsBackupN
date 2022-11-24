@@ -46,6 +46,7 @@ project {
                 #!/bin/bash
                 sudo echo a  > /home/ubuntu/b.txt
             """.trimIndent()
+            useSpotInstances = true
             instanceTags = mapOf(
                 "Name" to "ChubatovaFromTemplate2",
                 "tag2" to "2"
