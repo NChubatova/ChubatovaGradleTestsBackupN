@@ -44,7 +44,9 @@ project {
             instanceTags = mapOf(
                 "a" to "1",
                 "b" to "2",
-                "c" to "3"
+                "c" to "3",
+                "d" to "5",
+                "e" to "5"
             )
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
