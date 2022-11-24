@@ -14,11 +14,22 @@
     </extension>
     <extension id="PROJECT_EXT_11" type="CloudImage">
       <parameters>
+        <param name="agent_pool_id" value="2" />
         <param name="amazon-id" value="lt-0b5689014f6b6ca22" />
+        <param name="customize-launch-template" value="true" />
+        <param name="iam-instance-profile" value="chubatovaEc2role" />
         <param name="image-instances-limit" value="2" />
-        <param name="launch-template-version" value="Default" />
+        <param name="instance-type" value="t2.medium" />
+        <param name="key-pair-name" value="chubatova-amazon-ireland" />
+        <param name="launch-template-version" value="Latest" />
         <param name="profileId" value="amazon-1" />
+        <param name="security-group-ids" value="sg-072d8bfa0626ea2a6," />
         <param name="source-id" value="lt-0b5689014f6b6ca22" />
+        <param name="spot-instance-price" value="0" />
+        <param name="subnet-id" value="subnet-043178c302cabfe37" />
+        <param name="template-ami" value="ami-0a25857eeda24f6f0" />
+        <param name="use-spot-instances" value="true" />
+        <param name="user-tags" value="a=1,b=2,c=3" />
       </parameters>
     </extension>
     <extension id="PROJECT_EXT_8" type="CloudImage">
