@@ -37,10 +37,11 @@ project {
             profileId = "amazon-1"
             agentPoolId = "-2"
             name = "chubatovaEc2Tmpl"
-            vpcSubnetId = "__TEMPLATE__VALUE__"
+            vpcSubnetId = "subnet-043178c302cabfe37"
             iamProfile = "chubatovaEc2role"
             keyPairName = "__TEMPLATE__VALUE__"
             instanceType = "t2.medium"
+            useSpotInstances = true
             instanceTags = mapOf(
                 "a" to "1",
                 "b" to "2",
@@ -51,6 +52,7 @@ project {
                 "g" to "7"
             )
             customizeLaunchTemplate = true
+            launchTemplateCustomAmi = "ami-01056737f8dd61786"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
