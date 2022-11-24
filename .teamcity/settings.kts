@@ -36,15 +36,6 @@ project {
             id = "PROJECT_EXT_5"
             profileId = "amazon-1"
             agentPoolId = "-2"
-            vpcSubnetId = "__TEMPLATE__VALUE__"
-            iamProfile = "__TEMPLATE__VALUE__"
-            keyPairName = "__TEMPLATE__VALUE__"
-            instanceType = "__TEMPLATE__VALUE__"
-            instanceTags = mapOf(
-                "Name" to "ChubatovaChangedName"
-            )
-            customizeLaunchTemplate = true
-            launchTemplateCustomAmi = "ami-028771ab2b196ab0c"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
