@@ -45,8 +45,10 @@ project {
                 "a" to "1",
                 "b" to "2",
                 "c" to "3",
-                "d" to "5",
-                "e" to "5"
+                "d" to "4",
+                "e" to "5",
+                "f" to "6",
+                "g" to "7"
             )
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
