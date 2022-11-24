@@ -33,14 +33,10 @@ project {
 
     features {
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_10"
+            id = "PROJECT_EXT_11"
             profileId = "amazon-1"
-            agentPoolId = "-2"
-            name = "tmpl"
-
-
-
-           source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
+            maxInstancesCount = 2
+            source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_8"
