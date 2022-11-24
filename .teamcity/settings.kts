@@ -47,7 +47,8 @@ project {
                 sudo echo a  > /home/ubuntu/b.txt
             """.trimIndent()
             instanceTags = mapOf(
-                "Name" to "ChubatovaFromTemplate2"
+                "Name" to "ChubatovaFromTemplate2",
+                "tag2" to "2"
             )
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
