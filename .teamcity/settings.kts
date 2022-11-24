@@ -45,6 +45,8 @@ project {
                 #!/bin/bash
                 sudo echo a  > /home/ubuntu/a.txt
                 sudo mkdir /usr/bin/hey
+                sudo echo HelloQa
+                echo HelloQa
             """.trimIndent()
             maxInstancesCount = 3
             customizeLaunchTemplate = true
