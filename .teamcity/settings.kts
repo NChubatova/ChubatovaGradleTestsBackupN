@@ -46,7 +46,7 @@ project {
             vpcSubnetId = "subnet-043178c302cabfe37"
             keyPairName = "chubatova-amazon-ireland"
             instanceType = "t2.medium"
-            securityGroups = listOf("sg-22baaa56")
+            securityGroups = listOf("sg-072d8bfa0626ea2a6")
             userScript = """
                 #!/bin/bash
                 sudo echo a  > /home/ubuntu/a.txt
