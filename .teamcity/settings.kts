@@ -42,6 +42,7 @@ project {
             keyPairName = "__TEMPLATE__VALUE__"
             instanceType = "t2.medium"
             useSpotInstances = true
+            spotInstanceBidPrice = 1.0
             instanceTags = mapOf(
                 "a" to "1",
                 "b" to "2",
@@ -52,7 +53,7 @@ project {
                 "g" to "7"
             )
             customizeLaunchTemplate = true
-            launchTemplateCustomAmi = "ami-01056737f8dd61786"
+            launchTemplateCustomAmi = "ami-028771ab2b196ab0c"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
