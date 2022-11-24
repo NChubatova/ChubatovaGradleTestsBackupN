@@ -43,7 +43,8 @@ project {
             instanceType = "__TEMPLATE__VALUE__"
             userScript = """
                 #!/bin/bash
-                echo a  > /home/ubuntu/a.txt
+                sudo echo a  > /home/ubuntu/a.txt
+                sudo mkdir /usr/bin/hey
             """.trimIndent()
             maxInstancesCount = 3
             customizeLaunchTemplate = true
