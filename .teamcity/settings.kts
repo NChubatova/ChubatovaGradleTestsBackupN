@@ -37,22 +37,17 @@ project {
             profileId = "amazon-1"
             agentPoolId = "-2"
             name = "chubatovaTmplCustomized"
-            vpcSubnetId = "__TEMPLATE__VALUE__"
+            vpcSubnetId = "subnet-01bcdc0a6893cb144"
             iamProfile = "__TEMPLATE__VALUE__"
             keyPairName = "__TEMPLATE__VALUE__"
             instanceType = "__TEMPLATE__VALUE__"
-            userScript = """
-                #!/bin/bash
-                sudo echo a  > /home/ubuntu/a.txt
-                sudo mkdir /usr/bin/hey
-                sudo echo HelloQa
-                echo HelloQa
-            """.trimIndent()
+            securityGroups = listOf("sg-019d3311e9ccc333e")
             instanceTags = mapOf(
                 "b" to "c"
             )
             maxInstancesCount = 3
             customizeLaunchTemplate = true
+            launchTemplateCustomAmi = "ami-01056737f8dd61786"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
