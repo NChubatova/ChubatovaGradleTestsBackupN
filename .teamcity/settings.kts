@@ -72,7 +72,7 @@ project {
             name = "ec2"
             terminateIdleMinutes = 30
             region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
-            maxInstancesCount = 3
+            maxInstancesCount = 4
             authType = accessKey {
                 keyId = "credentialsJSON:0105dcd1-c6cc-45f5-819d-3b631d1306d1"
                 secretKey = "credentialsJSON:a050fd09-7abe-4064-96cf-7e6ff90f9671"
