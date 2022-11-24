@@ -38,6 +38,21 @@ project {
             agentPoolId = "-2"
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_6"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            name = "img"
+            vpcSubnetId = "subnet-043178c302cabfe37"
+            keyPairName = "chubatova-amazon-ireland"
+            instanceType = "t2.medium"
+            securityGroups = listOf("sg-22baaa56")
+            userScript = """
+                #!/bin/bash
+                sudo echo a  > /home/ubuntu/a.txt
+            """.trimIndent()
+            source = Source("ami-0a25857eeda24f6f0")
+        }
         amazonEC2CloudProfile {
             id = "amazon-1"
             name = "ec2"
