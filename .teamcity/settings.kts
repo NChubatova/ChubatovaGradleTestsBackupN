@@ -39,12 +39,9 @@ project {
             name = "chubatovaTmplCustomized"
             vpcSubnetId = "__TEMPLATE__VALUE__"
             iamProfile = "__TEMPLATE__VALUE__"
-            keyPairName = ""
-            instanceType = "t2.medium"
+            keyPairName = "__TEMPLATE__VALUE__"
+            instanceType = "__TEMPLATE__VALUE__"
             userScript = "echo a > a.txt"
-            instanceTags = mapOf(
-                "a" to "b"
-            )
             maxInstancesCount = 2
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = "1")
