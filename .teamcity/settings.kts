@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 
 /*
@@ -28,6 +29,23 @@ version = "2022.10"
 project {
 
     features {
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_3"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            name = "chubatovaTmplCustomized"
+            vpcSubnetId = "__TEMPLATE__VALUE__"
+            iamProfile = "__TEMPLATE__VALUE__"
+            keyPairName = ""
+            instanceType = "t2.medium"
+            userScript = "echo a > a.txt"
+            instanceTags = mapOf(
+                "a" to "b"
+            )
+            maxInstancesCount = 1
+            customizeLaunchTemplate = true
+            source = LaunchTemplate(templateId = "lt-0b5689014f6b6ca22", version = "1")
+        }
         amazonEC2CloudProfile {
             id = "amazon-1"
             name = "ec2"
