@@ -29,7 +29,7 @@
         <param name="subnet-id" value="subnet-043178c302cabfe37" />
         <param name="template-ami" value="ami-0a25857eeda24f6f0" />
         <param name="use-spot-instances" value="true" />
-        <param name="user-tags" value="a=1,b=2,c=3" />
+        <param name="user-tags" value="a=1,b=2,c=4" />
       </parameters>
     </extension>
     <extension id="PROJECT_EXT_8" type="CloudImage">
