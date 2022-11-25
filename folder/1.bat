@@ -1,1 +1,1 @@
-echo qsdдklgksd
+echo qsdдkl
