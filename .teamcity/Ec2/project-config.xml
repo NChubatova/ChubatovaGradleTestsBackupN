@@ -28,9 +28,9 @@
         <param name="spot-instance-price" value="9" />
         <param name="subnet-id" value="subnet-043178c302cabfe37" />
         <param name="template-ami" value="ami-0a25857eeda24f6f0" />
-        <param name="use-spot-instances" value="true" />
         <param name="user-script"><![CDATA[#!/bin/bash
-sudo echo a  > /home/ubuntu/c.txt]]></param>
+sudo echo a  > /home/ubuntu/c.txt
+sudo echo a  > /home/ubuntu/d.txt]]></param>
         <param name="user-tags" value="a=1,b=2,c=4" />
       </parameters>
     </extension>
