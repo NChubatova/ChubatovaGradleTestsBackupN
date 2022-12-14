@@ -28,10 +28,11 @@ version = "2022.10"
 
 project {
 
-    buildType(Gradle)
+    buildType(Gradle_3)
 }
 
-object Gradle : BuildType({
+object Gradle_3 : BuildType({
+    id("Gradle")
     name = "gradle"
 
     vcs {
@@ -44,10 +45,10 @@ object Gradle : BuildType({
             gradleWrapperPath = ""
         }
     }
-        features {
+
+    features {
         parallelTests {
             numberOfBatches = 2
         }
     }
-
 })
