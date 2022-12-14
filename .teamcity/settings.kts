@@ -44,10 +44,6 @@ object Gradle : BuildType({
             gradleWrapperPath = ""
         }
     }
-        features {
-        parallelTests {
-            numberOfBatches = 2
-        }
-    }
+
 
 })
