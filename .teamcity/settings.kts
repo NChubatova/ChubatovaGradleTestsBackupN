@@ -45,9 +45,4 @@ object Gradle : BuildType({
         }
     }
 
-    features {
-        parallelTests {
-            numberOfBatches = 2
-        }
-    }
 })
