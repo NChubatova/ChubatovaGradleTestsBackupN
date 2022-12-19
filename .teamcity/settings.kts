@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -39,9 +40,21 @@ object Build1 : BuildType({
 object Project2 : Project({
     name = "project2"
 
+    vcsRoot(Project2_HttpsGithubComChubatovaTigerVsMrPr2)
+
     buildType(Build2)
 })
 
 object Build2 : BuildType({
     name = "build2"
+})
+
+object Project2_HttpsGithubComChubatovaTigerVsMrPr2 : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/vsMrPr2"
+    url = "https://github.com/ChubatovaTiger/vsMrPr2"
+    branch = "refs/heads/main"
+    authMethod = password {
+        userName = "ChubatovaTiger"
+        password = "credentialsJSON:96e0afaf-d27d-465e-9f33-7d8408c47b6c"
+    }
 })
