@@ -27,8 +27,15 @@ version = "2022.10"
 project {
 
     buildType(Build1)
+
+    subProject(Project2)
 }
 
 object Build1 : BuildType({
     name = "build1"
+})
+
+
+object Project2 : Project({
+    name = "project2"
 })
