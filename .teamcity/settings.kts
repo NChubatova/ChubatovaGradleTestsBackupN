@@ -38,4 +38,10 @@ object Build1 : BuildType({
 
 object Project2 : Project({
     name = "project2"
+
+    buildType(Build2)
+})
+
+object Build2 : BuildType({
+    name = "build2"
 })
