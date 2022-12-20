@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 //haha
-public class liontest2 {
+public class liontest2FxDel {
 
     @Test
     public void test41flk1() {
@@ -31,7 +31,7 @@ public class liontest2 {
         @Test
     public void test43s() {
 
-            Assert.fail("fail FxAdd");
+            Assert.fail("fail FxChange");
 
 
 
