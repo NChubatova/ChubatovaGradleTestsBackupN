@@ -31,7 +31,7 @@ public class fuchs {
         @Test
     public void test43s() {
 
-            Assert.fail("fail fuchs1");
+            Assert.fail("fail fuchs3");
 
 
 
