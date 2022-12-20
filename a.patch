@@ -1,0 +1,13 @@
+diff --git a/src/test/java/my/liontestFxDel.java b/src/test/java/my/liontestFxDel.java
+index a5c00d4b6..d8f20146f 100644
+--- a/src/test/java/my/liontestFxDel.java
++++ b/src/test/java/my/liontestFxDel.java
+@@ -31,7 +31,7 @@ public class liontestFxDel {
+         @Test
+     public void test43s() {
+ 
+-            Assert.fail("fail FxChange2");
++            Assert.fail("fail FxChange3");
+ 
+ 
+ 
