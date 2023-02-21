@@ -38,7 +38,6 @@ project {
     buildType(Build1)
     buildType(Build2)
     buildType(Consumer_1)
-    buildType(Build1copy)
 
     params {
         param("teamcity.internal.feature.build.cache.enabled", "true")
@@ -92,36 +91,6 @@ object Build1 : BuildType({
                 filestocache1
                 filestocache2
             """.trimIndent()
-        }
-    }
-})
-
-object Build1copy : BuildType({
-    name = "build1copy"
-
-    vcs {
-        cleanCheckout = true
-    }
-
-    steps {
-        script {
-            scriptContent = """
-                mkdir filestocache2
-                fsutil file createnew filestocache2/file%build.counter% 2000000000
-                dir
-            """.trimIndent()
-        }
-        script {
-            scriptContent = "echo contentCache > art.txt"
-        }
-    }
-
-    features {
-        buildCache {
-            name = "mycaches"
-            use = false
-            publishOnlyChanged = false
-            rules = "filestocache2"
         }
     }
 })
