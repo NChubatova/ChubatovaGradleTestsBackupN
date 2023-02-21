@@ -242,6 +242,10 @@ object Consumer_1 : BuildType({
 object ServiceMessage : BuildType({
     name = "serviceMessage"
 
+    params {
+        param("system.maven.repo.local", "%system.agent.work.dir%/.m2")
+    }
+
     vcs {
         root(HttpsGithubComChubatovaTigerMavenJunit)
 
