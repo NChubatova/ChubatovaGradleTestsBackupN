@@ -44,6 +44,7 @@ project {
     }
 
     subProject(Maven)
+    subProject(Supr1)
 }
 
 object Build1 : BuildType({
@@ -262,4 +263,9 @@ object ServiceMessage : BuildType({
             """.trimIndent()
         }
     }
+})
+
+
+object Supr1 : Project({
+    name = "supr1"
 })
