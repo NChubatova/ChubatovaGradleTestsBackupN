@@ -34,7 +34,6 @@ project {
     vcsRoot(GitHub)
     vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
 
-    buildType(Suproject1)
     buildType(Build1)
     buildType(Build2)
     buildType(Consumer_1)
@@ -158,10 +157,6 @@ object Consumer_1 : BuildType({
             rules = "filestocache"
         }
     }
-})
-
-object Suproject1 : BuildType({
-    name = "suproject1"
 })
 
 object GitHub : GitVcsRoot({
