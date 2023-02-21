@@ -256,7 +256,7 @@ object ServiceMessage : BuildType({
     steps {
         maven {
             goals = "clean test"
-            runnerArgs = "-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%"
+            runnerArgs = """-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%\.m2"""
             localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
         }
         script {
