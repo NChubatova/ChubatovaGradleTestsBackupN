@@ -254,6 +254,7 @@ object ServiceMessage : BuildType({
             runnerArgs = "-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%"
         }
         script {
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             scriptContent = "dir .m2"
         }
     }
