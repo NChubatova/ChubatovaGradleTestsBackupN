@@ -269,6 +269,11 @@ object ServiceMessage : BuildType({
 
 object Supr1 : Project({
     name = "supr1"
+})
+
+
+object Supr2 : Project({
+    name = "supr2"
 
     buildType(Supr1_Buildc1)
 })
@@ -289,9 +294,4 @@ object Supr1_Buildc1 : BuildType({
             rules = "1.txt"
         }
     }
-})
-
-
-object Supr2 : Project({
-    name = "supr2"
 })
