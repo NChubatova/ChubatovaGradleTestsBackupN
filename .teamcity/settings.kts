@@ -39,6 +39,7 @@ project {
     buildType(Consumer_1)
 
     params {
+        param("teamcity.buildCache.limit.internalBuildCacheSizeMb", "1000")
         param("teamcity.internal.feature.build.cache.enabled", "true")
         password("xs", "credentialsJSON:6e3ea57e-bd74-4743-8910-00bc691fe41d")
     }
