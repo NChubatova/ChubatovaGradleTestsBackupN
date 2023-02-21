@@ -73,6 +73,16 @@ object Build1 : BuildType({
             """.trimIndent()
         }
         script {
+            name = "small (1)"
+            scriptContent = """
+                mkdir filestocache1
+                fsutil file createnew filestocache1/file1%build.counter% 200
+                mkdir filestocache2
+                fsutil file createnew filestocache2/file2%build.counter% 200
+                dir
+            """.trimIndent()
+        }
+        script {
             enabled = false
             scriptContent = "dir filestocache"
         }
