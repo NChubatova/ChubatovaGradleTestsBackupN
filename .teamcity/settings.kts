@@ -234,13 +234,10 @@ object ConsumeFromserviceMessage : BuildType({
     features {
         buildCache {
             enabled = false
-            name = "mycaches"
-            use = false
+            name = "m2"
+            publish = false
             publishOnlyChanged = false
-            rules = """
-                filestocache1
-                filestocache2
-            """.trimIndent()
+            rules = "lkjlkjlkj"
         }
     }
 })
