@@ -148,7 +148,7 @@ object Consumer_1 : BuildType({
             """.trimIndent()
         }
         script {
-            scriptContent = "dir filestocache"
+            scriptContent = "dir"
         }
     }
 
