@@ -248,14 +248,6 @@ object ServiceMessage : BuildType({
 
     steps {
         script {
-            enabled = false
-            scriptContent = """
-                mkdir filestocache
-                fsutil file createnew filestocache/file%build.counter% 2000000000
-                dir
-            """.trimIndent()
-        }
-        script {
             name = "small"
             enabled = false
             scriptContent = """
