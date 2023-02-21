@@ -59,7 +59,6 @@ object Build1 : BuildType({
 
     steps {
         script {
-            enabled = false
             scriptContent = """
                 mkdir filestocache
                 fsutil file createnew filestocache/file%build.counter% 2000000000
