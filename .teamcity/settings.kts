@@ -63,10 +63,12 @@ object Build1 : BuildType({
             """.trimIndent()
         }
         script {
-            name = "New build step"
+            name = "small"
             scriptContent = """
-                mkdir filestocache
-                fsutil file createnew filestocache/file%build.counter% 2000000000
+                mkdir filestocache1
+                fsutil file createnew filestocache1/file1%build.counter% 200
+                mkdir filestocache2
+                fsutil file createnew filestocache2/file2%build.counter% 200
                 dir
             """.trimIndent()
         }
