@@ -83,7 +83,10 @@ object Build1 : BuildType({
             name = "mycaches"
             use = false
             publishOnlyChanged = false
-            rules = "filestocache"
+            rules = """
+                filestocache1
+                filestocache2
+            """.trimIndent()
         }
     }
 })
