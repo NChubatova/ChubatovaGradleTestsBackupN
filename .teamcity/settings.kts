@@ -64,6 +64,7 @@ object Build1 : BuildType({
         }
         script {
             name = "small"
+            enabled = false
             scriptContent = """
                 mkdir filestocache1
                 fsutil file createnew filestocache1/file1%build.counter% 200
