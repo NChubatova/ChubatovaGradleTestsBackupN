@@ -253,11 +253,6 @@ object ServiceMessage : BuildType({
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
-        maven {
-            goals = "clean test"
-            runnerArgs = "-Dmaven.test.failure.ignore=true"
-            jvmArgs = "-Dmaven.repo.local=%teamcity.build.checkoutDir%"
-        }
     }
 
     features {
