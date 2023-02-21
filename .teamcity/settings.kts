@@ -45,6 +45,7 @@ project {
 
     subProject(Maven)
     subProject(Supr1)
+    subProject(Supr2)
 }
 
 object Build1 : BuildType({
@@ -268,4 +269,9 @@ object ServiceMessage : BuildType({
 
 object Supr1 : Project({
     name = "supr1"
+})
+
+
+object Supr2 : Project({
+    name = "supr2"
 })
