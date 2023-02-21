@@ -34,7 +34,6 @@ project {
     vcsRoot(GitHub)
     vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
 
-    buildType(CleanTest)
     buildType(Build1)
     buildType(Build2)
     buildType(Consumer_1)
@@ -119,28 +118,6 @@ object Build2 : BuildType({
             name = "chubatovacache"
             use = false
             rules = "filestocache2"
-        }
-    }
-})
-
-object CleanTest : BuildType({
-    name = "cleanTest"
-
-    vcs {
-        root(DslContext.settingsRoot)
-    }
-
-    steps {
-        script {
-            scriptContent = "echo a > a%build.counter%.txt"
-        }
-    }
-
-    features {
-        buildCache {
-            name = "cleantest"
-            publishOnlyChanged = false
-            rules = """C:\runnginx.bat"""
         }
     }
 })
