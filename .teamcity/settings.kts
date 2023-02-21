@@ -269,6 +269,12 @@ object ServiceMessage : BuildType({
 
 object Supr1 : Project({
     name = "supr1"
+
+    buildType(Supr1_Buildc1)
+})
+
+object Supr1_Buildc1 : BuildType({
+    name = "buildc1"
 })
 
 
