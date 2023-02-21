@@ -275,6 +275,12 @@ object Supr1 : Project({
 
 object Supr1_Buildc1 : BuildType({
     name = "buildc1"
+
+    steps {
+        script {
+            scriptContent = "echo a > 1.txt"
+        }
+    }
 })
 
 
