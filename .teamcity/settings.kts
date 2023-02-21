@@ -241,8 +241,6 @@ object ServiceMessage : BuildType({
     name = "serviceMessage"
 
     vcs {
-        root(GitHub)
-
         cleanCheckout = true
     }
 
