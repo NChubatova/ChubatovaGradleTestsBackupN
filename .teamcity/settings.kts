@@ -40,7 +40,7 @@ project {
 
     params {
         param("teamcity.internal.feature.build.cache.enabled", "true")
-        password("xs", "credentialsJSON:68318b42-2f72-46e1-90cb-59e8394e3d59")
+        password("xs", "credentialsJSON:6e3ea57e-bd74-4743-8910-00bc691fe41d")
     }
 }
 
