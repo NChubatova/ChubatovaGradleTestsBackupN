@@ -38,7 +38,6 @@ project {
     buildType(CleanTestdownlo)
     buildType(Build1)
     buildType(Build2)
-    buildType(ConsumeFromserviceMessage)
     buildType(Consumer_1)
     buildType(Build1copy)
 
@@ -205,42 +204,6 @@ object CleanTestdownlo : BuildType({
     }
 })
 
-object ConsumeFromserviceMessage : BuildType({
-    name = "consumeFromserviceMessage"
-
-    params {
-        param("system.maven.repo.local", "%system.agent.work.dir%")
-    }
-
-    vcs {
-        root(HttpsGithubComChubatovaTigerMavenJunit)
-
-        cleanCheckout = true
-    }
-
-    steps {
-        script {
-            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "dir .m2"
-        }
-        script {
-            name = "publish"
-            enabled = false
-            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = """echo "##teamcity[publishBuildCache cacheName='.m2' path='.m2']""""
-        }
-    }
-
-    features {
-        buildCache {
-            name = "m2"
-            publish = false
-            publishOnlyChanged = false
-            rules = "lkjlkjlkj"
-        }
-    }
-})
-
 object Consumer_1 : BuildType({
     id("Consumer")
     name = "consumer"
@@ -300,6 +263,43 @@ object Maven : Project({
     name = "maven"
 
     buildType(ServiceMessage)
+    buildType(ConsumeFromserviceMessage)
+})
+
+object ConsumeFromserviceMessage : BuildType({
+    name = "consumeFromserviceMessage"
+
+    params {
+        param("system.maven.repo.local", "%system.agent.work.dir%")
+    }
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+
+        cleanCheckout = true
+    }
+
+    steps {
+        script {
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = "dir .m2"
+        }
+        script {
+            name = "publish"
+            enabled = false
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """echo "##teamcity[publishBuildCache cacheName='.m2' path='.m2']""""
+        }
+    }
+
+    features {
+        buildCache {
+            name = "m2"
+            publish = false
+            publishOnlyChanged = false
+            rules = "lkjlkjlkj"
+        }
+    }
 })
 
 object ServiceMessage : BuildType({
