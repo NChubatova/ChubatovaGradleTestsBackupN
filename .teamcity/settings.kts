@@ -63,7 +63,7 @@ object Build1 : BuildType({
                 mkdir filestocache1
                 fsutil file createnew filestocache1/file%build.counter% 20000000
                 mkdir filestocache2
-                fsutil file createnew filestocache2/file%build.counter% 2000000000
+                fsutil file createnew filestocache2/file%build.counter% 200000000
                 dir
             """.trimIndent()
         }
