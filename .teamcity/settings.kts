@@ -220,7 +220,10 @@ object ConsumeFromserviceMessage : BuildType({
     steps {
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "dir"
+            scriptContent = """
+                dir
+                dir .m2
+            """.trimIndent()
         }
         script {
             name = "publish"
