@@ -257,6 +257,7 @@ object ServiceMessage : BuildType({
 
     features {
         buildCache {
+            enabled = false
             name = "mycaches"
             use = false
             publishOnlyChanged = false
