@@ -230,6 +230,7 @@ object ConsumeFromserviceMessage : BuildType({
         }
         script {
             name = "publish"
+            enabled = false
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             scriptContent = """echo "##teamcity[publishBuildCache cacheName='.m2' path='.m2']""""
         }
