@@ -283,20 +283,7 @@ object Supr1_Buildc1 : BuildType({
 
     steps {
         script {
-            scriptContent = """
-                echo a > 1.txt
-                echo a > 2.txt
-                echo a > 3.txt
-                echo a > 4.txt
-                echo a > 5.txt
-                echo a > 6.txt
-                echo a > 7.txt
-                echo a > 8.txt
-                echo a > 9.txt
-                echo a > 10.txt
-                echo a > 11.txt
-                echo a > 12.txt
-            """.trimIndent()
+            scriptContent = "echo a > привет"
         }
     }
 
