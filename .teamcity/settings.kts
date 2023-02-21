@@ -253,6 +253,9 @@ object ServiceMessage : BuildType({
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%"
         }
+        script {
+            scriptContent = "dir .m2"
+        }
     }
 
     features {
