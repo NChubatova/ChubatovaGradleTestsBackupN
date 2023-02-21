@@ -30,6 +30,7 @@ version = "2022.10"
 project {
 
     vcsRoot(GitHub)
+    vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
 
     buildType(CleanTest)
     buildType(ServiceMessage)
@@ -241,6 +242,8 @@ object ServiceMessage : BuildType({
     name = "serviceMessage"
 
     vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+
         cleanCheckout = true
     }
 
@@ -266,4 +269,10 @@ object GitHub : GitVcsRoot({
         uploadedKey = "rsaopensshnew"
         passphrase = "credentialsJSON:f6e56813-d355-4aed-ab01-7c7eb56b69bb"
     }
+})
+
+object HttpsGithubComChubatovaTigerMavenJunit : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/mavenJunit"
+    url = "https://github.com/ChubatovaTiger/mavenJunit"
+    branch = "refs/heads/main"
 })
