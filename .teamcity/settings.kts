@@ -233,7 +233,6 @@ object ConsumeFromserviceMessage : BuildType({
 
     features {
         buildCache {
-            enabled = false
             name = "m2"
             publish = false
             publishOnlyChanged = false
