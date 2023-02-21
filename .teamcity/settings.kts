@@ -62,6 +62,7 @@ object Build1 : BuildType({
             """.trimIndent()
         }
         script {
+            enabled = false
             scriptContent = "dir filestocache"
         }
     }
