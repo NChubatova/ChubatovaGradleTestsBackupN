@@ -62,6 +62,14 @@ object Build1 : BuildType({
             """.trimIndent()
         }
         script {
+            name = "New build step"
+            scriptContent = """
+                mkdir filestocache
+                fsutil file createnew filestocache/file%build.counter% 2000000000
+                dir
+            """.trimIndent()
+        }
+        script {
             enabled = false
             scriptContent = "dir filestocache"
         }
