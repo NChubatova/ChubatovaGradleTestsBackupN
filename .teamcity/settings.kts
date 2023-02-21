@@ -35,7 +35,6 @@ project {
     vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
 
     buildType(CleanTest)
-    buildType(CleanTestdownlo)
     buildType(Build1)
     buildType(Build2)
     buildType(Consumer_1)
@@ -173,33 +172,6 @@ object CleanTest : BuildType({
             name = "cleantest"
             publishOnlyChanged = false
             rules = """C:\runnginx.bat"""
-        }
-    }
-})
-
-object CleanTestdownlo : BuildType({
-    name = "cleanTestdownlo"
-
-    vcs {
-        root(DslContext.settingsRoot)
-
-        branchFilter = "+:<default>"
-    }
-
-    steps {
-        script {
-            scriptContent = """
-                echo a > a%build.counter%.txt
-                ping 127.0.0.1 -n 60 > nul
-            """.trimIndent()
-        }
-    }
-
-    features {
-        buildCache {
-            name = "cleantest"
-            publishOnlyChanged = false
-            rules = "a%build.counter%.txt"
         }
     }
 })
