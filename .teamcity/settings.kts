@@ -218,11 +218,6 @@ object ConsumeFromserviceMessage : BuildType({
     }
 
     steps {
-        maven {
-            goals = "clean test"
-            runnerArgs = """-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%\.m2"""
-            localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
-        }
         script {
             enabled = false
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
