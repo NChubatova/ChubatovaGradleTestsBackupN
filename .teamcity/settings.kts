@@ -92,6 +92,7 @@ object Build1 : BuildType({
             rules = """
                 filestocache1
                 filestocache2
+                kjlkjlkjl
             """.trimIndent()
         }
     }
