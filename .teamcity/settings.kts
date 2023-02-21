@@ -263,6 +263,11 @@ object ServiceMessage : BuildType({
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             scriptContent = "dir .m2"
         }
+        script {
+            name = "publish"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """echo "##teamcity[publishBuildCache cacheName='.m2' path='.m2']""""
+        }
     }
 
     features {
