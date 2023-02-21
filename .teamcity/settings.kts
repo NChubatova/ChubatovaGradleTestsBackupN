@@ -224,6 +224,7 @@ object ConsumeFromserviceMessage : BuildType({
             localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
         }
         script {
+            enabled = false
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             scriptContent = "dir .m2"
         }
