@@ -246,13 +246,6 @@ object ServiceMessage : BuildType({
         cleanCheckout = true
     }
 
-    steps {
-        script {
-            enabled = false
-            scriptContent = "dir filestocache"
-        }
-    }
-
     features {
         buildCache {
             name = "mycaches"
