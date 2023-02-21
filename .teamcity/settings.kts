@@ -243,7 +243,7 @@ object ServiceMessage : BuildType({
     name = "serviceMessage"
 
     params {
-        param("system.maven.repo.local", "%system.agent.work.dir%/.m2")
+        param("system.maven.repo.local", "%system.agent.work.dir%")
     }
 
     vcs {
