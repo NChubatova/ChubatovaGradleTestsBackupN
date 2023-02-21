@@ -221,7 +221,7 @@ object ConsumeFromserviceMessage : BuildType({
         script {
             enabled = false
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
-            scriptContent = "dir .m2"
+            scriptContent = "dir"
         }
         script {
             name = "publish"
