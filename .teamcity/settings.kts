@@ -47,6 +47,8 @@ project {
         param("teamcity.internal.feature.build.cache.enabled", "true")
         password("xs", "credentialsJSON:6e3ea57e-bd74-4743-8910-00bc691fe41d")
     }
+
+    subProject(Maven)
 }
 
 object Build1 : BuildType({
@@ -336,4 +338,9 @@ object HttpsGithubComChubatovaTigerMavenJunit : GitVcsRoot({
     name = "https://github.com/ChubatovaTiger/mavenJunit"
     url = "https://github.com/ChubatovaTiger/mavenJunit"
     branch = "refs/heads/main"
+})
+
+
+object Maven : Project({
+    name = "maven"
 })
