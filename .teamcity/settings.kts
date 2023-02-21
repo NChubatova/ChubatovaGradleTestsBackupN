@@ -219,7 +219,6 @@ object ConsumeFromserviceMessage : BuildType({
 
     steps {
         script {
-            enabled = false
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             scriptContent = "dir"
         }
