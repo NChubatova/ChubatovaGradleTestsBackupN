@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.buildCache
+import jetbrains.buildServer.configs.kotlin.buildSteps.MavenBuildStep
 import jetbrains.buildServer.configs.kotlin.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
@@ -256,6 +257,7 @@ object ServiceMessage : BuildType({
         maven {
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%"
+            localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
         }
         script {
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
