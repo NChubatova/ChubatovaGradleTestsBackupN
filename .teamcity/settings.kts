@@ -32,6 +32,7 @@ project {
     vcsRoot(GitHub)
 
     buildType(CleanTest)
+    buildType(ServiceMessage)
     buildType(CleanTestdownlo)
     buildType(Build1)
     buildType(Build2)
@@ -232,6 +233,54 @@ object Consumer_1 : BuildType({
             publish = false
             publishOnlyChanged = false
             rules = "filestocache"
+        }
+    }
+})
+
+object ServiceMessage : BuildType({
+    name = "serviceMessage"
+
+    vcs {
+        root(GitHub)
+
+        cleanCheckout = true
+    }
+
+    steps {
+        script {
+            enabled = false
+            scriptContent = """
+                mkdir filestocache
+                fsutil file createnew filestocache/file%build.counter% 2000000000
+                dir
+            """.trimIndent()
+        }
+        script {
+            name = "small"
+            enabled = false
+            scriptContent = """
+                mkdir filestocache1
+                fsutil file createnew filestocache1/file1%build.counter% 200
+                mkdir filestocache2
+                fsutil file createnew filestocache2/file2%build.counter% 200
+                dir
+            """.trimIndent()
+        }
+        script {
+            enabled = false
+            scriptContent = "dir filestocache"
+        }
+    }
+
+    features {
+        buildCache {
+            name = "mycaches"
+            use = false
+            publishOnlyChanged = false
+            rules = """
+                filestocache1
+                filestocache2
+            """.trimIndent()
         }
     }
 })
