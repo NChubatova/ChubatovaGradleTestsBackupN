@@ -148,7 +148,10 @@ object Consumer_1 : BuildType({
             """.trimIndent()
         }
         script {
-            scriptContent = "dir"
+            scriptContent = """
+                dir
+                dir filestocache2
+            """.trimIndent()
         }
     }
 
