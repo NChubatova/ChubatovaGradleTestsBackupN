@@ -281,6 +281,14 @@ object Supr1_Buildc1 : BuildType({
             scriptContent = "echo a > 1.txt"
         }
     }
+
+    features {
+        buildCache {
+            name = "movetst"
+            publishOnlyChanged = false
+            rules = "1.txt"
+        }
+    }
 })
 
 
