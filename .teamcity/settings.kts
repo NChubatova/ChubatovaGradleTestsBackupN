@@ -35,7 +35,6 @@ project {
     vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
 
     buildType(CleanTest)
-    buildType(ServiceMessage)
     buildType(CleanTestdownlo)
     buildType(Build1)
     buildType(Build2)
@@ -279,6 +278,30 @@ object Consumer_1 : BuildType({
     }
 })
 
+object GitHub : GitVcsRoot({
+    name = "GitHub"
+    url = "git@github.com:ChubatovaTiger/ChubatovaGradleTestsBackup.git"
+    branch = "refs/heads/master"
+    branchSpec = "refs/heads/(buildCache*)"
+    authMethod = uploadedKey {
+        uploadedKey = "rsaopensshnew"
+        passphrase = "credentialsJSON:f6e56813-d355-4aed-ab01-7c7eb56b69bb"
+    }
+})
+
+object HttpsGithubComChubatovaTigerMavenJunit : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/mavenJunit"
+    url = "https://github.com/ChubatovaTiger/mavenJunit"
+    branch = "refs/heads/main"
+})
+
+
+object Maven : Project({
+    name = "maven"
+
+    buildType(ServiceMessage)
+})
+
 object ServiceMessage : BuildType({
     name = "serviceMessage"
 
@@ -321,26 +344,4 @@ object ServiceMessage : BuildType({
             """.trimIndent()
         }
     }
-})
-
-object GitHub : GitVcsRoot({
-    name = "GitHub"
-    url = "git@github.com:ChubatovaTiger/ChubatovaGradleTestsBackup.git"
-    branch = "refs/heads/master"
-    branchSpec = "refs/heads/(buildCache*)"
-    authMethod = uploadedKey {
-        uploadedKey = "rsaopensshnew"
-        passphrase = "credentialsJSON:f6e56813-d355-4aed-ab01-7c7eb56b69bb"
-    }
-})
-
-object HttpsGithubComChubatovaTigerMavenJunit : GitVcsRoot({
-    name = "https://github.com/ChubatovaTiger/mavenJunit"
-    url = "https://github.com/ChubatovaTiger/mavenJunit"
-    branch = "refs/heads/main"
-})
-
-
-object Maven : Project({
-    name = "maven"
 })
