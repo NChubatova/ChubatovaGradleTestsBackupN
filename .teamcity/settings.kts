@@ -90,7 +90,6 @@ object Project1_B1pr1 : BuildType({
     features {
         buildCache {
             name = "mycache2"
-            publishOnlyChanged = false
             rules = "1-%build.counter%"
         }
     }
