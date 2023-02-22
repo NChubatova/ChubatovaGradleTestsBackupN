@@ -262,13 +262,10 @@ object Maven_BuildFeature : BuildType({
 
     features {
         buildCache {
-            name = "mycaches"
+            name = "mavenCache"
             use = false
             publishOnlyChanged = false
-            rules = """
-                filestocache1
-                filestocache2
-            """.trimIndent()
+            rules = ".m2"
         }
     }
 })
