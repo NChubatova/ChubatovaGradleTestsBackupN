@@ -100,6 +100,10 @@ object Project1_B1pr1 : BuildType({
 object Project1_B2pr1cons : BuildType({
     name = "b2pr1cons"
 
+    vcs {
+        cleanCheckout = true
+    }
+
     steps {
         script {
             scriptContent = "ls"
