@@ -16,15 +16,6 @@
     <vcs-settings />
     <requirements />
     <build-triggers />
-    <build-extensions>
-      <extension id="jetbrains.buildserver.feature.build.cache" type="jetbrains.buildserver.feature.build.cache">
-        <parameters>
-          <param name="cache-name" value="mycache" />
-          <param name="publish-cache" value="true" />
-          <param name="publish-cache-rules" value="111-%build.counter%" />
-        </parameters>
-      </extension>
-    </build-extensions>
     <cleanup />
   </settings>
 </build-type>
