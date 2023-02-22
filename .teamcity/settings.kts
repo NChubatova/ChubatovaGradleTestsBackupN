@@ -2,6 +2,7 @@ import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.buildCache
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.projectFeatures.buildReportTab
+import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -39,6 +40,16 @@ project {
             id = "PROJECT_EXT_1"
             title = "Code Coverage"
             startPage = "coverage.zip!index.html"
+        }
+        s3Storage {
+            id = "PROJECT_EXT_3"
+            bucketName = "n.chubatova-test"
+            bucketPrefix = "chuCaches"
+            awsEnvironment = default {
+                awsRegionName = "eu-central-1"
+            }
+            accessKeyID = "AKIA5JH2VERVHVMPJQJI"
+            accessKey = "credentialsJSON:eabd0246-b954-4671-a8c6-94088e24abc4"
         }
     }
 
