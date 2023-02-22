@@ -87,7 +87,10 @@ object Project1_B1pr1 : BuildType({
 
     steps {
         script {
-            scriptContent = "echo a > 1-%build.counter%"
+            scriptContent = """
+                mkdir dir1
+                echo a > dir1/1-%build.counter%
+            """.trimIndent()
         }
     }
 
