@@ -89,7 +89,7 @@ object Project1_B1pr1 : BuildType({
         script {
             scriptContent = """
                 mkdir myDir
-                echo a > myDir/2
+                echo a > myDir/3
             """.trimIndent()
         }
     }
