@@ -108,7 +108,7 @@ object Project1_B2pr1cons : BuildType({
 
     features {
         buildCache {
-            name = "mycache3"
+            name = "mycache2"
             publish = false
         }
     }
