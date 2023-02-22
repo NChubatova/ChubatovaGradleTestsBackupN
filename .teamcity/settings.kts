@@ -92,7 +92,7 @@ object Project1_B1pr1 : BuildType({
     steps {
         script {
             scriptContent = """
-                echo a > %dir%/5
+                echo a > %dir%/6
                 ls %dir%
             """.trimIndent()
         }
