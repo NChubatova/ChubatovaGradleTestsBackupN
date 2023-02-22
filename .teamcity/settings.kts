@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.buildCache
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.projectFeatures.activeStorage
 import jetbrains.buildServer.configs.kotlin.projectFeatures.buildReportTab
 import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
 
@@ -50,6 +51,10 @@ project {
             }
             accessKeyID = "AKIA5JH2VERVHVMPJQJI"
             accessKey = "credentialsJSON:eabd0246-b954-4671-a8c6-94088e24abc4"
+        }
+        activeStorage {
+            id = "PROJECT_EXT_4"
+            activeStorageID = "PROJECT_EXT_3"
         }
     }
 
