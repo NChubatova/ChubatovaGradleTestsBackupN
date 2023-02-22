@@ -190,6 +190,7 @@ object Maven : Project({
 
     buildType(ServiceMessage)
     buildType(ConsumeFromserviceMessage)
+    buildType(Maven_BuildFeature)
 })
 
 object ConsumeFromserviceMessage : BuildType({
@@ -224,6 +225,50 @@ object ConsumeFromserviceMessage : BuildType({
             publish = false
             publishOnlyChanged = false
             rules = "lkjlkjlkj"
+        }
+    }
+})
+
+object Maven_BuildFeature : BuildType({
+    name = "buildFeature"
+
+    params {
+        param("system.maven.repo.local", "%system.agent.work.dir%")
+    }
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+
+        cleanCheckout = true
+    }
+
+    steps {
+        maven {
+            goals = "clean test"
+            runnerArgs = """-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%\.m2"""
+            localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
+        }
+        script {
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = "dir .m2"
+        }
+        script {
+            name = "publish"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """echo "##teamcity[publishBuildCache cacheName='m2' path='.m2']""""
+        }
+    }
+
+    features {
+        buildCache {
+            enabled = false
+            name = "mycaches"
+            use = false
+            publishOnlyChanged = false
+            rules = """
+                filestocache1
+                filestocache2
+            """.trimIndent()
         }
     }
 })
