@@ -103,7 +103,7 @@ object Project1_B1pr1 : BuildType({
 
     features {
         buildCache {
-            name = "mycache8"
+            name = "mycache9"
             rules = "%dir%"
         }
     }
