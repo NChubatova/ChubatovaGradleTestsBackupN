@@ -94,6 +94,8 @@ object Project1_B1pr1 : BuildType({
             scriptContent = """
                 if [ -d %dir% ] 
                 then
+                echo PathExists
+                else
                 mkdir %dir%
                 fi
                 echo a > %dir%/1
