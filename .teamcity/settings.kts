@@ -262,7 +262,6 @@ object Maven_BuildFeature : BuildType({
 
     features {
         buildCache {
-            enabled = false
             name = "mycaches"
             use = false
             publishOnlyChanged = false
