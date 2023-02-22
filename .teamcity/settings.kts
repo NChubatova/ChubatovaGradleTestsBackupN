@@ -99,7 +99,7 @@ object Project1_B1pr1 : BuildType({
                 mkdir %dir%
                 fi
                 echo a > %dir%/1
-                dir
+                ls
             """.trimIndent()
         }
     }
