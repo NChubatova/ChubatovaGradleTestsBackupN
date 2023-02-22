@@ -81,10 +81,6 @@ object Project1 : Project({
 object Project1_B1pr1 : BuildType({
     name = "b1pr1"
 
-    params {
-        param("dirNum", "1")
-    }
-
     vcs {
         cleanCheckout = true
     }
