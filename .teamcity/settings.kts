@@ -93,7 +93,7 @@ object Project1_B1pr1 : BuildType({
         script {
             scriptContent = """
                 mkdir dir1-%dirNum%
-                echo a > dir1-%dirNum%/1
+                echo a > dir1-%dirNum%/2
             """.trimIndent()
         }
     }
