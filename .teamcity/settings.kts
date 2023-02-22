@@ -92,7 +92,7 @@ object Project1_B1pr1 : BuildType({
     steps {
         script {
             scriptContent = """
-                if not [ ! -d %dir% ] 
+                if [ -d %dir% ] 
                 then
                 mkdir %dir%
                 fi
