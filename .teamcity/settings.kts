@@ -92,8 +92,11 @@ object Project1_B1pr1 : BuildType({
     steps {
         script {
             scriptContent = """
-                if [ -d %dir% ] then echo PathExists
-                else mkdir %dir%
+                if [ -d %dir% ] 
+                then 
+                echo PathExists
+                else 
+                mkdir %dir%
                 fi
                 echo a > %dir%/1
                 dir
