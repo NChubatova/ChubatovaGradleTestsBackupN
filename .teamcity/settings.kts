@@ -153,7 +153,6 @@ object Project1_Project11_B11p11 : BuildType({
     features {
         buildCache {
             name = "mycache3"
-            use = false
             publishOnlyChanged = false
             rules = "111-%build.counter%"
         }
