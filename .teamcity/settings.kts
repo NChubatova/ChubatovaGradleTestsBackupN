@@ -1,26 +1,21 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.buildCache
+import jetbrains.buildServer.configs.kotlin.buildSteps.MavenBuildStep
+import jetbrains.buildServer.configs.kotlin.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.projectFeatures.activeStorage
-import jetbrains.buildServer.configs.kotlin.projectFeatures.buildReportTab
-import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
+import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
 project hierarchy. The script should contain a single call to the
 project() function with a Project instance or an init function as
 an argument.
-
 VcsRoots, BuildTypes, Templates, and subprojects can be
 registered inside the project using the vcsRoot(), buildType(),
 template(), and subProject() methods respectively.
-
 To debug settings scripts in command-line, run the
-
     mvnDebug org.jetbrains.teamcity:teamcity-configs-maven-plugin:generate
-
 command and attach your debugger to the port 8000.
-
 To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 -> Tool Windows -> Maven Projects), find the generate task node
 (Plugins -> teamcity-configs -> teamcity-configs:generate), the
@@ -30,60 +25,77 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2022.10"
 
 project {
-    description = "Contains all other projects"
+
+    vcsRoot(GitHub)
+    vcsRoot(HttpsGithubComChubatovaTigerMavenJunit)
+
+    buildType(Build1)
+    buildType(Build2)
+    buildType(Consumer_1)
 
     params {
+        param("teamcity.buildCache.limit.internalBuildCacheSizeMb", "20")
         param("teamcity.internal.feature.build.cache.enabled", "true")
+        password("xs", "credentialsJSON:6e3ea57e-bd74-4743-8910-00bc691fe41d")
+    }
+
+    subProject(Maven)
+    subProject(Supr1)
+    subProject(Supr2)
+}
+
+object Build1 : BuildType({
+    name = "build1"
+
+    vcs {
+        root(GitHub)
+
+        cleanCheckout = true
+    }
+
+    steps {
+        script {
+            scriptContent = """
+                mkdir filestocache1
+                fsutil file createnew filestocache1/file%build.counter% 20000000
+                mkdir filestocache2
+                fsutil file createnew filestocache2/file%build.counter% 200000000
+                dir
+            """.trimIndent()
+        }
+        script {
+            name = "small"
+            enabled = false
+            scriptContent = """
+                mkdir filestocache1
+                fsutil file createnew filestocache1/file1%build.counter% 200
+                mkdir filestocache2
+                fsutil file createnew filestocache2/file2%build.counter% 200
+                dir
+            """.trimIndent()
+        }
+        script {
+            enabled = false
+            scriptContent = "dir filestocache"
+        }
     }
 
     features {
-        buildReportTab {
-            id = "PROJECT_EXT_1"
-            title = "Code Coverage"
-            startPage = "coverage.zip!index.html"
-        }
-        s3Storage {
-            id = "PROJECT_EXT_3"
-            bucketName = "n.chubatova-test"
-            bucketPrefix = "chuCaches"
-            awsEnvironment = default {
-                awsRegionName = "eu-central-1"
-            }
-            accessKeyID = "AKIA5JH2VERVHVMPJQJI"
-            accessKey = "credentialsJSON:eabd0246-b954-4671-a8c6-94088e24abc4"
-        }
-        activeStorage {
-            id = "PROJECT_EXT_4"
-            activeStorageID = "PROJECT_EXT_3"
+        buildCache {
+            name = "mycaches"
+            use = false
+            publishOnlyChanged = false
+            rules = """
+                filestocache1
+                filestocache2
+                kjlkjlkjl
+            """.trimIndent()
         }
     }
-
-    cleanup {
-        baseRule {
-            preventDependencyCleanup = false
-        }
-    }
-
-    subProject(Project2)
-    subProject(Project1)
-}
-
-
-object Project1 : Project({
-    name = "project1"
-
-    buildType(Project1_B2pr1cons)
-    buildType(Project1_B1pr1)
-
-    subProject(Project1_Project11)
 })
 
-object Project1_B1pr1 : BuildType({
-    name = "b1pr1"
-
-    params {
-        param("dir", "myDir")
-    }
+object Build2 : BuildType({
+    name = "build2"
 
     vcs {
         cleanCheckout = true
@@ -92,130 +104,237 @@ object Project1_B1pr1 : BuildType({
     steps {
         script {
             scriptContent = """
-                if [ -d %dir% ] 
-                then 
-                echo PathExists
-                else 
-                mkdir %dir%
-                fi
-                echo a > %dir%/1
-                ls
+                mkdir filestocache2
+                echo a > filestocache2/1-2
+                echo b > filestocache2/2-2
+                echo c > filestocache2/%build.counter%m-2
+                dir
             """.trimIndent()
         }
     }
 
     features {
         buildCache {
-            name = "mycache10"
-            rules = "%dir%"
+            name = "chubatovacache"
+            use = false
+            rules = "filestocache2"
         }
     }
 })
 
-object Project1_B2pr1cons : BuildType({
-    name = "b2pr1cons"
+object Consumer_1 : BuildType({
+    id("Consumer")
+    name = "consumer"
 
     vcs {
+        root(GitHub)
+
+        cleanCheckout = true
+        branchFilter = "+:<default>"
+    }
+
+    steps {
+        script {
+            enabled = false
+            scriptContent = """
+                mkdir filestocache2
+                echo a > filestocache2/1-2
+                echo b > filestocache2/2-2
+                echo c > filestocache2/%build.counter%m-2
+                dir
+            """.trimIndent()
+        }
+        script {
+            scriptContent = """
+                dir
+                dir filestocache2
+            """.trimIndent()
+        }
+    }
+
+    features {
+        buildCache {
+            name = "mycaches"
+            publish = false
+            publishOnlyChanged = false
+            rules = "filestocache"
+        }
+    }
+})
+
+object GitHub : GitVcsRoot({
+    name = "GitHub"
+    url = "git@github.com:ChubatovaTiger/ChubatovaGradleTestsBackup.git"
+    branch = "refs/heads/master"
+    branchSpec = "refs/heads/(buildCache*)"
+    authMethod = uploadedKey {
+        uploadedKey = "rsaopensshnew"
+        passphrase = "credentialsJSON:f6e56813-d355-4aed-ab01-7c7eb56b69bb"
+    }
+})
+
+object HttpsGithubComChubatovaTigerMavenJunit : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/mavenJunit"
+    url = "https://github.com/ChubatovaTiger/mavenJunit"
+    branch = "refs/heads/main"
+})
+
+
+object Maven : Project({
+    name = "maven"
+
+    buildType(ServiceMessage)
+    buildType(ConsumeFromserviceMessage)
+    buildType(Maven_BuildFeature)
+})
+
+object ConsumeFromserviceMessage : BuildType({
+    name = "consumeFromserviceMessage"
+
+    params {
+        param("system.maven.repo.local", "%system.agent.work.dir%")
+    }
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+
         cleanCheckout = true
     }
 
     steps {
         script {
-            scriptContent = "ls"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = "dir .m2"
         }
-    }
-
-    features {
-        buildCache {
-            name = "mycache2"
-            publish = false
-        }
-    }
-})
-
-
-object Project1_Project11 : Project({
-    name = "project11"
-
-    buildType(Project1_Project11_Cons)
-    buildType(Project1_Project11_B11p11)
-})
-
-object Project1_Project11_B11p11 : BuildType({
-    name = "b11p11"
-
-    steps {
         script {
-            scriptContent = "echo a > 111-%build.counter%"
+            name = "publish"
+            enabled = false
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """echo "##teamcity[publishBuildCache cacheName='.m2' path='.m2']""""
         }
     }
 
     features {
         buildCache {
-            name = "mycache3"
+            name = "m2"
+            publish = false
             publishOnlyChanged = false
-            rules = "111-%build.counter%"
+            rules = "lkjlkjlkj"
         }
     }
 })
 
-object Project1_Project11_Cons : BuildType({
-    name = "cons"
+object Maven_BuildFeature : BuildType({
+    name = "buildFeature"
+
+    params {
+        param("system.maven.repo.local", "%system.agent.work.dir%")
+    }
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+
+        cleanCheckout = true
+    }
 
     steps {
+        maven {
+            goals = "clean test"
+            runnerArgs = """-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%\.m2"""
+            localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
+        }
         script {
-            scriptContent = "ls"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = "dir .m2"
+        }
+        script {
+            name = "publish"
+            enabled = false
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """echo "##teamcity[publishBuildCache cacheName='m2' path='.m2']""""
         }
     }
 
     features {
         buildCache {
-            name = "mycache2"
-            publish = false
-        }
-    }
-})
-
-
-object Project2 : Project({
-    name = "project2"
-
-    buildType(Project2_B2p2cons)
-    buildType(Project2_B1p2)
-})
-
-object Project2_B1p2 : BuildType({
-    name = "b1p2"
-
-    steps {
-        script {
-            scriptContent = "echo a > 2-%build.counter%"
-        }
-    }
-
-    features {
-        buildCache {
-            name = "mycache"
+            name = "mavenCache"
             use = false
             publishOnlyChanged = false
-            rules = "2-%build.counter%"
+            rules = ".m2"
         }
     }
 })
 
-object Project2_B2p2cons : BuildType({
-    name = "b2p2cons"
+object ServiceMessage : BuildType({
+    name = "serviceMessage"
+
+    params {
+        param("system.maven.repo.local", "%system.agent.work.dir%")
+    }
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerMavenJunit)
+
+        cleanCheckout = true
+    }
 
     steps {
+        maven {
+            goals = "clean test"
+            runnerArgs = """-Dmaven.test.failure.ignore=true -Dmaven.repo.local=%teamcity.build.checkoutDir%\.m2"""
+            localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
+        }
         script {
-            scriptContent = "ls"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = "dir .m2"
+        }
+        script {
+            name = "publish"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """echo "##teamcity[publishBuildCache cacheName='m2' path='.m2']""""
         }
     }
 
     features {
         buildCache {
-            name = "mycache"
-            publish = false
+            enabled = false
+            name = "mycaches"
+            use = false
+            publishOnlyChanged = false
+            rules = """
+                filestocache1
+                filestocache2
+            """.trimIndent()
+        }
+    }
+})
+
+
+object Supr1 : Project({
+    name = "supr1"
+})
+
+
+object Supr2 : Project({
+    name = "supr2"
+
+    buildType(Supr1_Buildc1)
+})
+
+object Supr1_Buildc1 : BuildType({
+    name = "buildc1"
+
+    steps {
+        script {
+            scriptContent = "echo a > привет"
+        }
+    }
+
+    features {
+        buildCache {
+            name = "movetst"
+            publishOnlyChanged = false
+            rules = "привет"
         }
     }
 })
