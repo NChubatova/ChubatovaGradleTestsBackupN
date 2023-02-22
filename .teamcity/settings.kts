@@ -92,7 +92,10 @@ object Project1_B1pr1 : BuildType({
     steps {
         script {
             scriptContent = """
-                if not exist %dir% mkdir %dir%
+                if not [ ! -d %dir% ] 
+                then
+                mkdir %dir%
+                fi
                 echo a > %dir%/1
             """.trimIndent()
         }
