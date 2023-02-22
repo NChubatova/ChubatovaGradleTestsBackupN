@@ -19,7 +19,7 @@
     <build-extensions>
       <extension id="jetbrains.buildserver.feature.build.cache" type="jetbrains.buildserver.feature.build.cache">
         <parameters>
-          <param name="cache-name" value="mycache" />
+          <param name="cache-name" value="mycache2" />
           <param name="publish-cache" value="true" />
           <param name="publish-cache-rules" value="1-%build.counter%" />
         </parameters>
