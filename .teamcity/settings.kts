@@ -47,7 +47,7 @@ object Pumchen : BuildType({
 
     features {
         parallelTests {
-            numberOfBatches = 3
+            numberOfBatches = 2
         }
     }
 })
