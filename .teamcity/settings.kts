@@ -56,6 +56,6 @@ object Pumchen : BuildType({
     }
 
     requirements {
-        contains("teamcity.agent.name", "bla")
+        contains("teamcity.agent.name", "a")
     }
 })
