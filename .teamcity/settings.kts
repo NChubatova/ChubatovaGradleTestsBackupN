@@ -54,4 +54,8 @@ object Pumchen : BuildType({
             numberOfBatches = 3
         }
     }
+
+    requirements {
+        contains("teamcity.agent.name", "bla")
+    }
 })
