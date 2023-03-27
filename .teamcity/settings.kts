@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -42,6 +43,9 @@ object Pumchen : BuildType({
         gradle {
             tasks = "clean build"
             gradleWrapperPath = ""
+        }
+        script {
+            scriptContent = "echo a"
         }
     }
 
