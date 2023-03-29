@@ -19,7 +19,7 @@ tasks.test {
     ignoreFailures = false
 
     retry {
-        maxRetries = 1
+        maxRetries = 0
         maxFailures = 200
         //failOnPassedAfterRetry = false
     }
