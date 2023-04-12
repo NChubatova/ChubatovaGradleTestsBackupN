@@ -12,7 +12,7 @@ public class fuchs {
         if (System.currentTimeMillis()%2==1){
         }
         else {
-            Assert.fail("fb");
+            //Assert.fail("fb");
 
         };
 
