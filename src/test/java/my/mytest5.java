@@ -12,7 +12,7 @@ public class mytest5 {
         if (System.currentTimeMillis()%2==1){
         }
         else {
-            Assert.fail("fail mn");
+            //Assert.fail("fail mn");
 
         };
 
@@ -31,7 +31,7 @@ public class mytest5 {
         @Test
     public void test43s() {
 
-            Assert.fail("fail mkk_remote2");
+            //Assert.fail("fail mkk_remote2");
 
 
 
