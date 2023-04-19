@@ -20,12 +20,12 @@ public class liontest4 {
     
     @Test
     public void test42s() {
-        //if (System.currentTimeMillis()%3==1){
-        //}
-        //else {
-            //Assert.fail("fail mkk_remote2");
+        if (System.currentTimeMillis()%3==1){
+        }
+        else {
+            Assert.fail("fail mkk_remote2");
 
-        //};
+        };
 
     };
         @Test
