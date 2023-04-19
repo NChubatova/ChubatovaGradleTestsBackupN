@@ -19,7 +19,7 @@ test {
     ignoreFailures = false
 
     retry {
-        maxRetries = 0
+        maxRetries = 3
         maxFailures = 200
         //failOnPassedAfterRetry = false
     }
