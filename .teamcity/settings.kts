@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.notifications
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.schedule
 
@@ -70,6 +71,16 @@ object Mail : BuildType({
             branchFilter = ""
             triggerBuild = always()
             withPendingChangesOnly = false
+        }
+    }
+
+    features {
+        notifications {
+            notifierSettings = emailNotifier {
+                email = "chubatovateamcity@gmail.com"
+            }
+            buildStarted = true
+            buildFinishedSuccessfully = true
         }
     }
 })
