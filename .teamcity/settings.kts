@@ -62,6 +62,7 @@ object Mail : BuildType({
 
     triggers {
         schedule {
+            enabled = false
             schedulingPolicy = cron {
                 seconds = "0/15"
                 minutes = "*"
