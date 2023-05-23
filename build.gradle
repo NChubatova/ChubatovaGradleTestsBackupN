@@ -22,7 +22,7 @@ test {
  }
     retry {
         maxRetries = 3
-        maxFailures = 200
+        maxFailures = 20
         //failOnPassedAfterRetry = false
     }
 }
