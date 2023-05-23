@@ -17,10 +17,9 @@ dependencies {
 test {
     useJUnit()
     ignoreFailures = false
-
-    exclude 'org/boo/**'
-    exclude '**/myTest*.class'
-
+    filter {
+    excludeTestsMatching "*myTest*"
+ }
     retry {
         maxRetries = 3
         maxFailures = 200
