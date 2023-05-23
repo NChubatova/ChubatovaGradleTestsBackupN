@@ -18,7 +18,7 @@ test {
     useJUnit()
     ignoreFailures = false
     filter {
-    excludeTestsMatching "*mytest*"
+    //excludeTestsMatching "*mytest*"
  }
     retry {
         maxRetries = 3
