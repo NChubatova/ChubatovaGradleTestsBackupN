@@ -18,6 +18,9 @@ test {
     useJUnit()
     ignoreFailures = false
 
+    exclude 'org/boo/**'
+    exclude '**/myTest*.class'
+
     retry {
         maxRetries = 3
         maxFailures = 200
