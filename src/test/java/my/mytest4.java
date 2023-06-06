@@ -26,6 +26,15 @@ public class mytest4 {
             //Assert.fail("fail mkk_remote2");
 
         //};
+        
+  try {
+   for(int n=5;n>0;n--) {
+    System.out.println(n);
+    Thread.sleep(60000);
+   }
+  }catch(InterruptedException e) {
+   System.out.println("main interrupted");
+  }
 
     };
         @Test
