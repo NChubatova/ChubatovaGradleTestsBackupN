@@ -63,7 +63,7 @@ object Aa : BuildType({
     name = "aa"
 
     vcs {
-        root(DslContext.settingsRoot)
+        //root(DslContext.settingsRoot)
         root(HttpsGithubComChubatovaTigerVsSubp)
     }
 })
