@@ -82,7 +82,7 @@ object Fr : BuildType({
 object HttpsGithubComChubatovaTigerVsSubp : GitVcsRoot({
     name = "https://github.com/ChubatovaTiger/vs_subp"
     url = "https://github.com/ChubatovaTiger/vs_subp"
-    branch = "refs/heads/main"
+    branch = "${DslContext.getParameter("branchName")}"
     authMethod = password {
         userName = "ChubatovaTiger"
         password = "credentialsJSON:a3b296c3-ed89-4c8e-ae53-9d525c32691d"
