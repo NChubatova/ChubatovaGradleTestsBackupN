@@ -30,7 +30,7 @@ public class mytest4 {
   try {
    for(int n=5;n>0;n--) {
     System.out.println(n);
-    Thread.sleep(120000);
+    Thread.sleep(100);
    }
   }catch(InterruptedException e) {
    System.out.println("main interrupted");
