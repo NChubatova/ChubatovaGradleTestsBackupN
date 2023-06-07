@@ -73,7 +73,7 @@ object Fr : BuildType({
 
     features {
         freeDiskSpace {
-            requiredSpace = "3000gb"
+            requiredSpace = "3000mb"
             failBuild = false
         }
     }
