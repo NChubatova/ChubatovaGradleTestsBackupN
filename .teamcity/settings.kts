@@ -32,7 +32,7 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_40"
            profileId = "amazon-11"
-            agentPoolId = "6"
+            //agentPoolId = "6"
             name = "im3"
             instanceType = "t2.micro"
             securityGroups = listOf("sg-098887b6daeb441ce")
