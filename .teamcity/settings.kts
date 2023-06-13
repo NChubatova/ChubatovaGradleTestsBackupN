@@ -30,7 +30,7 @@ project {
             source = Source("i-070d9dd2e2f4f3a6e")
         }
         amazonEC2CloudProfile {
-            id = "amazon-1000"
+            id = "amazon-10001"
             name = "aws"
             terminateIdleMinutes = 30
             region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
