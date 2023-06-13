@@ -2,33 +2,11 @@ import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 
-/*
-The settings script is an entry point for defining a TeamCity
-project hierarchy. The script should contain a single call to the
-project() function with a Project instance or an init function as
-an argument.
-
-VcsRoots, BuildTypes, Templates, and subprojects can be
-registered inside the project using the vcsRoot(), buildType(),
-template(), and subProject() methods respectively.
-
-To debug settings scripts in command-line, run the
-
-    mvnDebug org.jetbrains.teamcity:teamcity-configs-maven-plugin:generate
-
-command and attach your debugger to the port 8000.
-
-To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
--> Tool Windows -> Maven Projects), find the generate task node
-(Plugins -> teamcity-configs -> teamcity-configs:generate), the
-'Debug' option is available in the context menu for the task.
-*/
-
 version = "2023.05"
 
 project {
 
-    features {
+    /*features {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_40"
             profileId = "amazon-11"
@@ -39,10 +17,11 @@ project {
             spotInstanceBidPrice = 1.0
             source = Source("ami-0b9308ec4c1afd22f")
         }
+        */
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_7"
-            profileId = "amazon-1000"
-            agentPoolId = "-2"
+            id = "PROJECT_EXT_10"
+            profileId = "amazon-10001"
+            //agentPoolId = "-2"
             name = "im4"
             vpcSubnetId = "subnet-0ace2a91ee63119ea"
             keyPairName = "chubatova-amazon-ireland"
