@@ -31,7 +31,7 @@ project {
     features {
         amazonEC2CloudImage {
             //id = "PROJECT_EXT_4"
-           // profileId = "amazon-9"
+           profileId = "amazon-11"
             //agentPoolId = "1"
             name = "im3"
             instanceType = "t2.micro"
@@ -41,7 +41,7 @@ project {
             source = Source("ami-0b9308ec4c1afd22f")
         }
         amazonEC2CloudProfile {
-            //id = "amazon-1"
+            id = "amazon-1000"
             name = "aws"
             terminateIdleMinutes = 30
             region = AmazonEC2CloudProfile.Regions.EU_WEST_LONDON
