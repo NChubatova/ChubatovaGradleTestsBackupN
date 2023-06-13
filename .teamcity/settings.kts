@@ -30,7 +30,7 @@ project {
 
     features {
         amazonEC2CloudImage {
-            //id = "PROJECT_EXT_4"
+            id = "PROJECT_EXT_40"
            profileId = "amazon-11"
             //agentPoolId = "1"
             name = "im3"
