@@ -6,8 +6,8 @@ version = "2023.05"
 
 project {
 
-    /*features {
-        amazonEC2CloudImage {
+    features {
+        /*amazonEC2CloudImage {
             id = "PROJECT_EXT_40"
             profileId = "amazon-11"
             name = "im3"
