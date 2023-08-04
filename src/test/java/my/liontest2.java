@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
 //haha
+//noinspection SpellCheckingInspection
 public class liontest2 {
 
     @Test
