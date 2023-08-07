@@ -2,8 +2,4 @@
   <profile version="1.0">
     <option name="myName" value="chubatovaInsp" />
   </profile>
-  <inspection_tool class="RedundantSuppression" enabled="false" level="WARNING" enabled_by_default="false">
-    <scope name="chubatovaInsp" level="ERROR" enabled="false">
-	</scope>
-  </inspection_tool>
 </component>
