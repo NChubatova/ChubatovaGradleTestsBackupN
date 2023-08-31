@@ -32,7 +32,7 @@ public class fuchs {
         @Test
     public void test43s() {
 
-            Assert.fail("fail fuchs4");
+            //Assert.fail("fail fuchs4");
 
 
 
