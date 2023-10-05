@@ -10,7 +10,7 @@ public class liontest2 {
 
     @Test
     public void test41flk1() {
-        try{Thread.sleep(5000);}catch(InterruptedException e){System.out.println(e);}
+        try{Thread.sleep(50);}catch(InterruptedException e){System.out.println(e);}
         if (System.currentTimeMillis()%2==1){
         }
         else {
