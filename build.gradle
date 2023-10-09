@@ -21,7 +21,7 @@ test {
     //excludeTestsMatching "*mytest*"
  }
     retry {
-        maxRetries = 3
+        maxRetries = 0
         maxFailures = 20
         failOnPassedAfterRetry = false
     }
