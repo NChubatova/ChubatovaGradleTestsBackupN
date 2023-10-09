@@ -9,12 +9,12 @@ public class liontest3 {
 
     @Test
     public void test41flk1() {
-        if (System.currentTimeMillis()%2==1){
-        }
-        else {
+        //if (System.currentTimeMillis()%2==1){
+        //}
+        //else {
             Assert.fail("fad");
 
-        };
+        //};
 
     };
     
