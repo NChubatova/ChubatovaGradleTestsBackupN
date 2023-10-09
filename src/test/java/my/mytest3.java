@@ -9,7 +9,7 @@ public class mytest3 {
 
     @Test
     public void test31() {
-        try{Thread.sleep(10000);}catch(InterruptedException e){System.out.println(e);}
+        try{Thread.sleep(10);}catch(InterruptedException e){System.out.println(e);}
         //if (System.currentTimeMillis()%3==1){
         //}
         //else {
