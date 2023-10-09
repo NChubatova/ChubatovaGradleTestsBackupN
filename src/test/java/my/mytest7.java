@@ -9,12 +9,12 @@ public class mytest7 {
 
     @Test
     public void test41flk1() {
-        if (System.currentTimeMillis()%2==1){
-        }
-        else {
-            //Assert.fail("fail");
+        //if (System.currentTimeMillis()%2==1){
+        //}
+        //else {
+            Assert.fail("fail");
 
-        };
+        //};
 
     };
     
