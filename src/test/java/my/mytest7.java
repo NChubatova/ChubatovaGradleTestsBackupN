@@ -12,7 +12,7 @@ public class mytest7 {
         if (System.currentTimeMillis()%2==1){
         }
         else {
-            //Assert.fail("fail");
+            Assert.fail("fail");
 
         };
 
