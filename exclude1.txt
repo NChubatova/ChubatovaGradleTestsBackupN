@@ -14,5 +14,4 @@ my.mytest2
 my.mytest3
 my.mytest5
 my.mytest6
-my.mytest7
-my.mytest9
+
