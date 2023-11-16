@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3945a94c-6549-4e0d-a39a-8d304988ae53" type="jetbrains.git" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup</name>
+  <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+  <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+  <param name="authMethod" value="PASSWORD" />
+  <param name="branch" value="refs/heads/master" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="secure:password" value="credentialsJSON:44f76cc1-8740-4f6c-9570-88d77be72226" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="url" value="https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup" />
+  <param name="useAlternates" value="AUTO" />
+  <param name="username" value="ChubatovaTiger" />
+  <param name="usernameStyle" value="USERID" />
+</vcs-root>
+

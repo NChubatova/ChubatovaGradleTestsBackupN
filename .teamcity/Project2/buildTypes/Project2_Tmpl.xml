@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>tmpl</name>
+  <settings>
+    <parameters />
+    <build-runners />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <build-extensions>
+      <extension id="matrix" type="matrix">
+        <parameters>
+          <param name="matrix.label.customwitjlabel.2" value="my labelB" />
+          <param name="matrix.label.env.JAVA_HOME.1" value="JDK 21" />
+          <param name="matrix.label.env.JAVA_HOME.2" value="JDK 11" />
+          <param name="matrix.param.OS.1" value="OS" />
+          <param name="matrix.param.custom2.3" value="custom2" />
+          <param name="matrix.param.customwitjlabel.4" value="customwitjlabel" />
+          <param name="matrix.param.env.JAVA_HOME.2" value="env.JAVA_HOME" />
+          <param name="matrix.value.OS.1" value="Linux" />
+          <param name="matrix.value.OS.2" value="Mac OS" />
+          <param name="matrix.value.custom2.1" value="a" />
+          <param name="matrix.value.custom2.2" value="b" />
+          <param name="matrix.value.customwitjlabel.1" value="a" />
+          <param name="matrix.value.customwitjlabel.2" value="B" />
+          <param name="matrix.value.env.JAVA_HOME.1" value="%env.JDK_21_0%" />
+          <param name="matrix.value.env.JAVA_HOME.2" value="%env.JDK_11%" />
+        </parameters>
+      </extension>
+    </build-extensions>
+    <cleanup />
+  </settings>
+</template>
+
