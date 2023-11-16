@@ -8,6 +8,7 @@
   <param name="ignoreKnownHosts" value="true" />
   <param name="secure:password" value="credentialsJSON:44f76cc1-8740-4f6c-9570-88d77be72226" />
   <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="refs/heads/(*)" />
   <param name="url" value="https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup" />
   <param name="useAlternates" value="AUTO" />
   <param name="username" value="ChubatovaTiger" />
