@@ -8,6 +8,7 @@ import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 
 object Project : Project({
 
+    buildType(Build3)
     buildType(Build2)
     buildType(Build1)
 
