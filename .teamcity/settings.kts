@@ -30,11 +30,58 @@ version = "2023.11"
 project {
 
     buildType(Par)
+    buildType(Par0)
     buildType(Par1)
 }
 
 object Par : BuildType({
     name = "Par"
+
+    params {
+        param("env.BranchDefault", "%teamcity.build.branch.is_default%")
+        param("env.Triggered", "%teamcity.build.triggeredBy%")
+        param("env.rootBranch", "${DslContext.settingsRoot.paramRefs["branch"]}")
+        param("env.Branch", "%teamcity.build.branch%")
+        param("env.rootAuth", "%vcsroot.authMethod%")
+    }
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
+
+    steps {
+        gradle {
+            id = "gradle_runner"
+            tasks = "clean build"
+            jdkHome = "%env.JDK_11_0%"
+        }
+        script {
+            id = "simpleRunner"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
+            scriptContent = """
+                echo "%env.Branch%"
+                echo "%env.BranchDefault%"
+                echo "%env.rootAuth%"
+                echo "%env.rootBranch%"
+                echo "%env.Triggered%"
+            """.trimIndent()
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+    }
+
+    dependencies {
+        snapshot(Par1) {
+            reuseBuilds = ReuseBuilds.NO
+        }
+    }
+})
+
+object Par0 : BuildType({
+    name = "Par0"
 
     params {
         param("env.BranchDefault", "%teamcity.build.branch.is_default%")
