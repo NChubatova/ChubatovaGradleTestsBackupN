@@ -38,7 +38,7 @@ object Mat : BuildType({
     }
 
     features {
-        matrix {
+       /* matrix {
             param("a", listOf(
                 value("1"),
                 value("2")
@@ -46,6 +46,15 @@ object Mat : BuildType({
             param("b", listOf(
                 value("3"),
                 value("4")
+            ))
+        }
+*/
+matrix {
+            param("a", listOf(
+                value("1")
+            ))
+            param("b", listOf(
+                value("3")
             ))
         }
     }
