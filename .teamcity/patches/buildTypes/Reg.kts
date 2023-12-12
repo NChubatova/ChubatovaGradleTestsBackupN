@@ -13,6 +13,7 @@ in the root project, and delete the patch script.
 create(DslContext.projectId, BuildType({
     id("Reg")
     name = "reg"
+    paused = true
 
     steps {
         script {
