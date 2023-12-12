@@ -53,9 +53,7 @@ matrix {
             param("a", listOf(
                 value("1")
             ))
-            param("b", listOf(
-                value("3")
-            ))
+
         }
     }
 })
