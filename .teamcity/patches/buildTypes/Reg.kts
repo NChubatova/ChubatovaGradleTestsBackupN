@@ -17,7 +17,10 @@ create(DslContext.projectId, BuildType({
     steps {
         script {
             id = "simpleRunner"
-            scriptContent = "exit 1"
+            scriptContent = """
+                sleep 20
+                exit 1
+            """.trimIndent()
         }
     }
 }))
