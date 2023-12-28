@@ -12,7 +12,7 @@ public class liontest {
         try{Thread.sleep(5);}catch(InterruptedException e){System.out.println(e);}
         if (System.currentTimeMillis()%2==1){
         }
-        else {lklkl
+        else {
             Assert.fail("fa0134");
 
         };
