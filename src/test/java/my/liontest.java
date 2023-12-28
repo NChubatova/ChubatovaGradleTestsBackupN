@@ -13,7 +13,7 @@ public class liontest {
         if (System.currentTimeMillis()%2==1){
         }
         else {
-            //Assert.fail("fa0134");
+            Assert.fail("fa0134");
 
         };
 
