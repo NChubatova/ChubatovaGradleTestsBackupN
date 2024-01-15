@@ -29,7 +29,7 @@ test {
 
 task hello {
     doLast {
-        println providers.systemProperty("build.number").present
+        println providers.systemProperty("testsys").present
     }
 }
 
