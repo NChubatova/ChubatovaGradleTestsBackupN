@@ -29,7 +29,7 @@ test {
 
 task hello {
     doLast {
-        println 'Hello world!'
+        println providers.systemProperty("teamcity.version").isPresent
     }
 }
 
