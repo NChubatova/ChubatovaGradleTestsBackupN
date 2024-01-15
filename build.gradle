@@ -29,8 +29,8 @@ test {
 
 task hello {
     doLast {
-        println providers.systemProperty("teamcity.version").present
-        println providers.systemProperty("teamcity.version")
+        println providers.systemProperty("teamcityversion").present
+        println providers.systemProperty("teamcityversion")
         //println project.ext["teamcity.build.branch"]
     }
 }
