@@ -29,8 +29,8 @@ test {
 
 task hello {
     doLast {
-        println providers.systemProperty("teamcity.auth.userID").present
-        println providers.systemProperty("teamcity.auth.userID")
+        println providers.systemProperty("teamcity.version").present
+        println(providers.systemProperty("system").get())
         //println project.ext["teamcity.build.branch"]
     }
 }
