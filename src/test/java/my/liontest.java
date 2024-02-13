@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.*;
-haha
+
 public class liontest {
 
     @Test
