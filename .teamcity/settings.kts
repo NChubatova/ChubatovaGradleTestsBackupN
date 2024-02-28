@@ -22,7 +22,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2022.10"
+version = "2023.11"
 
 project {
 
@@ -33,6 +33,6 @@ object Build1 : BuildType({
     name = "build2"
 
     vcs {
-        root(DslContext.settingsRoot, "-:build", "+:.")
+        root(DslContext.settingsRoot, "-:build")
     }
 })
