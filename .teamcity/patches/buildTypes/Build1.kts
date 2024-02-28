@@ -10,11 +10,6 @@ To apply the patch, change the buildType with id = 'Build1'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Build1")) {
-    vcs {
-        expectEntry(DslContext.settingsRoot.id!!, "-:build")
-        root(DslContext.settingsRoot.id!!, "-:build", "+:.")
-    }
-
     expectSteps {
     }
     steps {
