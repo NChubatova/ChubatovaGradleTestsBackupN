@@ -33,6 +33,6 @@ object Build1 : BuildType({
     name = "build2"
 
     vcs {
-        root(DslContext.settingsRoot, "-:build")
+        root(DslContext.settingsRoot, "+:build")
     }
 })
