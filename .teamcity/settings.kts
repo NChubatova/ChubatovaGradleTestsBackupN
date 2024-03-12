@@ -73,6 +73,11 @@ object Test1 : BuildType({
             jdkHome = "%env.JDK_11%"
         }
     }
+
+    dependencies {
+        snapshot(BuildCore) {
+        }
+    }
 })
 
 object Test2 : BuildType({
