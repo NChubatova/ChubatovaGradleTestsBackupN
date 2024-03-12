@@ -29,6 +29,7 @@ version = "2023.11"
 project {
 
     buildType(Test2)
+    buildType(BuildCore)
     buildType(Test1)
     buildType(BuildAll)
 }
@@ -46,6 +47,10 @@ object BuildAll : BuildType({
         snapshot(Test2) {
         }
     }
+})
+
+object BuildCore : BuildType({
+    name = "BuildCore"
 })
 
 object Test1 : BuildType({
