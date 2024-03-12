@@ -103,4 +103,9 @@ object Test2 : BuildType({
             numberOfBatches = 2
         }
     }
+
+    dependencies {
+        snapshot(BuildCore) {
+        }
+    }
 })
