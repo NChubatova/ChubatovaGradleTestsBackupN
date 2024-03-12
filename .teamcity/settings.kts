@@ -51,6 +51,10 @@ object BuildAll : BuildType({
 
 object BuildCore : BuildType({
     name = "BuildCore"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
 })
 
 object Test1 : BuildType({
