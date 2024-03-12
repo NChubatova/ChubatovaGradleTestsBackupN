@@ -59,7 +59,7 @@ object BuildCore : BuildType({
     name = "BuildCore"
 
     vcs {
-        root(DslContext.settingsRoot)
+        root(DslContext.settingsRoot, "+:Project")
     }
 })
 
