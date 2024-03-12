@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -39,6 +40,11 @@ object BuildAll : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+
+    triggers {
+        vcs {
+        }
     }
 
     dependencies {
