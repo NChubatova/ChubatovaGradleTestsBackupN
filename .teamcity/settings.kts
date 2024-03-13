@@ -44,6 +44,7 @@ object BuildAll : BuildType({
 
     triggers {
         vcs {
+            enabled = false
         }
     }
 
