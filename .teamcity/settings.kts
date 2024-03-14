@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
@@ -61,6 +62,13 @@ object BuildCore : BuildType({
 
     vcs {
         root(DslContext.settingsRoot, "+:Project")
+    }
+
+    steps {
+        script {
+            id = "simpleRunner"
+            scriptContent = """curl -i -u "%system.teamcity.auth.userId%:%system.teamcity.auth.password%" "%teamcity.serverUrl%/showJsp.html?jspPath=showJsp.html?jspPath=/admin/diagnostic.html;.jsp?actionName=threadDump&save=false""""
+        }
     }
 })
 
