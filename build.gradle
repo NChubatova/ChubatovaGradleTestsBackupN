@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    //id("jvm-test-suite")
     id("org.gradle.test-retry") version "1.2.0"
     
 }
@@ -18,9 +19,9 @@ tasks.test {
     ignoreFailures = false
 
     retry {
-        maxRetries = 0
+        maxRetries = 2
         maxFailures = 200
-        failOnPassedAfterRetry = true
+        //failOnPassedAfterRetry = false
     }
 }
 

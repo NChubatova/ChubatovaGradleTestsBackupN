@@ -1,6 +1,6 @@
-import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.commitStatusPublisher
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
+import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -24,34 +24,31 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2021.2"
+version = "2022.10"
 
 project {
 
-    buildType(B)
+    buildType(Gradle_3)
 }
 
-object B : BuildType({
-    name = "b"
+object Gradle_3 : BuildType({
+    id("Gradle")
+    name = "gradle"
 
     vcs {
         root(DslContext.settingsRoot)
     }
 
     steps {
-        script {
-            scriptContent = "./check.sh"
+        gradle {
+            tasks = "clean build"
+            gradleWrapperPath = ""
         }
     }
 
     features {
-        commitStatusPublisher {
-            vcsRootExtId = "${DslContext.settingsRoot.id}"
-            publisher = bitbucketServer {
-                url = "s"
-                userName = "d"
-                password = "credentialsJSON:031ae95d-bb6e-4769-bd70-f4fe3dfc8ab1"
-            }
+        parallelTests {
+            numberOfBatches = 2
         }
     }
 })
